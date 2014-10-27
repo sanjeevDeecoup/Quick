@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebsiteUserMain.master.cs" Inherits="QuickWeb.WebsiteUser.WebsiteUserMain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <link rel="Shortcut Icon" type="image/ico" href="../images/favicon.ico" />
+	<title><%=AppTitle %></title>
+		<script language="javascript" type="text/javascript">
+			//function to disable browser back button
+			function DisableBackButton() {
+				window.history.forward();
+			}
+			setTimeout("DisableBackButton()", 0);
+			window.onunload = function () { null };
+	</script>   
+	  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/bootstrap-extend.css" rel="stylesheet" type="text/css" />
+	<link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/datepicker.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.8.1.min.js" type="text/javascript"></script>
+      <script type = "text/javascript"> 
+          function Redirect() {
+              var BID = $('#hdnBranchID').val();
+              var BranchName = $('#lblBranch').text();
+              var custcode = $('#hdnCustCode').val();
+              var BranchAddress = $('#lblAddress').text();                                
+                  window.location = 'ChangePassword.aspx?BID=' + BID + "&CustCode=" + custcode + "&BranchName=" + BranchName + "&BranchAdress=" + BranchAddress;
+              }
+              function RedirectPage() {
+                  var sBID = $('#hdnBranchID').val();
+                  var sBranchName = $('#lblBranch').text();
+                  var scustcode = $('#hdnCustCode').val();
+                  var sBranchAddress = $('#lblAddress').text();
+                  window.location = 'frmUserAndGarmentDetail.aspx?BID=' + sBID + "&CustCode=" + scustcode + "&BranchName=" + sBranchName + "&BranchAdress=" + sBranchAddress;
+              }
+    </script>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="form1" runat="server">
+	<div class="panel panel-primary well-sm-tiny1 panel-borderColor">
+		<div class="panel-heading Textpadding" style="background-color:#438EB9">   		  
+		  <div class="navbar-header">
+		  <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button" style="background-color:#579EC8">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>	 
+		</div>
+			<div class="navbar-collapse collapse">
+          
+            <div class="col-sm-8 textBold" style="padding-top:10px">
+            <asp:Label ID="lblBranch" runat="server" EnableTheming="false"  ClientIDMode="Static" /> - 
+            <asp:Label ID="lblAddress" runat="server" EnableTheming="false" ClientIDMode="Static"  />
+            </div>
+            <div class="col-sm-4">
+			<ul class="nav navbar-nav" style="float:right;background-color:#579EC8">
+            <li class="" style="border-right-style: solid; border-right-width: 1px"><a href="javascript:RedirectPage()" style="padding-top:8px;padding-bottom:5px;background-color: #579EC8;color:White"><i class="fa fa-home fa-lg"></i>&nbsp;Home</a></li>
+			
+            <li class="dropdown" >
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown" style="padding-top:5px;padding-bottom:5px;background-color: #579EC8;color:White">
+								<img  src="../img/User2.png" height="35px" width="40px" class="nav-user-photo WhiteColor">
+								<span class="user-info nopadding">
+									<small>Welcome,  <asp:Label ID="lblCustName" runat="server" EnableTheming="false" CssClass="textBold" /></small>								
+								</span>
+								<i class="caret"></i>
+							</a>
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li class="Textpadding" >
+									<a href="javascript:Redirect()" id="achrChangePwd"   onmouseover="style.backgroundColor='#FEE188'" onmouseout="style.backgroundColor='white'">
+										<i class="fa fa-cog textBold"></i>
+										&nbsp;Change Password
+									</a>
+								</li>							
+
+								<li class="Textpadding">
+									<a href="UserLogin.aspx"  onmouseover="style.backgroundColor='#FEE188'" onmouseout="style.backgroundColor='white'">
+										<i class="fa fa-power-off textBold"></i>
+										&nbsp;Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+			</ul>
+            </div>
+         
+			</div>
+		</div>
+		<div class="panel-body" style="padding-top:5px">
+			 <div>
+		<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+		
+		</asp:ContentPlaceHolder>
+		</div>
+		</div>
+        <asp:HiddenField ID="hdnBranchID"  runat="server" ClientIDMode="Static"/>
+        <asp:HiddenField ID="hdnCustCode"  runat="server" ClientIDMode="Static"/>
+	</div>
+	</form>
+</body>
+</html>

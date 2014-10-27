@@ -1,0 +1,5 @@
+D:\Aashish\dc\DrySoft\Discount\code\promos\DAL\bin\Release\DAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\DAL\bin\Release\DAL.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\DAL\obj\Release\ResolveAssemblyReference.cache
+D:\Aashish\dc\DrySoft\Discount\code\promos\DAL\obj\Release\DAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\DAL\obj\Release\DAL.pdb

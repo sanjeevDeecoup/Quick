@@ -1,0 +1,156 @@
+
+.nav_new {
+     background: none repeat scroll 0% 0% Black;
+     bottom: 0px;
+     left: 0px;
+     position: absolute;
+     top: 0px;
+     width: 90px;
+     height:596px;
+     color:white;
+}
+
+.nav_new > ul li {
+     clear: left;
+     display: inline-block;
+     float: left;   
+     margin: 3px 0px 3px 0px;
+     text-align: center;
+     width: 90px;
+     color:white;
+}
+
+.nav_new > ul li a {
+     background: none repeat scroll 0% 0% Black;
+   color:white;
+     display: inline-block;
+     font-size: 13px;
+        width: 90px;
+      text-decoration: none !important;
+}
+.nav_new > ul li:hover a{    
+      background-color:#242424;      
+}
+
+.nav_new > ul li a span{       
+        color: gray;
+}
+
+.nav_new > ul li a.home {
+     background-position: 0px 0px;
+}
+
+
+.nav_new > ul li a.home:hover {
+     background-position: -60px 0px;
+}
+
+.nav_new > ul li a.pickup {
+     background-position: 0px -60px;
+}
+
+.nav_new > ul li a.pickup:hover {
+     background-position: -60px -60px;
+}
+
+.nav_new > ul li a.drop {
+     background-position: 0px -120px;
+}
+
+.nav_new > ul li a.drop:hover {
+     background-position: -60px -120px;
+}
+
+.nav_new > ul li a.reports {
+     background-position: 0px -180px;
+}
+
+.nav_new > ul li a.reports:hover {
+     background-position: -60px -180px;
+}
+
+.nav_new > ul li a.settings {
+     background-position: 0px -240px;
+}
+
+.nav_new > ul li a.settings:hover {
+     background-position: -60px -240px;
+}
+
+.nav_new > ul.secondary {
+     bottom: 10px;
+     position: absolute;
+}
+
+.view{
+  
+     bottom: 0px;
+     left: 75px;
+     position: absolute;
+     right: 0px;
+     top: 0px;    
+}
+
+.padding5 {
+	padding:10px 0px 10px 0px;
+}
+
+.tdheight {
+	height:596px;
+}
+
+.submenu2 {
+    display:none;
+    background-color:Black;
+    width: 90px;
+    height: 100%;
+    position:absolute !important;
+    color: White;
+    z-index:1200
+    }
+
+@media (max-width: 767px) {
+body {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+}
+
+
+*
+{
+	padding: 0;
+	margin: 0px;
+}
+.txtdiv{	
+	writing-mode: tb-rl;
+	-webkit-transform: rotate(90deg);	
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	position: fixed;
+	left: 0;
+z-index:1200;
+}
+.sideIcon {
+	background-color:Black; 
+	color: White;
+	padding:0px 4px 0px 4px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	margin-left:-18px;
+	border-width: 5px; 
+	border-color: #C0C0C0;
+	 border-top-style: solid; 
+	 border-right-style: solid; 
+	 border-left-style: solid;
+	 font-size:15px; 
+}
+.submenuHome {        
+    background-color:Black;
+    width: 94px;
+    height: 100%;  
+    color: White;
+    margin-left:-4px; 
+    }

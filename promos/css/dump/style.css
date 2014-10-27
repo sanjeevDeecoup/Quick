@@ -1,0 +1,40 @@
+﻿#mainContainer { font-family:Verdana; font-size:12px; width:800px; height:500px; }
+
+/* Steps - top header */
+#steps { height:50px; background-color:#ffffff; padding:0px; margin:0px; }
+#steps span { float:left;  width:147px; height:50px; border: 1px solid black; margin:0px 5px 0px 5px;
+              background-color:#d4d0c8; }
+#steps span.current { float:left; border: 1px solid black; font-weight:bold; }
+
+/* Step Form */
+#container { height:400px; width:800px; border-bottom:1px solid #ffffff;}
+#stepsForm { width:600px; height:300px; float:left; background-color:#d4d0c8; }
+#helpText {  width:200px; height:300px; float:left; background-color:#ffffcc; }
+#container fieldset { border:none;  background-color:#d4d0c8;  }
+#container fieldset ul { list-style-type:none; padding: 0px 5px 0px 10px; width:100%; }
+#container fieldset ul li { padding:3px;  text-align:left; } 
+#container .typeTextHide { display:none; }
+#stepsForm input[type=text] { width:50px; }
+
+/* forms Header with Promo Name and Step header description */
+#stepsFormHeader { height:90px; width:800px; background-color:#d4d0c8; padding:10px 0px 0px 0px;
+                   text-align:center; font-size:16px; font-weight:bold; }
+#promoName {  } 
+input.longerText { width:250px; }
+hr { background-color:White; width:95%; }
+#promoStepDesc { }
+
+/* Commands */
+#commands { border-top:1px solid #ffffff; height:45px; width:790px; background-color:#d4d0c8; 
+            padding:0px 5px 0px 5px;}
+.prev, .next { background-color:#d4d0c8; padding:5px 10px; color:#000000; text-decoration:none;
+               border-top:1px solid #ffffff; border-left:1px solid #ffffff; 
+               border-bottom:1px solid #000000; border-right:1px solid #000000;}
+.prev:hover, .next:hover {  text-decoration:underline; }
+.prev { float:left;}
+.next { float:right;}
+#commands p { display:none; font-weight:bold; }
+#commands p.currentSel { display:block; }
+
+
+

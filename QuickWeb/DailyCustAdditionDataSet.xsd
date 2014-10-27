@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DailyCustAdditionDataSet" targetNamespace="http://tempuri.org/DailyCustAdditionDataSet.xsd" xmlns:mstns="http://tempuri.org/DailyCustAdditionDataSet.xsd" xmlns="http://tempuri.org/DailyCustAdditionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DailyCustAdditionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DailyCustAdditionDataSet" msprop:Generator_UserDSName="DailyCustAdditionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sp_DailyCustomerAddition" msprop:Generator_TableClassName="sp_DailyCustomerAdditionDataTable" msprop:Generator_TableVarName="tablesp_DailyCustomerAddition" msprop:Generator_TablePropName="sp_DailyCustomerAddition" msprop:Generator_RowDeletingName="sp_DailyCustomerAdditionRowDeleting" msprop:Generator_RowChangingName="sp_DailyCustomerAdditionRowChanging" msprop:Generator_RowEvHandlerName="sp_DailyCustomerAdditionRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_DailyCustomerAdditionRowDeleted" msprop:Generator_UserTableName="sp_DailyCustomerAddition" msprop:Generator_RowChangedName="sp_DailyCustomerAdditionRowChanged" msprop:Generator_RowEvArgName="sp_DailyCustomerAdditionRowChangeEvent" msprop:Generator_RowClassName="sp_DailyCustomerAdditionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="Volume" msprop:Generator_ColumnVarNameInTable="columnVolume" msprop:Generator_ColumnPropNameInRow="Volume" msprop:Generator_ColumnPropNameInTable="VolumeColumn" msprop:Generator_UserColumnName="Volume" type="xs:string" minOccurs="0" />
+              <xs:element name="Pending" msprop:Generator_ColumnVarNameInTable="columnPending" msprop:Generator_ColumnPropNameInRow="Pending" msprop:Generator_ColumnPropNameInTable="PendingColumn" msprop:Generator_UserColumnName="Pending" type="xs:string" minOccurs="0" />
+              <xs:element name="PendingAmount" msprop:Generator_ColumnVarNameInTable="columnPendingAmount" msprop:Generator_ColumnPropNameInRow="PendingAmount" msprop:Generator_ColumnPropNameInTable="PendingAmountColumn" msprop:Generator_UserColumnName="PendingAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstBill" msprop:Generator_ColumnVarNameInTable="columnFirstBill" msprop:Generator_ColumnPropNameInRow="FirstBill" msprop:Generator_ColumnPropNameInTable="FirstBillColumn" msprop:Generator_UserColumnName="FirstBill" type="xs:string" minOccurs="0" />
+              <xs:element name="LastBill" msprop:Generator_ColumnVarNameInTable="columnLastBill" msprop:Generator_ColumnPropNameInRow="LastBill" msprop:Generator_ColumnPropNameInTable="LastBillColumn" msprop:Generator_UserColumnName="LastBill" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

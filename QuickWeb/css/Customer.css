@@ -1,0 +1,557 @@
+﻿body
+{
+    font-family: Calibri;
+    font-size: 14px;
+    width: 100%;
+    margin: 0px;
+}
+#mainContainer
+{
+    width: 1220px;
+    height: 600px;
+    background-color: #e2e0e0;
+    padding: 10px;
+}
+.rightContainer
+{
+    float: right;
+    width: 50%;
+    height: 100%;
+    margin-top: 20px;
+}
+.leftContainer
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+#NewItemgroup
+{
+    width: 95%;
+    height: 10%;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+#undersubitem
+{
+    width: 98%;
+    height: 85%;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-left: 2px;
+    overflow: hidden;
+}
+#undervariation
+{
+    width: 98%;
+    height: 85%;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-left: 2px;
+    overflow: auto;
+}
+#undercategory
+{
+    width: 98%;
+    height: 85%;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-left: 2px;
+    overflow: auto;
+}
+#undervariation div
+{
+    float: left;
+}
+#undersubitem div
+{
+    float: left;
+}
+#itemsPanel
+{
+    width: 100%;
+    height: 45%;
+}
+.label
+{
+    float: left;
+    font-family: Verdana;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 11%;
+}
+.label1
+{
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 33%;
+}
+.text
+{
+    float: left;
+    margin-top: 17px;
+    width: 66%;
+}
+.text1
+{
+    float: left;
+    margin-top: 10px;
+    width: 21%;
+}
+.button
+{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+    width: 33%;
+    height: 35px;
+    margin-top: 10px;
+}
+.button1
+{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+    width: 33%;
+    height: 35px;
+    margin-top: 10px;
+}
+.button2
+{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+    width: 47%;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* #VariationsItems {width:65%; height:65%; border-left: 1px solid #000000; border-bottom: 1px solid #ffffff;
+           border-right: 1px solid #ffffff; background-color:#888888; overflow:auto; }
+#CategoryItems {width:65%; height:65%; border-left: 1px solid #000000; border-bottom: 1px solid #ffffff;
+border-right: 1px solid #ffffff; background-color:#888888; overflow:auto; margin-top:10px;  } */
+.label1Right
+{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+    height: 34px;
+    width: 100%;
+    margin-top: 10px;
+}
+.Table
+{
+    width: 100%;
+    margin-top: 10px;
+}
+.col1
+{
+    width: 10%;
+    font-size: 14px;
+}
+.col2
+{
+    width: 10%;
+    font-size: 14px;
+}
+.col3
+{
+    width: 10%;
+    font-size: 14px;
+}
+.col4
+{
+    width: 12%;
+    font-size: 14px;
+}
+.col5
+{
+    width: 12%;
+    font-size: 14px;
+}
+.col6
+{
+    width: 12%;
+    font-size: 14px;
+}
+.iconContainer
+{
+    width: 58px;
+    height: 40px;
+    background-color: #e2e0e0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 18px !important;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #ffffff;
+}
+#txtItemName
+{
+    float: left;
+    margin-top: 10px;
+    width: 35%;
+}
+.label1
+{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+    width: 33%;
+    height: 33px;
+    margin-top: 7px;
+}
+.container3
+{
+    width: 100%;
+    height: 196px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin-top: 17px;
+    float: left;
+}
+.container4
+{
+    width: 95%;
+    height: 150px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin-top: 10px;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+.container41
+{
+    width: 95%;
+    height: 150px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin-top: 10px;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+.label4
+{
+    width: 47%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #C4C4C4;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+.label5
+{
+    width: 96%;
+    height: 30px;
+    background-color: #C4C4C4;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+.container5
+{
+    width: 350px;
+    height: 250px;
+    background-color: #888888;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin: 10px 2px 1px 25px;
+    float: left;
+}
+#unorderlist label
+{
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 75px;
+}
+#unorderlist
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#unorderlist li
+{
+    float: left;
+}
+#unorderlist input[type=text]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+#unorderlist input[type=file]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 35px;
+    position: relative;
+}
+.itemIconContainer
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    background-color: #e2e0e0;
+    text-align: center;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    overflow: hidden;
+    margin-left: 125px;
+}
+.itemIconImage
+{
+    width: 100%;
+    height: 75%;
+}
+#miscPanel
+{
+    width: 100%;
+    height: 20%;
+}
+#miscPanel
+{
+    float: left;
+    text-align: left;
+}
+#subitemdetail input[type=text]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#subitemdetail label
+{
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#subitemdetail input[type=image]
+{
+    width: 30px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#subitemdetail
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#subitemdetail li
+{
+    float: left;
+}
+
+#variationdetail input[type=text]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#variationdetail label
+{
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#variationdetail input[type=image]
+{
+    width: 30px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#variationdetail
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#variationdetail li
+{
+    float: left;
+}
+
+#categorydetail input[type=text]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#categorydetail label
+{
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#categorydetail input[type=image]
+{
+    width: 30px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#categorydetail
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#categorydetail li
+{
+    float: left;
+}
+
+#rightCommands
+{
+    width: 100%;
+    height: 10%;
+    float: left;
+    text-align: left;
+    margin-top: 250px;
+}
+#rightCommands div
+{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#rightCommands input[type=button]
+{
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+#griddiv
+{
+    width: 90%;
+    height: 150px;
+    margin-top: 35px;
+    margin-left: 25px;
+    float: left;
+    overflow: scroll;
+}
+
+#lbldiv
+{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 35px;
+    float: left;
+}
+
+#hiddenCustomer
+{
+    display: none;
+}
+#hiddenvariation
+{
+    display: none;
+}
+#hiddencategory
+{
+    display: none;
+}
+
+#list
+{
+    width: 200px;
+    max-height: 250px;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    overflow: auto;
+}
+#list div.listItem
+{
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 2px;
+    padding-right: 10px;
+}
+.selectedListItem
+{
+    color: #ffffff;
+    background-color: #0303c2;
+}
+#list div.listItem:hover
+{
+    cursor: pointer;
+    background-color: #ccffff;
+}
+#list div.listItem span.highlighter
+{
+    background-color: Yellow;
+    color: #000000;
+}
+#list div.listItem span
+{
+    white-space: nowrap;
+}
+
+#list div.listItem span[rel=name]
+{
+    display: none;
+}
+#list div.listItem span[rel=code]
+{
+    display: none;
+}

@@ -1,0 +1,199 @@
+--- Add New Column 4.3
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BackupDatabase' and o.name='mstreceiptconfig'  )
+	alter table mstreceiptconfig add BackupDatabase varchar(255) not null default('DRYSOFT')
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='IsBackupActive' and o.name='mstreceiptconfig'  )
+	alter table mstreceiptconfig add IsBackupActive bit not null default('0')
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='IsEmailActive' and o.name='mstreceiptconfig'  )
+	alter table mstreceiptconfig add IsEmailActive bit not null default('0')
+
+---- Add New Column 4.4
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='IsBookingTime' and o.name='mstreceiptconfig'  )
+	alter table mstreceiptconfig add IsBookingTime bit not null default('0')
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='ChallanStatus' and o.name='Barcodetable'  )
+	alter table Barcodetable add ChallanStatus bit not null default('0')
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='IsBoundToMachine' and o.name='mstreceiptconfig'  )
+	alter table mstreceiptconfig add IsBoundToMachine bit not null default('0')
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BranchMobile' and o.name='BranchMaster'  )
+	alter table BranchMaster add BranchMobile varchar(50)
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BranchEmail' and o.name='BranchMaster'  )
+	alter table BranchMaster add BranchEmail varchar(50)
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='Port' and o.name='mstreceiptconfig'  )
+	alter table mstreceiptconfig add Port int not null default('25')
+
+	ALTER TABLE Entpayment
+ALTER COLUMN DeliveryMsg varchar(max)
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BackUpEmailID' and o.name='mstreceiptconfig'  )
+	alter table mstreceiptconfig add BackUpEmailID varchar(255)
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='WebsiteLink' and o.name='ConfigurationSetting'  )
+	alter table ConfigurationSetting add WebsiteLink varchar(255)	
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='PrintStickerStatus' and o.name='Barcodetable'  )
+	alter table Barcodetable add PrintStickerStatus bit not null default('0')	
+
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='PrintWSStickerStatus' and o.name='Barcodetable'  )
+	alter table Barcodetable add PrintWSStickerStatus bit not null default('0')
+
+
+	---- Add New Column 5.0
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='MstConfigSettings'  )
+	alter table MstConfigSettings add BookingPrefix varchar(50)
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='EntBookings'  )
+	alter table EntBookings add BookingPrefix varchar(50)
+	
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='Entbookingdetails'  )
+	alter table Entbookingdetails add BookingPrefix varchar(50)
+	
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='EntChallan'  )
+	alter table EntChallan add BookingPrefix varchar(50)
+	
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='barcodetable'  )
+	alter table barcodetable add BookingPrefix varchar(50)
+	
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='entpayment'  )
+	alter table entpayment add BookingPrefix varchar(50)
+	
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='entledgerentries'  )
+	alter table entledgerentries add BookingPrefix varchar(50)
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingNumber' and o.name='entledgerentries'  )
+	alter table entledgerentries add BookingNumber varchar(50)
+	
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='workshopchallan'  )
+	alter table workshopchallan add BookingPrefix varchar(50)
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='EntBookingsBackup'  )
+	alter table EntBookingsBackup add BookingPrefix varchar(50)
+	
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='EntbookingdetailsBackup'  )
+	alter table EntbookingdetailsBackup add BookingPrefix varchar(50)
+	
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='EntPaymentBackup'  )
+	alter table EntPaymentBackup add BookingPrefix varchar(50)
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='EntPackageConsume'  )
+	alter table EntPackageConsume add BookingPrefix varchar(50)
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='TmpEntPackageCounsume'  )
+	alter table TmpEntPackageCounsume add BookingPrefix varchar(50)
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='Barlabel'  )
+	alter table Barlabel add BookingPrefix varchar(50)
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='StockMatch'  )
+	alter table StockMatch add BookingPrefix varchar(50)
+
+		if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BookingPrefix' and o.name='StockNotMatch'  )
+	alter table StockNotMatch add BookingPrefix varchar(50)
+
+
+---------------5.1
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='WorkshopUserType' and o.name='UserMaster'  )
+alter table UserMaster add WorkshopUserType int not null default('0')
+
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='WorkshopUserType' and o.name='EntMenuRights'  )
+alter table EntMenuRights add WorkshopUserType int not null default('0')
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='PaymentRemarks' and o.name='EntLedgerEntries'  )
+	alter table EntLedgerEntries add PaymentRemarks varchar(255)
+
+-------------5.2
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='ChallanUserName' and o.name='BarcodeTable'  )
+	alter table BarcodeTable add ChallanUserName varchar(255)	
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='ChallanUserName' and o.name='EntChallan'  )
+	alter table EntChallan add ChallanUserName varchar(255)
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='ChallanUserName' and o.name='WorkShopChallan'  )
+	alter table WorkShopChallan add ChallanUserName varchar(255)
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='IsChallanByPass' and o.name='ProcessMaster'  )
+	alter table ProcessMaster add IsChallanByPass bit not null default('0')
+
+alter  table MstConfigSettings
+alter column DefaultProcessCode varchar(15)
+
+
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='BusinessName' and o.name='BranchMaster'  )
+	alter table BranchMaster add BusinessName varchar(60)
+
+
+	-------------5.3
+
+	if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='IsLoginTime' and o.name='BranchMaster'  )
+alter table BranchMaster add IsLoginTime  bit not null default('0')
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='LoginStartTime' and o.name='BranchMaster'  )
+alter table BranchMaster add LoginStartTime  varchar(255)
+
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='LoginEndTime' and o.name='BranchMaster'  )
+alter table BranchMaster add LoginEndTime  varchar(255)
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='AndroidEditable' and o.name='MstConfigSettings'  )
+alter table MstConfigSettings add AndroidEditable  bit not null default('0')
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='EditBookingAfterReady' and o.name='mstReceiptConfig'  )
+alter table mstReceiptConfig add EditBookingAfterReady  bit not null default('0')
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='DeliveryDotMatrixPrinter' and o.name='mstReceiptConfig'  )
+alter table mstReceiptConfig add DeliveryDotMatrixPrinter  bit not null default('0')
+
+if NOT EXISTS (SELECT * FROM sys.columns c inner join sys.objects o on c.object_id = o.object_id 
+where c.name='DeliveryPrinterName' and o.name='mstReceiptConfig'  )
+alter table mstReceiptConfig add DeliveryPrinterName  varchar(255)

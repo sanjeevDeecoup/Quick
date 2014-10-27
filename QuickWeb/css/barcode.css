@@ -1,0 +1,260 @@
+﻿#mainContainer
+{
+    width: 97%;
+    height: 98%;
+    background-color: #e2e0e0;
+    padding: 10px;
+}
+.rightContainer
+{
+    float: right;
+    width: 30%;
+    height: 100%;
+    margin-top: 20px;
+}
+.leftContainer
+{
+    float: left;
+    width: 70%;
+    height: 100%;
+    margin-top: 20px;
+}
+.booking50
+{
+    font-family: Arial;
+    font-size: small;
+    text-align: left;
+    line-height: 30px;
+    font-weight: bold;
+    width: 98%;
+}
+.barcodeprint
+{
+    width: 114px;
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+}
+.barcode
+{
+    height: 20px;
+    font-weight: bold;
+    width: 11.64%;
+    border: 0px solid black;
+    margin-top: 8px;
+    float: left;
+    text-align: center;
+}
+.barcode1
+{
+    height: 20px;
+    width: 13.64%;
+    font-weight: bold;
+    border: 0px solid black;
+    float: left;
+    margin-top: 8px;
+    text-align: right;
+    word-spacing: 3px;
+}
+.barcode2
+{
+    height: 20px;
+    width: 10.64%;
+    font-weight: bold;
+    border: 0px solid black;
+    margin-top: 8px;
+    float: left;
+    text-align: left;
+}
+.barcode3
+{
+    height: 20px;
+    width: 9.64%;
+    font-weight: bold;
+    border: 0px solid black;
+    margin-top: 8px;
+    float: left;
+    text-align: left;
+}
+.barcode4
+{
+    height: 20px;
+    width: 13.64%;
+    font-weight: bold;
+    border: 0px solid black;
+    float: left;
+    word-spacing: 2px;
+    margin-top: 8px;
+    text-align: center;
+}
+.barcode5
+{
+    height: 20px;
+    width: 15.64%;
+    border: 0px solid black;
+    float: left;
+    text-align: left;
+    word-spacing: 3px;
+}
+.barcode6
+{
+    height: 20px;
+    width: 13.64%;
+    font-weight: bold;
+    border: 0px solid black;
+    float: left;
+    margin-top: 8px;
+    text-align: center;
+    word-spacing: 3px;
+}
+.barcode7
+{
+    height: 20px;
+    font-weight: bold;
+    width: 13.64%;
+    border: 0px solid black;
+    margin-top: 8px;
+    float: left;
+    text-align: center;
+}
+.barcode8
+{
+    height: 20px;
+    width: 13.64%;
+    font-weight: bold;
+    border: 0px solid black;
+    float: left;
+    margin-top: 8px;
+    text-align: center;
+}
+.barcode9
+{
+    height: 20px;
+    width: 13.64%;
+    font-weight: bold;
+    border: 0px solid black;
+    float: left;
+    word-spacing: 2px;
+    margin-top: 8px;
+    text-align: center;
+}
+.barcode10
+{
+    height: 20px;
+    width: 15.64%;
+    border: 0px solid black;
+    float: left;
+}
+.barcode11
+{
+    height: 40px;
+    width: 13.64%;
+    border: 0px solid black;
+    float: left;
+    text-align: right;
+    word-spacing: 3px;
+}
+.barcode12
+{
+    height: 20px;
+    width: 13.64%;
+    border: 0px solid black;
+    margin-top: 8px;
+    float: left;
+    text-align: center;
+}
+.barcode13
+{
+    height: 20px;
+    width: 13.64%;
+    border: 0px solid black;
+    float: left;
+    text-align: right;
+}
+.barcode14
+{
+    height: 20px;
+    width: 13.64%;
+    border: 0px solid black;
+    float: left;
+    word-spacing: 2px;
+    text-align: right;
+}
+.barcode15
+{
+    height: 20px;
+    width: 15.64%;
+    border: 0px solid black;
+    float: left;
+    text-align: left;
+    word-spacing: 3px;
+}
+.barcode16
+{
+    height: 40px;
+    width: 13.64%;
+    border: 0px solid black;
+    float: left;
+    text-align: right;
+    word-spacing: 3px;
+}
+.barcode17
+{
+    height: 20px;
+    width: 13.64%;
+    border: 0px solid black;
+    margin-top: 8px;
+    float: left;
+    text-align: center;
+}
+.barcode18
+{
+    height: 20px;
+    width: 13.64%;
+    border: 0px solid black;
+    float: left;
+    margin-top: 8px;
+    text-align: right;
+}
+.barcode19
+{
+    height: 20px;
+    width: 13.64%;
+    border: 0px solid black;
+    float: left;
+    word-spacing: 2px;
+    text-align: right;
+}
+.barcode20
+{
+    height: 20px;
+    width: 15.64%;
+    border: 0px solid black;
+    float: left;
+}
+.barcode21
+{
+    height: 20px;
+    width: 15.64%;
+    border: 0px solid black;
+    float: left;
+    word-spacing: 3px;
+}
+.barcode22
+{
+    height: 40px;
+    width: 13.64%;
+    border: 0px solid black;
+    float: left;
+    text-align: right;
+    word-spacing: 3px;
+}
+.barcode23
+{
+    height: 20px;
+    width: 13.64%;
+    border: 0px solid black;
+    float: left;
+    margin-top: 8px;
+    text-align: right;
+}

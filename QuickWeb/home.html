@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Quick Drycleaning Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <!-- This is for inserting Navigation, for the time being turned off Vivek - 28 Nov 2012
+<style>
+body {
+  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/Logo144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/Logo144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/Logo72.png">
+    <link rel="apple-touch-icon-precomposed" href="img/Logo144.png">
+    <link href="css/ace.min-extend.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-extend.css" rel="stylesheet" type="text/css" />
+    <link href="css/introjs.css" rel="stylesheet" type="text/css" />
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="css/HomeStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/LeftsideMenu.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <!-- <script src="js/SessionExpired.js" type="text/javascript"></script>-->
+    <script type="text/javascript">
+        //        var sess_pollInterval = 60000;
+        //        var sess_expirationMinutes = 10;
+        //        var sess_warningMinutes = 10;
+        //        var sess_intervalID;
+        //        var sess_lastActivity;
+        //        $(document).ready(function (e) {
+        //            initSession();
+        //        });
+    </script>
+    <script type="text/javascript">
+
+        $(document).keydown(function (e) {
+            if (e.which == 112) {
+                var _meLoc = window.location + '';
+                var _index = _meLoc.lastIndexOf('/');
+                var _baseUrl = _meLoc.slice(0, _index);
+                var _bookingURL = _baseUrl + '/New_Booking/frm_New_Booking.aspx';
+                window.location = _bookingURL;
+            }
+            else if (e.which == 115) {
+                var _meLoc = window.location + '';
+                var _index = _meLoc.lastIndexOf('/');
+                var _baseUrl = _meLoc.slice(0, _index);
+                var _bookingURL = _baseUrl + '/New_Booking/frm_New_Booking.aspx?option=Edit';
+                window.location = _bookingURL;
+            }
+            else if (e.which == 117) {
+                var _meLoc = window.location + '';
+                var _index = _meLoc.lastIndexOf('/');
+                var _baseUrl = _meLoc.slice(0, _index);
+                var _bookingURL = _baseUrl + '/Bookings/Delivery.aspx';
+                window.location = _bookingURL;
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        function checkAccessRights(argPageToCheck) {
+            var isAllowed = false;
+            $.ajax({
+                url: 'Autocomplete.asmx/checkAcsRights',
+                type: 'GET',
+                data: "pageTitle='" + argPageToCheck + "'",
+                timeout: 20000,
+                contentType: 'application/json; charset=UTF-8',
+                datatype: 'JSON',
+                cache: true,
+                async: false,
+                success: function (response) {
+                    var _val = response.d;
+                    if (_val == true) {
+                        isAllowed = _val;
+                    }
+                    else {
+                        //                        var _html = '<div class="row-fluid" id="addedRowFluid"><div class="span4 offset4"><div class="label label-important large aligncenter"> <h4 style="color:Red"> <i class="icon-remove-sign icon-white"></i>&nbsp;You are not authorised !</h4></div></div></div>';
+                        //                        $('#addedRowFluid').remove();
+                        //                        $('#divHeader').after(_html);
+                        stateOfColor = true;
+                        setDivMouseOver('Red', '#999999', stateOfColor)
+                        $('#lblMsg').text('You are not authorised !');
+                    }
+                },
+                error: function (response) {
+                }
+
+            });
+            return isAllowed;
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            showControl();
+            var stateOfColor = true;
+            $("#txtCustomer").focus();
+
+            $.ajax({
+                url: 'AutoComplete.asmx/GetStoreDetails',
+                type: 'GET',
+                data: " ",
+                timeout: 20000,
+                contentType: 'application/json; charset=UTF-8',
+                datatype: 'JSON',
+                cache: true,
+                async: false,
+                success: function (response) {
+                    var resultData = response.d;
+                    var aryStoreData = resultData.split(':');
+                    $('#lblStoreName').text(aryStoreData[0]);
+                    //   $('#lblStoreAddress').text(aryStoreData[1]);
+                    $('#lblUserName').text(aryStoreData[2]);
+                },
+                error: function (response) {
+                    alert(response.toString())
+                }
+            });
+
+
+            $("#achrSearchInvoice").click(function (e) {
+
+
+                if ($('#rdbCustomer').is(':checked')) {
+                    var IsAllow = checkAccessRights('Add New')
+                    if (IsAllow == false) {
+                        return false;
+                    }
+
+                    var strCustName = $('#txtCustomer').val();
+                    if (strCustName === "") {
+                        stateOfColor = true;
+                        setDivMouseOver('Red', '#999999', stateOfColor);
+                        $("#lblMsg").text('Kindly select a customer.');
+                        $("#txtCustomer").focus();
+                        return false;
+                    }
+
+                }
+                else {
+                    var status = CheckBooking();
+                    if (status == false) {
+                        $("#txtBarcode").focus();
+                        return false;
+                    }
+                }
+
+            });
+
+            $("#rdbCustomer,#rdbInvoice").click(function (e) {
+                showControl();
+            });
+
+
+            $('#txtBarcode').keydown(function (event) {
+                if (event.which == 13 || event.which == 9) {
+
+                    var status = CheckBooking();
+                    if (status == false) {
+                        $("#txtBarcode").focus();
+                        return false;
+                    }
+                }
+            });
+
+            $('#txtCustomer').keyup(function (event) {
+                if (event.which == 13 || event.which == 9) {
+
+                    var IsAllow = checkAccessRights('Add New')
+                    if (IsAllow == false) {
+                        return false;
+                    }
+
+                    var myVar = setInterval(function () { customerCheck() }, 10);
+                    function customerCheck() {
+                        $("#lblMsg").text('');
+                        $('#divShowMsg').hide();
+                        var CustCode = $('#txtCustomer').val();
+                        var CustCode1 = CustCode.split("-");
+
+                        $('#txtCustomer').val(CustCode1[1]);
+                        if (CustCode === "") {
+                            stateOfColor = true;
+                            setDivMouseOver('Red', '#999999', stateOfColor);
+                            $("#lblMsg").text('Kindly select a customer');
+                            $("#txtCustomer").focus();
+                            clearInterval(myVar);
+                        }
+                        else {
+                            if (CustCode1.length == 1) {
+                                window.open('new_admin/frmNewCustomer.aspx?CName=' + CustCode + '', '_self');
+                                clearInterval(myVar);
+                                return false;
+                            }
+                            else {
+                               // $('#txtCustomer').val('');
+                                window.open('new_admin/frmNewCustomer.aspx?CCode=' + CustCode1[0].trim() + '', '_self');
+                                clearInterval(myVar);
+                            }
+                        }
+                        clearInterval(myVar);
+                    }
+                }
+            });
+            $('#txtCustomer').blur(function (event) {
+
+                var strCustName = $('#txtCustomer').val();
+                if (strCustName === "") {
+                    return false;
+                }
+
+                var IsAllow = checkAccessRights('Add New')
+                if (IsAllow == false) {
+                    return false;
+                }
+
+                var myVar = setInterval(function () { customerCheck() }, 400);
+                function customerCheck() {
+                    $("#lblMsg").text('');
+                    $('#divShowMsg').hide();
+                    var CustCode = $('#txtCustomer').val();
+                    var CustCode1 = CustCode.split("-");
+
+                    $('#txtCustomer').val(CustCode1[1]);
+                    if (CustCode === "") {
+                        stateOfColor = true;
+                        setDivMouseOver('#00aa00', '#999999', stateOfColor);
+                        $("#lblMsg").text('Kindly select a customer');
+                        $("#txtCustomer").focus();
+                        clearInterval(myVar);
+                    }
+                    else {
+                        if (CustCode1.length == 1) {
+                            window.open('new_admin/frmNewCustomer.aspx?CName=' + CustCode + '', '_self');
+                            clearInterval(myVar);
+                            return false;
+                        }
+                        else {
+                           // $('#txtCustomer').val('');
+                            window.open('new_admin/frmNewCustomer.aspx?CCode=' + CustCode1[0].trim() + '', '_self');
+                            clearInterval(myVar);
+                        }
+                    }
+                    clearInterval(myVar);
+                }
+            });
+
+            function CheckBooking() {
+                var IsAllow = checkAccessRights('Search Invoice')
+                if (IsAllow == false) {
+                    return false;
+                }
+                var strBarCode = $("#txtBarcode").val().trim();
+                if (strBarCode == "") {
+                    $("#txtBarcode").focus();
+                    stateOfColor = true;
+                    setDivMouseOver('Red', '#999999', stateOfColor);
+                    $('#lblMsg').text('Kindly enter order number or barcode');
+                    return false;
+                }
+
+                var BookingNo = $('#txtBarcode').val().toUpperCase();
+                var aryBookingNo = [];
+                aryBookingNo = BookingNo.split("-");
+                var Len = aryBookingNo.length;
+                if (Len == 1 || Len == 3) {
+                    var bkCancel = checkIfBookingCancel(aryBookingNo);
+                    if (bkCancel != 5) {
+                        var bkExists = checkIfBookingExists(aryBookingNo);
+                        if (bkExists === "false") {
+                            stateOfColor = true;
+                            setDivMouseOver('Red', '#999999', stateOfColor)
+                            $('#lblMsg').text('Order Not Available.');
+                            $('#txtBarcode').val('');
+                            return false;
+                        }
+                        else {
+                            window.open('Bookings/Delivery.aspx?BN=' + BookingNo + '', '_self');
+                            $('#txtBarcode').val('');
+                            $('#lblMsg').text('');
+                        }
+                    }
+                    else {
+                        stateOfColor = true;
+                        setDivMouseOver('#00aa00', '#999999', stateOfColor);
+                        $('#lblMsg').text('This booking number  is cancelled');
+                        return false;
+                    }
+                }
+                else {
+                    stateOfColor = true;
+                    setDivMouseOver('Red', '#999999', stateOfColor)
+                    $('#lblMsg').text('Please enter valid input for search');
+                    $('#txtBarcode').val('');
+                    return false;
+                }
+            }
+            function checkIfBookingExists(argBookingNumber) {
+                var result = '';
+                $.ajax({
+                    url: 'Autocomplete.asmx/FindBookingNumber',
+                    data: "bookingNumber='" + argBookingNumber[0] + "'&BID='" + argBookingNumber[2] + "'",
+                    type: 'GET',
+                    datatype: 'JSON',
+                    contentType: 'application/json; charset=utf8',
+                    async: false,
+                    timeout: 5000,
+                    success: function (response) {
+                        result = response.d;
+                    },
+                    error: function (response) {
+                        result = 'false';
+                    }
+                });
+                return result;
+            }
+
+            function checkIfBookingCancel(argBookingNumber) {
+                var result1 = '';
+                $.ajax({
+                    url: 'Autocomplete.asmx/checkBookingNoCalcel',
+                    data: "bookingNumber='" + argBookingNumber[0] + "'&BID='" + argBookingNumber[2] + "'",
+                    type: 'GET',
+                    datatype: 'JSON',
+                    contentType: 'application/json; charset=utf8',
+                    async: false,
+                    timeout: 5000,
+                    success: function (response) {
+                        result1 = response.d;
+                    },
+                    error: function (response) {
+
+                    }
+                });
+                return result1;
+            }
+
+
+
+        });
+    </script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {       
+            $('#hdnControlWidth').val($('#txtCustomer').width()-17);          
+            showAllCustomer('#txtCustomer');
+        });
+
+        function showControl() {
+            if ($('#rdbCustomer').is(':checked')) {
+                $('#txtCustomer').show();
+                $('#txtBarcode').hide();
+                $('#txtCustomer').focus();
+            }
+            else {
+                $('#txtBarcode').show();
+                $('#txtCustomer').hide();
+                $('#txtBarcode').focus();
+            }
+        }
+       
+    </script>
+    <script type="text/javascript">
+
+        function setDivMouseOver(argColorOne, argColorTwo, stateOfColor) {
+            document.getElementById('divShowMsg').style.display = "inline";
+
+            if (stateOfColor) {
+                //$('#DivContainerInnerStatus').animate({ backgroundColor: argColorOne }, 200).delay(1000).animate({ backgroundColor: argColorTwo }, 100);
+
+                $('#DivContainerInnerStatus').css('backgroundColor', argColorOne);
+
+
+            }
+            else {
+                $('#DivContainerInnerStatus').animate({ backgroundColor: argColorTwo }, 1000);
+                $('#DivContainerInnerStatus').animate({ backgroundColor: argColorOne }, 100);
+            }
+            stateOfColor = !stateOfColor;
+            setTimeout(function () { $('#divShowMsg').fadeOut(3000);}, 4000);
+        }       
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            var height = window.innerHeight;
+            height = (height - 2) + 'px';
+            $("#divSubMenu").css("height", height);
+            $(".nav_new").css("height", height);
+        });
+    </script>
+</head>
+<body>
+    <table class="table" style="margin-bottom: 0px">
+        <tr>
+            <td style="margin: 0px; padding: 0px">
+                <div id="divSubMenu" class="submenuHome">
+                    <div class="nav_new">
+                        <ul>
+                            <li class=""><a href="home.html" class="padding5"><i class="fa fa-home fa-3x"></i><span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+                            <li class=""><a href="Masters/Default.aspx" class="padding5" onclick="return checkAccessRights('Dash Board')">
+                                <i class="fa fa-tachometer fa-3x"></i><span>Dashboard</span></a></li>
+                            <li class=""><a href="New_Admin/frmNewCustomer.aspx" class="padding5" onclick="return checkAccessRights('Add New')">
+                                <i class="fa fa-user fa-3x"></i><span>&nbsp;Customer&nbsp;</span></a></li>
+                            <li class=""><a href="New_Booking/frm_New_Booking.aspx" class="padding5" onclick="return checkAccessRights('New Order')">
+                                <i class="fa fa-download fa-3x"></i><span>&nbsp;Drop&nbsp;(F1)&nbsp;</span></a></li>
+                            <li class=""><a id="achrDelivery" href="Bookings/Delivery.aspx" class="padding5"
+                                onclick="return checkAccessRights('Delivery')"><i class="fa fa-truck  fa-3x"></i>
+                                <span>Pick&nbsp;Up&nbsp;(F6)</span></a></li>
+                            <li class=""><a href="Reports/QuantityandPriceReport.aspx" class="padding5" onclick="return checkAccessRights('Orders')">
+                                <i class="fa fa-bar-chart-o fa-3x"></i><span>&nbsp;Reports&nbsp;</span></a></li>
+                            <li class=""><a href="New_Admin/frmReceipt.aspx" class="padding5" onclick="return checkAccessRights('Default Settings')">
+                                <i class="fa fa-cogs fa-3x"></i><span>Configuration</span></a></li>                                  
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td style="width: 100%">
+                <div class="row-fluid">
+                    <div class="panel panel-primary well-sm-tiny1 panel-borderColor">
+                        <div class="panel-heading Textpadding" style="background-color: #438EB9">
+                            <div class="navbar-header">
+                                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"
+                                    type="button" style="background-color: #579EC8">
+                                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                                        class="icon-bar"></span><span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <div class="col-sm-3" style="padding-top: 5px">
+                                    <img src="img/QuickiLogo.png" class="nav-user-photo WhiteColor" width="60px" height="40px" />
+                                </div>
+                                <div class="col-sm-5 text-center textBold" style="padding-top: 10px">
+                                    <span id="lblStoreName" class="fa-lg"></span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="nav navbar-nav" style="float: right; background-color: #579EC8">
+                                        <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" style="padding-top: 5px;
+                                            padding-bottom: 5px; background-color: #579EC8; color: White">
+                                            <img src="img/User2.png" height="35px" width="40px" class="nav-user-photo WhiteColor">
+                                            <span class="user-info nopadding"><small>Hi, </small><span id="lblUserName" class="textBold">
+                                            </span></span><i class="caret"></i></a>
+                                            <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                                                <li class="Textpadding"><a href="Masters/ChangePassword.aspx" onclick="return checkAccessRights('Change Password')"
+                                                    id="achrChangePwd" onmouseover="style.backgroundColor='#FEE188'" onmouseout="style.backgroundColor='white'">
+                                                    <i class="fa fa-cog textBold"></i>&nbsp;Change Password </a></li>
+                                                <li class="Textpadding"><a href="help.html" target="_blank" onmouseover="style.backgroundColor='#FEE188'"
+                                                    onmouseout="style.backgroundColor='white'"><i class="fa fa-question-circle icon-white textBold">
+                                                    </i>&nbsp;&nbsp;Help</a> </li>
+                                                <li class="Textpadding"><a href="Login.aspx?option=Backup" onmouseover="style.backgroundColor='#FEE188'"
+                                                    onmouseout="style.backgroundColor='white'"><i class="fa fa-power-off textBold"></i>
+                                                    &nbsp;&nbsp;Log Out</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div id="divHeader">
+                    </div>
+                </div>
+                <div class="div-margin">
+                    <br />
+                    <br />
+                    <div class="row-fluid">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-8 whitebox3">
+                            <div class="col-sm-1">
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="row-fluid">
+                                    <div class="col-sm-12">
+                                        <div>
+                                            <input id="rdbCustomer" type="radio" name="SearchData" checked="checked"><label><span><span></span></span></label>
+                                            <span class="textBold hometxtcolor">Search Customer (Name, Address, Mobile Number, Membership
+                                                id or customer id)</span>
+                                        </div>
+                                        <div>
+                                            <input id="rdbInvoice" type="radio" name="SearchData"><label><span><span></span></span></label>
+                                            <span class="hometxtcolor textBold">Search Invoice (Invoice number or Barcode )</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-fluid div-margin">
+                                    <div class="col-sm-12 ">
+                                        <div class="input-group">
+                                            <span class="input-group-addon padding2px IconBkColor"><a id="achrSearchInvoice"
+                                                class="btn btn-primary  active"><i class="fa fa-search icon-white"></i></a></span>
+                                            <input type="text" id="txtBarcode" class="form-control" style="height: 42px; display: none"
+                                                placeholder="Search" />
+                                            <input type="text" id="txtCustomer" class="form-control" placeholder="Search" style="height: 42px;
+                                                display: none" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row-fluid">
+                                    <div class="col-sm-6 ">
+                                        <a id="achrAddCustomer"  onclick="return checkAccessRights('Add New')"
+                                            class="btn btn-primary btn-block btn-lg  active"><span class="textBold">Add New Customer</span>&nbsp;&nbsp;<i
+                                                class="fa fa-user fa-lg icon-white"></i></a>
+                                    </div>
+                                    <div class="col-sm-6 ">
+                                        <a id="a1" href="Masters/Default.aspx" onclick="return checkAccessRights('Dash Board')"
+                                            class="btn btn-primary btn-block btn-lg  active"><span class="textBold">Dashboard</span>&nbsp;&nbsp;<i
+                                                class="fa fa-tachometer fa-lg"></i></a>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <div class="row-fluid">
+                    <div class="col-sm-2">
+                    </div>
+                    <div id="divShowMsg" class="col-sm-8 Textpadding whitebox3" style="display: none">
+                        <div id="DivContainerStatus">
+                            <div id="DivContainerInnerStatus" class="span label label-default">
+                                <h4 class="textmargin">
+                                    <!--<asp:Label ID="lblErr" runat="server" EnableViewState="False" Font-Bold="True" CssClass="ErrorMessage"
+                                ClientIDMode="Static" />-->
+                                    <span style="margin-left: 40%"><span style="color: White; font-weight: bold" id="lblMsg">
+                                    </span></span><span style="margin-left: -20%"></span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+               <div class="row-fluid">
+                 <div class="col-sm-2"></div>
+                  <div class="col-sm-10">
+                <div class="textBold hometxtcolor" style="font-size:21px">Get Started</div></div>                
+                   </div>
+                <div class="row-fluid">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                 <div class="row-fluid">
+                <span class="textBold hometxtcolor" style="font-size:18px">&nbsp;Help me to add a new customer and create a new order</span>&nbsp;&nbsp;&nbsp;
+            <a id="achrTour1"><span style="font-size:17px" class="textBold">Start Tour</span>&nbsp;&nbsp;<i class="fa fa-share"></i></a>
+              </div> 
+                    </div>
+                 </div>
+
+             
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" id="hdnIsTour" value="0" />   
+     <input type="hidden" id="hdnControlWidth" /> 
+    <!-- Second Row of Containers Ends -->
+    <!-- Left
+	Side TABS Starts here-->
+    <!--
+	Main Container ENDS -->
+    <!-- Le javascript ==================================================
+	-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Right
+	now it is referring to JQuery from Net I have to do it Conditionally so local can
+	also work-->
+    <script src="js/jquery-latest.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="js/typeahead-bs2.js" type="text/javascript"></script>
+    <script src="JavaScript/HomeSrc.js" type="text/javascript"></script>
+     <script src="JavaScript/intro.js" type="text/javascript"></script> 
+    <script src="JavaScript/AppTour.js" type="text/javascript"></script>
+      <script type="text/javascript">
+          $(document).ready(function () {
+              // HomeScreenTour();
+              //$('#hdnIsTour').val('1');
+
+              var achrCustomer = document.getElementById('achrAddCustomer');
+              achrCustomer.href = "New_admin/frmNewCustomer.aspx?Add=true&IsTour=" + $('#hdnIsTour').val() + "";
+
+              $('#achrTour1').click(function () {
+                  HomeScreenTour(); $('#hdnIsTour').val('1');
+                  achrCustomer.href = "New_admin/frmNewCustomer.aspx?Add=true&IsTour=" + $('#hdnIsTour').val() + "";
+              });
+
+              $('.introjs-nextbutton').click(function ()
+              { $('#achrAddCustomer').focus(); });
+          });
+      </script>
+</body>
+</html>

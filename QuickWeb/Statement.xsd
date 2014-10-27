@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Statement" targetNamespace="http://tempuri.org/Statement.xsd" xmlns:mstns="http://tempuri.org/Statement.xsd" xmlns="http://tempuri.org/Statement.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Statement" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Statement" msprop:Generator_UserDSName="Statement">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Statement" msprop:Generator_TableClassName="StatementDataTable" msprop:Generator_TableVarName="tableStatement" msprop:Generator_TablePropName="_Statement" msprop:Generator_RowDeletingName="StatementRowDeleting" msprop:Generator_RowChangingName="StatementRowChanging" msprop:Generator_RowEvHandlerName="StatementRowChangeEventHandler" msprop:Generator_RowDeletedName="StatementRowDeleted" msprop:Generator_UserTableName="Statement" msprop:Generator_RowChangedName="StatementRowChanged" msprop:Generator_RowEvArgName="StatementRowChangeEvent" msprop:Generator_RowClassName="StatementRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BookingID" msprop:Generator_ColumnVarNameInTable="columnBookingID" msprop:Generator_ColumnPropNameInRow="BookingID" msprop:Generator_ColumnPropNameInTable="BookingIDColumn" msprop:Generator_UserColumnName="BookingID" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingDate" msprop:Generator_ColumnVarNameInTable="columnBookingDate" msprop:Generator_ColumnPropNameInRow="BookingDate" msprop:Generator_ColumnPropNameInTable="BookingDateColumn" msprop:Generator_UserColumnName="BookingDate" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingNumber" msprop:Generator_ColumnVarNameInTable="columnBookingNumber" msprop:Generator_ColumnPropNameInRow="BookingNumber" msprop:Generator_ColumnPropNameInTable="BookingNumberColumn" msprop:Generator_UserColumnName="BookingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="HNumber" msprop:Generator_ColumnVarNameInTable="columnHNumber" msprop:Generator_ColumnPropNameInRow="HNumber" msprop:Generator_ColumnPropNameInTable="HNumberColumn" msprop:Generator_UserColumnName="HNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" type="xs:string" minOccurs="0" />
+              <xs:element name="DueDate" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" msprop:Generator_UserColumnName="DueDate" type="xs:string" minOccurs="0" />
+              <xs:element name="DeliverDate" msprop:Generator_ColumnVarNameInTable="columnDeliverDate" msprop:Generator_ColumnPropNameInRow="DeliverDate" msprop:Generator_ColumnPropNameInTable="DeliverDateColumn" msprop:Generator_UserColumnName="DeliverDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalCost" msprop:Generator_ColumnVarNameInTable="columnTotalCost" msprop:Generator_ColumnPropNameInRow="TotalCost" msprop:Generator_ColumnPropNameInTable="TotalCostColumn" msprop:Generator_UserColumnName="TotalCost" type="xs:string" minOccurs="0" />
+              <xs:element name="DiscountOnPayment" msprop:Generator_ColumnVarNameInTable="columnDiscountOnPayment" msprop:Generator_ColumnPropNameInRow="DiscountOnPayment" msprop:Generator_ColumnPropNameInTable="DiscountOnPaymentColumn" msprop:Generator_UserColumnName="DiscountOnPayment" type="xs:string" minOccurs="0" />
+              <xs:element name="ST" msprop:Generator_ColumnVarNameInTable="columnST" msprop:Generator_ColumnPropNameInRow="ST" msprop:Generator_ColumnPropNameInTable="STColumn" msprop:Generator_UserColumnName="ST" type="xs:string" minOccurs="0" />
+              <xs:element name="NetAmount" msprop:Generator_ColumnVarNameInTable="columnNetAmount" msprop:Generator_ColumnPropNameInRow="NetAmount" msprop:Generator_ColumnPropNameInTable="NetAmountColumn" msprop:Generator_UserColumnName="NetAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="PaymentMade" msprop:Generator_ColumnVarNameInTable="columnPaymentMade" msprop:Generator_ColumnPropNameInRow="PaymentMade" msprop:Generator_ColumnPropNameInTable="PaymentMadeColumn" msprop:Generator_UserColumnName="PaymentMade" type="xs:string" minOccurs="0" />
+              <xs:element name="DuePayment" msprop:Generator_ColumnVarNameInTable="columnDuePayment" msprop:Generator_ColumnPropNameInRow="DuePayment" msprop:Generator_ColumnPropNameInTable="DuePaymentColumn" msprop:Generator_UserColumnName="DuePayment" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingStatus" msprop:Generator_ColumnVarNameInTable="columnBookingStatus" msprop:Generator_ColumnPropNameInRow="BookingStatus" msprop:Generator_ColumnPropNameInTable="BookingStatusColumn" msprop:Generator_UserColumnName="BookingStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="Paid" msprop:Generator_ColumnVarNameInTable="columnPaid" msprop:Generator_ColumnPropNameInRow="Paid" msprop:Generator_ColumnPropNameInTable="PaidColumn" msprop:Generator_UserColumnName="Paid" type="xs:string" minOccurs="0" />
+              <xs:element name="DeliveryDiscount" msprop:Generator_ColumnVarNameInTable="columnDeliveryDiscount" msprop:Generator_ColumnPropNameInRow="DeliveryDiscount" msprop:Generator_ColumnPropNameInTable="DeliveryDiscountColumn" msprop:Generator_UserColumnName="DeliveryDiscount" type="xs:string" minOccurs="0" />
+              <xs:element name="Package" msprop:Generator_ColumnVarNameInTable="columnPackage" msprop:Generator_ColumnPropNameInRow="Package" msprop:Generator_ColumnPropNameInTable="PackageColumn" msprop:Generator_UserColumnName="Package" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingAcceptedByUserId" msprop:Generator_ColumnVarNameInTable="columnBookingAcceptedByUserId" msprop:Generator_ColumnPropNameInRow="BookingAcceptedByUserId" msprop:Generator_ColumnPropNameInTable="BookingAcceptedByUserIdColumn" msprop:Generator_UserColumnName="BookingAcceptedByUserId" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerAddress" msprop:Generator_ColumnVarNameInTable="columnCustomerAddress" msprop:Generator_ColumnPropNameInRow="CustomerAddress" msprop:Generator_ColumnPropNameInTable="CustomerAddressColumn" msprop:Generator_UserColumnName="CustomerAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkShopNote" msprop:Generator_ColumnVarNameInTable="columnWorkShopNote" msprop:Generator_ColumnPropNameInRow="WorkShopNote" msprop:Generator_ColumnPropNameInTable="WorkShopNoteColumn" msprop:Generator_UserColumnName="WorkShopNote" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderNote" msprop:Generator_ColumnVarNameInTable="columnOrderNote" msprop:Generator_ColumnPropNameInRow="OrderNote" msprop:Generator_ColumnPropNameInTable="OrderNoteColumn" msprop:Generator_UserColumnName="OrderNote" type="xs:string" minOccurs="0" />
+              <xs:element name="OnlyBookingDate" msprop:Generator_ColumnVarNameInTable="columnOnlyBookingDate" msprop:Generator_ColumnPropNameInRow="OnlyBookingDate" msprop:Generator_ColumnPropNameInTable="OnlyBookingDateColumn" msprop:Generator_UserColumnName="OnlyBookingDate" type="xs:string" minOccurs="0" />
+              <xs:element name="HomeDelivery" msprop:Generator_ColumnVarNameInTable="columnHomeDelivery" msprop:Generator_ColumnPropNameInRow="HomeDelivery" msprop:Generator_ColumnPropNameInTable="HomeDeliveryColumn" msprop:Generator_UserColumnName="HomeDelivery" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

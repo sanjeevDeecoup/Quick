@@ -1,0 +1,86 @@
+﻿--- Drop Primary Key
+DECLARE @t NVARCHAR(512), @sql NVARCHAR(MAX),@table varchar(100)
+
+SELECT @table = N'dbo.EntMenuRights';
+
+SELECT @sql = 'ALTER TABLE ' + @table 
+    + ' DROP CONSTRAINT ' + name + ';'
+    FROM sys.key_constraints
+    WHERE [type] = 'PK'
+    AND [parent_object_id] = OBJECT_ID(@table);
+
+EXEC sp_executeSQL @sql;
+
+---- Create Composite Primary Key
+ALTER TABLE entbookings
+ADD CONSTRAINT PK_EntMenuRights PRIMARY KEY (UserTypeId,PageTitle,BranchId,WorkshopUserType)
+
+
+----------------- 5.2
+
+------------- Process Master
+
+DECLARE @t NVARCHAR(512), @sql NVARCHAR(MAX),@table varchar(100)
+
+SELECT @table = N'dbo.processmaster';
+
+SELECT @sql = 'ALTER TABLE ' + @table 
+    + ' DROP CONSTRAINT ' + name + ';'
+    FROM sys.key_constraints
+    WHERE [type] = 'PK'
+    AND [parent_object_id] = OBJECT_ID(@table);
+
+EXEC sp_executeSQL @sql;
+
+ALTER TABLE processmaster
+ALTER COLUMN ProcessCode varchar(15) not null
+
+---- Create Composite Primary Key
+ALTER TABLE ProcessMaster
+ADD CONSTRAINT PK_ProcessMaster PRIMARY KEY (ProcessCode,ProcessName,BranchId)
+
+----------------- Item Wise Process Rate
+
+DECLARE @t1 NVARCHAR(512), @sql1 NVARCHAR(MAX),@table1 varchar(100)
+
+SELECT @table1 = N'dbo.ItemWiseProcessRate';
+
+SELECT @sql1 = 'ALTER TABLE ' + @table1 
+    + ' DROP CONSTRAINT ' + name + ';'
+    FROM sys.key_constraints
+    WHERE [type] = 'PK'
+    AND [parent_object_id] = OBJECT_ID(@table1);
+
+EXEC sp_executeSQL @sql1;
+
+ALTER TABLE ItemWiseProcessRate
+ALTER COLUMN ProcessCode varchar(15) not null
+
+---- Create Composite Primary Key
+ALTER TABLE ItemWiseProcessRate
+ADD CONSTRAINT PK_ItemWiseProcessRate PRIMARY KEY (ItemName,ProcessCode,BranchId,RateListId)
+
+
+------------- 5.4
+
+CREATE function dbo.properCase(@string varchar(8000)) returns varchar(8000) as
+begin
+
+set @string = lower(@string)
+
+declare @i int
+set @i = ascii('a')
+
+while @i <= ascii('z')
+begin
+
+set @string = replace( @string, ' ' + char(@i), ' ' + char(@i-32))
+set @i = @i + 1
+end
+
+set @string = char(ascii(left(@string, 1))-32) + right(@string, len(@string)-1)
+
+return @string
+end
+
+go

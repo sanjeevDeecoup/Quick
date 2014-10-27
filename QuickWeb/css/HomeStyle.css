@@ -1,0 +1,48 @@
+﻿
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 18px;
+  height           : 18px;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 50px;
+  background       : white;
+  background-image :    -moz-linear-gradient(white,white);
+  background-image :     -ms-linear-gradient(white,white);
+  background-image :      -o-linear-gradient(white,white);
+  background-image : -webkit-linear-gradient(white,white);
+  background-image :         linear-gradient(white,white);
+  vertical-align   : bottom;
+}
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(white,white);
+  background-image :     -ms-linear-gradient(white,white);
+  background-image :      -o-linear-gradient(white,white);
+  background-image : -webkit-linear-gradient(white,white);
+  background-image :         linear-gradient(white,white);
+}
+input[type=radio]:not(old):checked +  label > span > span{
+  display          : block;
+  width            : 0.7em;
+  height           : 0.7em;
+  margin           : 3px;
+  border           : 0.0625em solid #32A3CE;
+  border-radius    : 50px;
+  background       : #32A3CE;
+  background-image :    -moz-linear-gradient(#32A3CE,#32A3CE));
+  background-image :     -ms-linear-gradient(#32A3CE,#32A3CE);
+  background-image :      -o-linear-gradient(#32A3CE,#32A3CE);
+  background-image : -webkit-linear-gradient(#32A3CE,#32A3CE);
+  background-image :         linear-gradient(#32A3CE,#32A3CE);
+}

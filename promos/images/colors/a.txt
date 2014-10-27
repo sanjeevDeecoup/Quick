@@ -1,0 +1,41 @@
+ Volume in drive D is DATA
+ Volume Serial Number is A081-E32D
+
+ Directory of D:\Aashish\dc\DrySoft\Discount\code\promos\images\colors
+
+03/23/12  03:15 PM    <DIR>          .
+03/23/12  03:15 PM    <DIR>          ..
+03/23/12  03:15 PM                 0 a.txt
+03/23/12  02:15 PM               136 Aqua.png
+03/23/12  02:16 PM               136 Beige.png
+03/23/12  02:16 PM               136 Black.png
+03/23/12  02:16 PM               136 Blue.png
+03/23/12  02:16 PM               136 Blue_Violet.png
+03/23/12  02:17 PM               136 Brown.png
+03/23/12  02:18 PM               136 chocolate.PNG
+03/23/12  02:18 PM               136 Cream.PNG
+03/23/12  02:18 PM               136 Crimson.png
+03/23/12  02:18 PM               136 DarkGray.PNG
+03/23/12  02:20 PM               136 Gold.png
+03/23/12  02:20 PM               136 Gray.PNG
+03/23/12  02:20 PM               136 Green.png
+03/23/12  02:20 PM               136 Khakhi.png
+03/23/12  02:21 PM               136 LightBrown.png
+03/23/12  02:21 PM               136 Lime.png
+03/23/12  02:21 PM               136 Magenta.png
+03/23/12  02:21 PM               136 Maroon.png
+03/23/12  02:22 PM             1,271 multi.png
+03/23/12  02:22 PM               136 Navy.png
+03/23/12  02:23 PM               136 Olive.png
+03/23/12  02:23 PM               136 Orange.png
+03/23/12  02:23 PM               136 Pink.png
+03/23/12  02:23 PM               136 Purple.png
+03/23/12  02:23 PM               136 Red.png
+03/23/12  02:24 PM               136 Sky_Blue.png
+03/23/12  02:25 PM               136 Teal.png
+03/23/12  02:26 PM               136 Toamto.png
+03/23/12  02:26 PM               136 violet.png
+03/23/12  02:26 PM               136 White.png
+03/23/12  02:15 PM               136 Yellow.png
+              32 File(s)          5,351 bytes
+               2 Dir(s)  12,653,191,168 bytes free

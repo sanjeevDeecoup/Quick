@@ -1,0 +1,19 @@
+﻿body { font-family:Calibri; font-size:16px; width:100%; margin:0px;}
+#mainContainer{width:1220px; height:600px; background-color:#e2e0e0;padding:10px;}
+#rightCommands { width:100%; height:30px;text-align:center; }
+#rightCommands div { width:50%; }
+#rightCommands input[type=button] { padding:5px; font-weight:bolder; font-size:16px; }
+#itemsGrid { margin-left:25px; width:95%; height:350px; font-size:14px; background-color:#f8ffff; overflow:auto; padding:0px; border:2px solid #ffffff; margin-top:10PX; clear:both; }
+#lbldiv{font-size:16px;font-weight:bolder;margin-top:15px;margin-left:35px; float:left;}
+#itemsTable thead th { background-color:#a5a5a5; color:#ffffff;}
+.col1, .col7 { display:none; }
+.col2  { width:15%; }
+.col3  { width:15%;}
+.col4 { width:30%; }
+.col5 { width:20%; }
+.col6 { width:20%; }
+#griddiv{height:30px;}
+.txt
+{
+	margin-top:18; text-align:center; color:#FF9933; font-size:larger; font-weight: bolder;
+}

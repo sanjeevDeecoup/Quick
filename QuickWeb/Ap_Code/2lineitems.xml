@@ -1,0 +1,323 @@
+<booking>
+  <receiptheader>
+    <iswalkin>
+      <bookingnumber>332</bookingnumber>
+    </iswalkin>
+    <ishomebooking>
+      <homeeceiptnumber></homeeceiptnumber>
+    </ishomebooking>
+    <customerid>Cust1</customerid>
+    <duedate>9-May-2012</duedate>
+    <duetime>10:00 AM</duetime>
+    <isurgent>1</isurgent>
+    <issms></issms>
+    <isemail>1</isemail>
+    <remarks>Delivery After 5 PM</remarks>
+    <salesman></salesman>
+    <checkedby></checkedby>
+    <quantity>4</quantity>
+    <totalgrossamount>1711</totalgrossamount>
+    <totaldiscount>25</totaldiscount>
+    <totaltax></totaltax>
+    <totaladvance>350</totaladvance>
+  </receiptheader>
+  <lineitems>
+    <lineItem seq="1">
+      <item id="22">
+        <quantity>4</quantity>
+        <length>40</length>
+        <breadth>50</breadth>
+        <area1></area1>
+        <remarks>abcd</remarks>
+        <brand></brand>
+        <text>4 LALAN</text>
+      </item>
+      <patterns>
+        <pattern id="4">
+          <text></text>
+        </pattern>
+      </patterns>
+      <colors>
+        <color id="1">
+          <text>Brown</text>
+        </color>
+      </colors>
+      <subItems>
+        <subItem id="13">
+          <text>Dupatta</text>
+        </subItem>
+      </subItems>
+      <categories>
+        <category id="5">
+          <text>Ladies</text>
+        </category>
+      </categories>
+      <brands>
+        <brand id="">
+          <text></text>
+        </brand>
+      </brands>
+      <variations>
+        <variation id="26">
+          <text>Emboidery</text>
+        </variation>
+      </variations>
+      <comments>
+        <comment id="">
+          <text></text>
+        </comment>
+      </comments>
+      <processes>
+        <process id="1">
+          <rate>45.20</rate>
+          <amount></amount>
+          <text>KC</text>
+        </process>
+        <process id="2">
+          <rate>25.75</rate>
+          <amount></amount>
+          <text>WEF</text>
+        </process>
+        <process id="3">
+          <rate>100</rate>
+          <amount></amount>
+          <text>LD</text>
+          <process id="3">
+            <rate>100</rate>
+            <amount></amount>
+            <text>DC</text>
+          </process>
+        </process>
+      </processes>
+    </lineItem>
+    <lineItem seq="2">
+      <item id="12">
+        <quantity>2</quantity>
+        <length></length>
+        <breadth></breadth>
+        <area1></area1>
+        <remarks>bcd</remarks>
+        <brand></brand>
+        <text>GENTS SUIT</text>
+      </item>
+      <patterns>
+        <pattern id="3">
+          <text>Floral</text>
+        </pattern>
+      </patterns>
+      <colors>
+        <color id="23">
+          <text>white</text>
+        </color>
+      </colors>
+      <subItems>
+        <subItem id="28">
+          <text>Pagri</text>
+        </subItem>
+        <subItem id="68">
+          <text>Stroll</text>
+        </subItem>
+      </subItems>
+      <categories>
+        <category id="1">
+          <text>Gents</text>
+        </category>
+      </categories>
+      <brands>
+        <brand id="22">
+          <text> Catwalk</text>
+        </brand>
+        <brand id="28">
+          <text> Denizen</text>
+        </brand>
+      </brands>
+      <variations>
+        <variation id="26">
+          <text>Emboidery</text>
+        </variation>
+      </variations>
+      <comments>
+        <comment id="10">
+          <text> Wet&amp;Dry</text>
+        </comment>
+        <comment id="11">
+          <text> No Petrol</text>
+        </comment>
+      </comments>
+      <processes>
+        <process id="5">
+          <rate>40</rate>
+          <amount>40</amount>
+          <text>DC@40</text>
+        </process>
+        <process id="5">
+          <rate>40</rate>
+          <amount>40</amount>
+          <text>wc@40</text>
+        </process>
+        <process id="13">
+          <rate>500</rate>
+          <amount>500</amount>
+          <text>CH@500</text>
+        </process>
+        <process id="13">
+          <rate>500</rate>
+          <amount>500</amount>
+          <text>LD@500</text>
+        </process>
+      </processes>
+    </lineItem>
+    <lineItem seq="3">
+      <item id="12">
+        <quantity>4</quantity>
+        <length></length>
+        <breadth></breadth>
+        <area1></area1>
+        <remarks></remarks>
+        <brand></brand>
+        <text>SHIRT</text>
+      </item>
+      <patterns>
+        <pattern id="3">
+          <text>Floral</text>
+        </pattern>
+      </patterns>
+      <colors>
+        <color id="123">
+          <text>Yellow</text>
+        </color>
+        <color id="321">
+          <text>Peela</text>
+        </color>
+        <color id="32">
+          <text>neela</text>
+        </color>
+        <color id="32">
+          <text>Teal</text>
+        </color>
+        <color id="32">
+          <text>Royal Blue</text>
+        </color>
+      </colors>
+      <subItems>
+        <subItem id="28">
+          <text>Pagri</text>
+        </subItem>
+        <subItem id="68">
+          <text>Stroll</text>
+        </subItem>
+      </subItems>
+      <categories>
+        <category id="1">
+          <text>Gents</text>
+        </category>
+      </categories>
+      <brands>
+        <brand id="22">
+          <text> Catwalk</text>
+        </brand>
+        <brand id="28">
+          <text> Denizen</text>
+        </brand>
+      </brands>
+      <variations>
+        <variation id="26">
+          <text>Emboidery</text>
+        </variation>
+      </variations>
+      <comments>
+        <comment id="10">
+          <text> Wet&amp;Dry</text>
+        </comment>
+        <comment id="11">
+          <text> No Petrol</text>
+        </comment>
+      </comments>
+      <processes>
+        <process id="5">
+          <rate>40</rate>
+          <amount>40</amount>
+          <text>DC@40</text>
+        </process>
+        <process id="13">
+          <rate>500</rate>
+          <amount>500</amount>
+          <text>CH@500</text>
+        </process>
+        <process id="25">
+          <rate>420</rate>
+          <amount>250</amount>
+          <text>CH@250</text>
+        </process>
+      </processes>
+    </lineItem>
+    <lineItem seq="4">
+      <item id="22">
+        <quantity>2</quantity>
+        <length>40</length>
+        <breadth>50</breadth>
+        <area1></area1>
+        <remarks>abcd</remarks>
+        <brand></brand>
+        <text>TROUSER</text>
+      </item>
+      <patterns>
+        <pattern id="4">
+          <text></text>
+        </pattern>
+      </patterns>
+      <colors>
+        <color id="1">
+          <text>Brown</text>
+        </color>
+      </colors>
+      <subItems>
+        <subItem id="13">
+          <text>Dupatta</text>
+        </subItem>
+      </subItems>
+      <categories>
+        <category id="5">
+          <text>Ladies</text>
+        </category>
+      </categories>
+      <brands>
+        <brand id="">
+          <text></text>
+        </brand>
+      </brands>
+      <variations>
+        <variation id="26">
+          <text>Emboidery</text>
+        </variation>
+      </variations>
+      <comments>
+        <comment id="">
+          <text></text>
+        </comment>
+      </comments>
+      <processes>
+        <process id="1">
+          <rate>45.20</rate>
+          <amount></amount>
+          <text>KC</text>
+        </process>
+        <process id="2">
+          <rate>25.75</rate>
+          <amount></amount>
+          <text>WEF</text>
+        </process>
+        <process id="3">
+          <rate>100</rate>
+          <amount></amount>
+          <text>LD</text>
+          <process id="3">
+            <rate>100</rate>
+            <amount></amount>
+            <text>DC</text>
+          </process>
+        </process>
+      </processes>
+    </lineItem>
+  </lineitems>
+</booking>

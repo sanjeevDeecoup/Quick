@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Aashish\dc\DrySoft\Discount\code\Publish\App" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="PromoSchemeService.svc" publishTime="02/09/2012 19:08:13" />
+    <file relUrl="bin/WcfService1.dll" publishTime="03/26/2012 07:29:56" />
+    <file relUrl="bin/WcfService1.pdb" publishTime="03/26/2012 07:29:55" />
+    <file relUrl="Web.config" publishTime="03/26/2012 07:30:00" />
+    <file relUrl="Service1.svc" publishTime="02/09/2012 19:08:13" />
+    <file relUrl="bin/DAL.pdb" publishTime="03/26/2012 07:29:48" />
+    <file relUrl="bin/BAL.dll" publishTime="03/26/2012 07:29:50" />
+    <file relUrl="bin/DAL.dll" publishTime="03/26/2012 07:29:48" />
+    <file relUrl="bin/BAL.pdb" publishTime="03/26/2012 07:29:50" />
+  </publishProfile>
+</publishData>

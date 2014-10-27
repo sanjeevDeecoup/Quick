@@ -1,0 +1,2 @@
+﻿Add New Column in the customermaster table(CustomerSalutation varchar(10))
+Add New Column in the EntBookings table(ISN int NOT NULL DEFAULT(1))

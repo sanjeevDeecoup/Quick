@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="DryMasterMain" CodeBehind="DryMasterMain.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="Shortcut Icon" type="image/ico" href="images/favicon.ico" />
+    <title>
+        <%=AppTitle %></title>
+    <link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />    
+    <script language="javascript" type="text/javascript">
+        //function to disable browser back button
+        function DisableBackButton() {
+            window.history.forward();
+        }
+        setTimeout("DisableBackButton()", 0);
+        window.onunload = function () { null };
+    </script>
+    <script src="../js/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+//            $('#LinkButton1').click(function () {
+//               document.getElementById("btnBackUp").click();
+//            });
+
+            $('body').keydown(function (event) {
+                if (event.which == 117) {
+                    document.getElementById("btnDelivery").click();
+                }
+                else if (event.which == 113) {
+                    document.getElementById("btnSearchByInvoice").click();
+                }
+            });
+
+            $('#ctl00_btnF1').click(function (e) {
+                // if the x and y is 0, just return false
+                // don't know why its happening, but its causing the page to reload when user presses enter at rate column when editing a row
+                if ((e.originalEvent != null) && (e.originalEvent.clientX == 0 && e.originalEvent.clientY == 0)) {
+                    return false;
+                }
+            });
+
+        });
+    </script>
+</head>
+<body onload="ShowReturnMsg()" onmousedown="somefunction()" onkeydown="if(event.keyCode==115){window.location='../New_Booking/frm_New_Booking.aspx?option=Edit';}else if(event.keyCode==112){window.location='../New_Booking/frm_New_Booking.aspx';}">
+    <form class="FormStyle" id="form1" runat="server" enctype="multipart/form-data">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table class="BaseTableStyle" border="2" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="TableForHeader" border="0" cellpadding="0" cellspacing="0">
+                    <tr valign="top">
+                        <td width="100px">
+                        </td>
+                        <td align="center" valign="top">
+                            <div style="font-family: 'Bauhaus 93'; font-size: 20px;">
+                                <asp:Label ID="lblStoreName" runat="server" ForeColor="#6086ac"></asp:Label></div>
+                        </td>
+                        <td align="right" width="75px" nowrap="nowrap" height="10" valign="top" style="color: Black;
+                            font-weight: bold">
+                           <%=strVersion%>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr valign="top" style="background-color: White; color: White; font-weight: bold;">
+            <td align="left" style="background-color: White">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="left">
+                            <asp:Menu ID="MainMenu" runat="server" StaticEnableDefaultPopOutImage="False" Font-Size="1.4em"
+                                ForeColor="Black" Orientation="Horizontal" Font-Names="Arial Black" BackColor="White"
+                                DynamicHorizontalOffset="2" StaticSubMenuIndent="10px">
+                                <StaticMenuStyle BorderColor="#6086ac" BorderStyle="Solid" BorderWidth="0px" />
+                                <StaticSelectedStyle BackColor="#6086ac" />
+                                <StaticMenuItemStyle HorizontalPadding="5px" BorderColor="White" BorderStyle="Solid"
+                                    BorderWidth="1px" Font-Names="Arial" Font-Size="15px" VerticalPadding="2px" />
+                                <DynamicHoverStyle BackColor="#6086ac" BorderColor="#6086ac" BorderStyle="Solid"
+                                    BorderWidth="1px" Font-Names="Arial" Font-Size="Large" ForeColor="Orange" />
+                                <DynamicMenuStyle BackColor="#6086ac" />
+                                <DynamicSelectedStyle BackColor="#6086ac" />
+                                <DynamicMenuItemStyle BackColor="#6086ac" Font-Size="Large" ForeColor="White" VerticalPadding="2px"
+                                    BorderColor="White" BorderWidth="1px" Font-Names="Arial" HorizontalPadding="5px" />
+                                <Items>
+                                </Items>
+                                <StaticHoverStyle BorderColor="#6086ac" BorderStyle="Solid" BorderWidth="1px" Font-Names="Arial"
+                                    Font-Size="15px" ForeColor="White" BackColor="#6086ac" />
+                            </asp:Menu>
+                        </td>
+                        <td align="right">
+                            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="font-weight: bolder; border-style: solid; border-width: 0px; border-color: #FFFFFF #006600 #006600 #006600;
+                                        background-color: White; color: Black; font-family: Arial; font-size: small"
+                                        align="right" nowrap="nowrap">
+                                        <a href="../Help.html" target="_blank">Help</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnF1" runat="server" Text="New (F1)" OnClick="btnF1_Click" CausesValidation="False" />&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnF4" runat="server" Text="Edit (F4)" OnClick="btnF4_Click" CausesValidation="False" />&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnDelivery" runat="server" Text="Delivery (F6)" ClientIDMode="Static"
+                                            CausesValidation="false" OnClick="btnDelivery_Click" />
+                                        <asp:Button ID="btnSearchByInvoice" runat="server" Text="Search Order (F2)" ClientIDMode="Static"
+                                            CausesValidation="false" OnClick="btnSearchByInvoice_Click" />
+                                        <asp:Button ID="btnBackUp" runat="server" ClientIDMode="Static" CausesValidation="false"
+                                            OnClick="btnBackUp_Click" Style="visibility: hidden" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td align="right">
+                            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="font-weight: bolder; border-style: solid; border-width: 0px; border-color: #FFFFFF #006600 #006600 #006600;
+                                        background-color: White; color: Black; font-family: Arial; font-size: small"
+                                        align="right" nowrap="nowrap">
+                                        Hi,
+                                        <%=CurrentUserName %>,&nbsp;&nbsp;<asp:LinkButton ID="LinkButton1" Text="Log Out"
+                                            ForeColor="Red" Font-Bold="true" runat="server" OnClick="lnkLogOut_Click" CausesValidation="False" />
+                                        &nbsp;&nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <table border="0" width="100%" cellpadding="0" cellspacing="1">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr bgcolor="#f7f7e9" style="background-color: #f7f7e9">
+            <td align="center">
+                <asp:Label ForeColor="#0476b4" ID="lblFooterMessage" runat="server" CssClass="TDCaption"></asp:Label>,
+                <asp:Label ForeColor="#0476b4" ID="lblAddress" runat="server" CssClass="TDCaption"></asp:Label>
+            </td>
+        </tr>
+        <tr bgcolor="#f7f7e9" style="background-color: #f7f7e9">
+            <td class="TDCaption1 MasterFooter" style="color: #0476b4">
+                © <a href="http://www.quickdrycleaning.com">DC Web Services Pvt Ltd.</a> For any
+                Support, Feedback or Sales Inquiry contact: <a href="mailto:info@quickdrycleaning.com">
+                    info@quickdrycleaning.com</a>
+            </td>
+        </tr>
+        <asp:HiddenField ID="hdnMAC" runat="server" />
+    </table>
+    </form>
+</body>
+<script type="text/javascript">
+    function ShowReturnMsg() {
+        var msg = '<%= Session["ReturnMsg"] %>';
+        if (msg.length > 0) alert(msg);
+    }
+</script>
+<% Session["ReturnMsg"] = null; %>
+</html>

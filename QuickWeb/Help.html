@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Quick Dry Cleaning Getting Starting Guide</title>
+    <style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #F5FCAD;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	text-align: left;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #BBDEF2;
+}
+
+/* ~~ These are the columns for the layout. ~~
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: right;
+	width: 20%;
+	background: #cccccc;
+	position:relative;
+
+}
+.content {
+	padding: 10px 0;
+	width: 80%;
+		float: right;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	border-top: 1px solid #ffffff; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+	background-color: #dddddd;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #eeeeee;
+	}
+ul.nav li {
+	border-bottom: 1px solid #ffffff; /* this creates the button separation */
+	font-family: Verdana, Geneva, sans-serif;
+	color: #dddddd;
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration:None;
+	background: #dddddd;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	color: #F00;
+	background-color: #CCC;
+	list-style-type: none;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: #EDF870;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content p strong em {
+	color: #F00;
+	font-weight: bold;
+}
+.footerText {
+	font-weight: bold;
+}
+TopAnchor {
+	font-size: 9px;
+	font-weight: normal;
+}
+.anchor {
+	font-size: 10px;
+	color: #30C;
+	text-align: right;
+	width: auto;
+	font-weight: bold;
+	border: thin none #333;
+}
+-->
+</style>
+    <!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#">
+                <img src="Header.jpg" alt="Insert Logo Here" name="Insert_logo" width="1012" height="100"
+                    id="Insert_logo" style="background: #eeeeee; display: block; color: #ffffff;" /></a>
+            <!-- end .header -->
+        </div>
+        <div class="sidebar1">
+            <ul class="nav">
+                <li><a href="#StepOne">Step One</a></li>
+                <li><a href="#StepTwo">Step Two</a></li>
+                <li><a href="#StepThree">Step Three</a></li>
+                <li><a href="#Step4">Step Four</a></li>
+                <li><a href="#Step5">Step Five</a></li>
+                <li><a href="#Step6">Step Six</a></li>
+                <li><a href="#Step7">Step Seven</a></li>
+                <li><a href="#Step8">Step Eight</a></li>
+                <li><a href="#Step9">Step Nine</a>
+                    <!-- end .sidebar1 -->
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>
+                <a name="Top" id="Top"></a>Getting Started Guide</h1>
+            <p>
+                Congratulation for Buying Quick Dry Cleaning Software, Modernize Your Dry Cleaning
+                Business and move ahead of your connection. This Guide will help you get Started
+                and Configure Software for Firs Use. This Guide is divided in <strong>Nine Steps.
+                </strong>
+            </p>
+            <h2>
+                <a name="StepOne" id="StepOne"></a>Step One - Process Master</h2>
+            <p>
+                Go to <strong>Master-&gt; Process Master</strong>, here you can configure Processes
+                used in Laundry/Dry Cleaning Business, Main Points to consider here is you can control
+                whether Discount will be provided on a particular Process or is Service Tax applicable
+                to a particular Process.
+                <br />
+            </p>
+            <p>
+                <strong>Note:</strong> We have already configured some of the data in this screen,
+                you can modify it according to your requirements.</p>
+            <p class="anchor">
+                <a href="#Top">Go to Top</a></p>
+            <h2>
+                <a name="StepTwo" id="StepTwo"></a>Step Two - Item Master</h2>
+            <p>
+                Go to <strong>Master-&gt; Item Master</strong>, here you can configure Items used
+                in Laundry/Dry Cleaning Business, Main Points to consider here is you can create
+                Shortcut Keys here for Items. While Creating Items you can also Configure Sub items
+                in a Cloth. For Ex. a Gents Suit generally have Three Sub Items ( Shirt, Trouser
+                and Coat ).<br />
+            </p>
+            <p>
+                <strong>Note: </strong>We have already configured some of the data in this screen,
+                you can modify it according to your Requirements.</p>
+            <p class="anchor">
+                <a href="#Top">Go to Top</a></p>
+            <h2>
+                <a name="StepThree" id="StepThree"></a>Step Three - Rate List</h2>
+            <p>
+                Go to <strong>Master-&gt; Rate List</strong>, here you can configure Rate/Price
+                for corresponding items for a particular Process. These Rates/Price will be picked
+                automatically while doing booking, However these will be modifiable while doing
+                booking.<br />
+            </p>
+            <p class="anchor">
+                <a href="#Top">Go to Top</a></p>
+            <h2>
+                <a name="Step4" id="Step4"></a>Step Four - Customer Master</h2>
+            <p>
+                Go to <strong>Master-&gt; Customer</strong>, here you can Store Customer details,
+                main points to be considered here is <em><strong>Name, Address, Phone No and Location
+                    is mandatory,</strong></em> other fields like Birthday, Anniversary, Emails
+                and Referrals are helpful to take full use of software, as it will help to create
+                important MIS Reports which will help to understand business better.</p>
+            <p>
+                <strong>Birthday and Anniversary </strong>– Customers are human and they like when
+                they are made to feel important. Take every opportunity to remind them that you
+                care. Send them birthday and anniversary mailers, SMS and Emails and build relationships.
+                Store it here.<br />
+            </p>
+            <p>
+                <strong>Customer Priority -</strong>Remember their likings and disliking.</p>
+            <p>
+                <strong>Default Discount-</strong> If you want to provide discount automatically
+                to a customer this is the field to put percentage value for discount.</p>
+            <p class="anchor">
+                <a href="#Top">Go to Top</a></p>
+            <h2>
+                <a name="Step5" id="Step5"></a>Step Five - Receipt Configuration</h2>
+            <p>
+                Go to <strong>Admin-&gt; Configuration</strong>, This is one of the most important
+                screen this screen will help to configure default settings for the software and
+                options for Printing
+                <!-- end .content -->
+                Booking Receipts. this screen is divided in three sections.</p>
+            <p>
+                <strong><em>Step Five - Section One Receipt Settings</em></strong></p>
+            <p>
+                <strong>Receipt Settings (General TAB)</strong> - This will help to configure booking
+                slip, following options are available to turn On/Off various settings.
+                <br />
+            </p>
+            <ul>
+                <li><em>Previous Due - </em>Yes to Display/Print Previous due on Booking Slip.<br />
+                </li>
+                <li><em>Header Slogan - </em>Yes to Display/Print special marketing offer on the slip
+                    itself fully confirmable.
+                    <br />
+                </li>
+                <li><em>Terms &amp; Conditions - </em>Specify if you want to print your terms &amp;
+                    condition on the booking slip.<br />
+                </li>
+                <li><em>Bar Code - </em>Every Booking is identified by a unique Bar Code, choose if
+                    you want to print it on the Booking Slip.<br />
+                </li>
+                <li><em>Print LOGO - </em>Have your own Branding upload your logo.<br />
+                </li>
+                <li><em>Print Service Tax - </em>If you collect Service Tax, then specify if it is to
+                    be printed on Booking Slip or not.<br />
+                </li>
+                <li><em>Print Table Border- </em>Specify if you would like to print Border on Slip.<br />
+                </li>
+                <li><em>Previous Due - </em>Yes to Display/Print Previous due on Booking Slip.</li>
+                <li><em>Booking No, Date and Address Format</em> - Choose your Font/Size and Variations
+                    for the font here.</li>
+            </ul>
+            <p>
+                <strong>Receipt Settings (Receipt Header TAB)</strong> - This TAB will help to configure
+                Header Options and Type of Stationary ( Pre Printed or Computer Generated ).Booking
+                Slip will be generated on A5 Sheet.<br />
+                Top 3cm Space can be used for Header and back side can be used for Terms &amp; Conditions.
+                However you can also get it printed from computer directly. Following options are
+                available.<br />
+            </p>
+            <ul>
+                <li><em>Create your Header/Pre Printed - </em>Select if you want to Print Booking Slip
+                    on Plain A5 Stationary or you have it Pre Printed with your branding. ( other options
+                    are available only if you are using Plain Paper.)<br />
+                </li>
+                <li><em>Name - </em>Type in Store Name and Specify font Style and Formatting.<br />
+                </li>
+                <li><em>Address - </em>Type in Store Address and Phone No, configure font style and
+                    formatting.<br />
+                </li>
+                <li><em>Logo - </em>Upload your Logo and specify the alignment of logo.<br />
+                </li>
+                <li><em>Currency - </em>Type in Currency indicator here.</li>
+            </ul>
+            <p>
+                <strong>Receipt Settings (Header Slogan)</strong> - This Section can be used for
+                various purpose ( like any special promotional offer, other branch details, Slogan,
+                Your Telephone No's, Your USP or any other)
+            </p>
+            <ul>
+                <li><em>Header Slogan - </em>Type in any thing here and specify Font styling and size.
+                </li>
+            </ul>
+            <p>
+                <strong>Receipt Settings (Terms &amp; Condition TAB)</strong> - This Section can
+                be used to pur three important terms and conditions on the front of Booking Slip,
+                if you need more space then you can use Pre Printed Stationary and get it printed
+                on back side of Booking Slip.</p>
+            <p>
+                <strong><em>Step Five - Section Two Display Settings</em></strong></p>
+            <p>
+                <strong>Display Settings </strong>- This options are used to configure display settings
+                for the software. Following options are available.<br />
+                Type in your Web Site Name,Store Name, Address, Tim ming and any message that you
+                would like to display on footer of the software. Upload your logo to display on
+                software Header.</p>
+            <p>
+                <strong><em>Step Five - Section Three New Bookings</em></strong></p>
+            <p>
+                <strong>New Booking </strong>- This screen will help to Configure default options
+                for booking Screen. Following options are available :<br />
+                <em>Process Name :</em> Specify default Process that Should come pre Selected on
+                Booking Screen.
+            </p>
+            <ul>
+                <li><em>Item Name :</em> Choose Default Item here.</li>
+                <li><em>Colour :</em> Choose Default Colour here.</li>
+                <li><em>Delivery Time :</em> Configure Default Delivery Time here.</li>
+                <li><em>Delivery Date Offset :</em> Set how many days are the process cycle for your
+                    business.</li>
+                <li><em>Start Booking No :</em> This is a special Field, if you want to configure starting
+                    booking No then type it here, new booking will start from here.</li>
+                <li><em>Customer Search :</em> Specify how you wanna to Search customer.</li>
+                <li><em>Net Amount : </em>Choose if you want Rounded Net Amount or in decimal.</li>
+            </ul>
+            <p class="anchor">
+                <a href="#Top">Go to Top</a></p>
+            <h2>
+                <a name="Step6" id="Step6"></a>Step Six - Booking</h2>
+            <p>
+                Go to <strong>Booking-&gt; New Booking</strong> or Press<strong> F1</strong>, This
+                is the most used and important screen, Following Steps needs to be done for booking.
+            </p>
+            <ul>
+                <li>Select/Search Customer</li>
+                <li>Type in Quantity<br />
+                </li>
+                <li>Type in Item Name ( By using Shortcut or searching Name )</li>
+                <li>Remarks - Specify remarks or important points for a particular cloth like Urgent
+                    or Stains on cloth.</li>
+                <li>Colours - Choose Colours for the clothes if required.</li>
+                <li>Process - Specify Process and Rate for the Process</li>
+                <li>Now Press Enter or Add Button to create new line items<br />
+                </li>
+            </ul>
+            <p>
+                Once all clothes are mentioned in the screen, then select other options like Home
+                Delivery, Urgent , Special Remarks for the Booking, Choose whether to send E-mail
+                or SMS and select the name of the person who has checked the Clothes.</p>
+            <p>
+                <strong>Now Type in any Discount or Advance Payments. </strong>
+            </p>
+            <p>
+                Finally Click on <strong>Save Booking (or Press F8) </strong>to Save this Booking.
+                OR Click on S<strong>ave and Print (or Press F2)</strong> to save and print the
+                invoice directly.
+            </p>
+            <p class="anchor">
+                <a href="#Top">Go to Top</a></p>
+            <h2>
+                <a name="Step7" id="Step7"></a>Step Seven - Challan\Delivery Note\Workshop Note</h2>
+            <p>
+                Go to <strong>Booking-&gt;Challan\Delivery Note\Workshop Note</strong> This screen
+                will display all clothes which are booked and yet not send for Processing ( to Workshop
+                or to a Vendor )</p>
+            <p>
+                Select all the clothes that you are sending for processing, Click on Save and then
+                Click on Print Challan to get a list of Clothes with details ( Booking no, Process,
+                Remarks etc)</p>
+            <p class="anchor">
+                <a href="#Top">Go to Top</a></p>
+            <h2>
+                <a name="Step8" id="Step8"></a>Step Eight - Return from Workshop</h2>
+            <p>
+                Go to <strong>Booking-&gt;Return from Workshop</strong> This screen will be used
+                while receiving clothes back in the Shop, all clothes which are not yet received
+                after processing will be listed here.</p>
+            <p>
+                Select all the clothes that you are Receiving after processing, Click on Save and
+                now clothes will be ready for Delivery.
+            </p>
+            <h2>
+                <a name="Step9" id="Step9"></a>Step Nine - Payment Receipt</h2>
+            <p>
+                Go to <strong>Booking-&gt;Payment Receipt</strong> This screen will be used when
+                customer comes to collect his clothes from the Shop.
+            </p>
+            <p>
+                Type in Slip No it will display all necessary details about the particular booking
+                slip.</p>
+            <p>
+                Here select the Clothes you are Delivering then click on Deliver Clothes. Type in
+                the payments you are receiving from Customer and then Click on Accept Payment to
+                complete the Cycle.</p>
+            <p class="anchor">
+                <a href="#Top">Go to Top</a></p>
+        </div>
+        <div class="footer" align="center">
+            <span class="footerText">For any Support or Enquiry Call : 011-23847402, 9810755331</span>
+            <!-- end .footer -->
+        </div>
+        <!-- end .container -->
+    </div>
+</body>
+</html>

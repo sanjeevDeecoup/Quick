@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MarkedReadyReportDataSet" targetNamespace="http://tempuri.org/MarkedReadyReportDataSet.xsd" xmlns:mstns="http://tempuri.org/MarkedReadyReportDataSet.xsd" xmlns="http://tempuri.org/MarkedReadyReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MarkedReadyReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MarkedReadyReportDataSet" msprop:Generator_UserDSName="MarkedReadyReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sp_Marked_Ready" msprop:Generator_TableClassName="sp_Marked_ReadyDataTable" msprop:Generator_TableVarName="tablesp_Marked_Ready" msprop:Generator_TablePropName="sp_Marked_Ready" msprop:Generator_RowDeletingName="sp_Marked_ReadyRowDeleting" msprop:Generator_UserTableName="sp_Marked_Ready" msprop:Generator_RowChangingName="sp_Marked_ReadyRowChanging" msprop:Generator_RowEvHandlerName="sp_Marked_ReadyRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_Marked_ReadyRowDeleted" msprop:Generator_RowEvArgName="sp_Marked_ReadyRowChangeEvent" msprop:Generator_RowChangedName="sp_Marked_ReadyRowChanged" msprop:Generator_RowClassName="sp_Marked_ReadyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingNumber" msprop:Generator_ColumnVarNameInTable="columnBookingNumber" msprop:Generator_ColumnPropNameInRow="BookingNumber" msprop:Generator_ColumnPropNameInTable="BookingNumberColumn" msprop:Generator_UserColumnName="BookingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="BarCode" msprop:Generator_ColumnVarNameInTable="columnBarCode" msprop:Generator_ColumnPropNameInRow="BarCode" msprop:Generator_ColumnPropNameInTable="BarCodeColumn" msprop:Generator_UserColumnName="BarCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceivedFromWorkshopAt" msprop:Generator_ColumnVarNameInTable="columnReceivedFromWorkshopAt" msprop:Generator_ColumnPropNameInRow="ReceivedFromWorkshopAt" msprop:Generator_ColumnPropNameInTable="ReceivedFromWorkshopAtColumn" msprop:Generator_UserColumnName="ReceivedFromWorkshopAt" type="xs:string" minOccurs="0" />
+              <xs:element name="ReadyAt" msprop:Generator_ColumnVarNameInTable="columnReadyAt" msprop:Generator_ColumnPropNameInRow="ReadyAt" msprop:Generator_ColumnPropNameInTable="ReadyAtColumn" msprop:Generator_UserColumnName="ReadyAt" type="xs:string" minOccurs="0" />
+              <xs:element name="Item" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_UserColumnName="Item" type="xs:string" minOccurs="0" />
+              <xs:element name="EntryBy" msprop:Generator_ColumnVarNameInTable="columnEntryBy" msprop:Generator_ColumnPropNameInRow="EntryBy" msprop:Generator_ColumnPropNameInTable="EntryByColumn" msprop:Generator_UserColumnName="EntryBy" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

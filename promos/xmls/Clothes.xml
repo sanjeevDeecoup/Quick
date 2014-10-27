@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schemeTemplate id="2" promoid="0">
+  <schemeName>Clothes</schemeName>
+  <examples>
+    <example>Get 1 Kids Jacket free on 1 Kids Jacket</example>
+  </examples>
+  <steps>
+    <f2 sequence="1">
+      <legend>Discounted Value</legend>
+      <help>Please enter the discounted value</help>
+      <error>Please enter the discounted value</error>
+      <content>
+        <captions>
+          <control seqid="1">
+            <controlSelector>div[name=quantityText] label</controlSelector>
+            <controlValue>Enter value</controlValue>
+          </control>
+        </captions>
+        <showHide>
+          <control seqid="1">
+            <controlSelector>div[name=quantityUnit] :nth-child(1)</controlSelector>
+            <controlValue>hide</controlValue>
+          </control>
+          <control seqid="2">
+            <controlSelector>div[name=quantityUnit] :nth-child(2)</controlSelector>
+            <controlValue>hide</controlValue>
+          </control>
+        </showHide>
+      </content>
+      <filldata>
+        <uidata seqid="1">
+          <uiselector>input:text[name=txtClothQty]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="2">
+          <uiselector>input:radio[name=unit1]:checked</uiselector>
+          <uivalue></uivalue>
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true">Get </staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f2>
+    <f4 sequence="2" validation="1">
+      <legend>Clothes</legend>
+      <help>Please select the clothes on which the discount will be given</help>
+      <error>Please select atleast 1 cloth</error>
+      <filldata>
+        <uidata>
+          <uiselector>div[rel=selectedItemsMain] div</uiselector>
+          <uivalue />
+        </uidata>
+      </filldata>
+      <summarydata staticDataSelector="f2[sequence=1] filldata uidata[seqid=2] uivalue">
+        <staticdata beforeValue="true" value="1">worth of value on </staticdata>
+        <dynamicdata></dynamicdata>
+        <staticdata beforeValue="true" value="2">discount on </staticdata>
+        <staticdata beforeValue="false" value="3">free </staticdata>
+      </summarydata>
+    </f4>
+    <f2 sequence="3">
+      <legend>Purchase</legend>
+      <help>Please enter the quantity that has to be bought for the discount</help>
+      <error>Please enter the quantity</error>
+      <content>
+        <captions>
+          <control seqid="1">
+            <controlSelector>div[name=quantityText] label</controlSelector>
+            <controlValue>Enter Value</controlValue>
+          </control>
+        </captions>
+        <showHide>
+          <control seqid="1">
+            <controlSelector>div[name=quantityUnit]</controlSelector>
+            <controlValue>hide</controlValue>
+          </control>
+        </showHide>
+      </content>
+      <filldata>
+        <uidata seqid="1">
+          <uiselector>input:text[name=txtClothQty]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="2">
+          <uiselector>input:radio[name=unit3]:checked</uiselector>
+          <uivalue>3</uivalue>
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true">on processing of </staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f2>
+    <f4 sequence="4" validation="1">
+      <legend>Select Clothes</legend>
+      <help>Please select the clothes which will qualify the customer for the discount</help>
+      <error>Please select atleast 1 cloth</error>
+      <filldata>
+        <uidata>
+          <uiselector>div[rel=selectedItemsMain] div</uiselector>
+          <uivalue />
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true"></staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f4>
+    <f6 sequence="5">
+      <legend>Validity</legend>
+      <help>Please select validity</help>
+      <error>Please select validity before clicking next</error>
+      <filldata>
+        <uidata seqid="1">
+          <uiselector>input:radio[name=validity]:checked</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="2">
+          <uiselector>input:text[name=txtApplicableFor]</uiselector>
+          <uivalue>1</uivalue>
+        </uidata>
+        <uidata seqid="3">
+          <uiselector>select[name=selectApplicableForTenure]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="4">
+          <uiselector>input:text[name=txtDateFrom]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="5">
+          <uiselector>input:text[name=txtDateTo]</uiselector>
+          <uivalue />
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true">. This scheme is valid </staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f6>
+    <f5 sequence="6">
+      <legend>Scheme Name</legend>
+      <help>Please enter the Scheme Name</help>
+      <error>Please enter scheme name</error>
+      <filldata>
+        <uidata seqid="1">
+          <uiselector>input:text[name=txtSchemeName]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="2">
+          <uiselector>textarea[name=txtSchemeDesc]</uiselector>
+          <uivalue />
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true"></staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f5>
+  </steps>
+</schemeTemplate>

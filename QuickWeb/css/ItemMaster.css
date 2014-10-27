@@ -1,0 +1,524 @@
+﻿body
+{
+    font-family: Calibri;
+    font-size: 16px;
+    width: 100%;
+    margin: 0px;
+}
+#mainContainer
+{
+    width: 1220px;
+    height: 600px;
+    background-color: #e2e0e0;
+    padding: 10px;
+}
+/*#rightContainer{float:right;width:60%;height:100% }
+#leftContainer{ float:left; width:39%;height:100% }*/
+#NewItemgroup
+{
+    width: 95%;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+#undersubitem
+{
+    background-color: #b9b9b9;
+    width: 98%;
+    height: 85%;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-left: 2px;
+    overflow: auto;
+    text-align: center;
+}
+#undervariation
+{
+    background-color: #b9b9b9;
+    width: 98%;
+    height: 85%;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-left: 2px;
+    overflow: auto;
+    text-align: center;
+}
+#undercategory
+{
+    background-color: #b9b9b9;
+    width: 98%;
+    height: 85%;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-left: 2px;
+    overflow: auto;
+    text-align: center;
+}
+#undervariation div
+{
+    float: left;
+}
+#undersubitem div
+{
+    float: left;
+}
+#undercategory div
+{
+    float: left;
+}
+/* #itemsPanel{width:100%;height:45%; }
+ #VariationsItems {width:65%; height:65%; border-left: 1px solid #000000; border-bottom: 1px solid #ffffff;
+           border-right: 1px solid #ffffff; background-color:#888888; overflow:auto; }
+#CategoryItems {width:65%; height:65%; border-left: 1px solid #000000; border-bottom: 1px solid #ffffff;
+border-right: 1px solid #ffffff; background-color:#888888; overflow:auto; margin-top:10px;  }
+span {font-weight:bold;float:left;}*/
+
+#txtItemName
+{
+    float: left;
+    margin-top: 10px;
+    width: 35%;
+}
+.container3
+{
+    width: 350px;
+    height: 250px;
+    background-color: #b9b9b9;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin: 10px 2px 1px 25px;
+    float: left;
+}
+.container4
+{
+    width: 350px;
+    height: 250px;
+    background-color: #b9b9b9;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin: 10px 2px 1px 25px;
+    float: left;
+}
+.container5
+{
+    width: 350px;
+    height: 250px;
+    background-color: #b9b9b9;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin: 10px 2px 1px 25px;
+    float: left;
+}
+#unorderlist label
+{
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 75px;
+}
+#unorderlist
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    height: 10%;
+}
+#unorderlist li
+{
+    float: left;
+}
+#unorderlist input[type=text]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+/*#unorderlist input[type=file] {border:none; width:140px; margin-top:10px; margin-left:35px; position:relative;}
+*/
+
+#miscPanel
+{
+    width: 100%;
+    height: 270px;
+}
+#subitemdetail input[type=text]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#subitemdetail label
+{
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#subitemdetail input[type=image]
+{
+    width: 30px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#subitemdetail
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#subitemdetail li
+{
+    float: left;
+}
+
+#variationdetail input[type=text]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#variationdetail label
+{
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#variationdetail input[type=image]
+{
+    width: 30px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#variationdetail
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#variationdetail li
+{
+    float: left;
+}
+
+#categorydetail input[type=text]
+{
+    border: none;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#categorydetail label
+{
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#categorydetail input[type=image]
+{
+    width: 30px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#categorydetail
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#categorydetail li
+{
+    float: left;
+}
+
+#rightCommands
+{
+    width: 100%;
+    height: 30px;
+}
+#rightCommands div
+{
+    width: 50%;
+}
+#rightCommands input[type=button]
+{
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+#lbldiv
+{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 35px;
+    float: left;
+}
+
+#hiddensubitem
+{
+    display: none;
+}
+#hiddenvariation
+{
+    display: none;
+}
+#hiddencategory
+{
+    display: none;
+}
+
+#list
+{
+    width: 200px;
+    max-height: 250px;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    overflow: auto;
+}
+#list div.listItem
+{
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    width: 90%;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 2px;
+    padding-right: 10px;
+}
+.selectedListItem
+{
+    color: #ffffff;
+    background-color: #0303c2;
+}
+#list div.listItem:hover
+{
+    cursor: pointer;
+    background-color: #ccffff;
+}
+#list div.listItem span.highlighter
+{
+    background-color: Yellow;
+    color: #000000;
+}
+#list div.listItem span
+{
+    white-space: nowrap;
+}
+
+#list div.listItem span[rel=name]
+{
+    display: none;
+}
+#list div.listItem span[rel=code]
+{
+    display: none;
+}
+
+#tooltipDiv
+{
+    max-width: 200px;
+    background-color: #ffffce;
+    position: absolute;
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#undervariation
+{
+    background-color: #b9b9b9;
+}
+div.header
+{
+    color: #ffffff;
+    width: 98%;
+    border-bottom: 1px solid #ffffff;
+    margin: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+div.details
+{
+    width: 98%;
+}
+div.addedItem
+{
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    margin: 1px;
+    clear: both;
+    background-color: #dbdbdb;
+}
+div.header div, div.addedItem div
+{
+    float: left;
+}
+div.icol1
+{
+    width: 20%;
+    cursor: pointer;
+}
+div.icol2
+{
+    width: 60%;
+    cursor: pointer;
+}
+div.icol3
+{
+    width: 10%;
+}
+div.icol4
+{
+    width: 10%;
+}
+
+.itemIconContainer
+{
+    width: 48px;
+    height: 48px;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    background-color: #e2e0e0;
+    text-align: center;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    overflow: hidden;
+}
+.itemIconImage
+{
+    width: 100%;
+    height: 75%;
+}
+.itemIconCode
+{
+    display: none;
+}
+.itemIconName
+{
+    text-align: left;
+    font-size: 10px;
+    height: 12px;
+    width: 48px;
+    overflow: hidden;
+}
+.itemIconCheckImage
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -48px;
+}
+.itemIconNameSpan
+{
+    height: 12px;
+    white-space: nowrap;
+}
+
+#fileIcon
+{
+    background-color: #ffffff;
+    width: 250px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#iconContainer img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#itemsGrid
+{
+    margin-left: 25px;
+    width: 95%;
+    height: 200px;
+    font-size: 14px;
+    background-color: #f8ffff;
+    overflow: auto;
+    padding: 0px;
+    border: 2px solid #ffffff;
+    margin-top: 10PX;
+    clear: both;
+}
+#itemsTable
+{
+    width: 100%;
+    table-layout: fixed;
+}
+#itemsTable thead th
+{
+    background-color: #a5a5a5;
+    color: #ffffff;
+}
+.col1, .col7
+{
+    display: none;
+}
+.col2
+{
+    width: 15%;
+}
+.col3
+{
+    width: 15%;
+}
+.col4
+{
+    width: 30%;
+}
+.col5
+{
+    width: 20%;
+}
+.col6
+{
+    width: 20%;
+}
+#itemsTable tr
+{
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+}
+#itemsTable tr:hover
+{
+    background-color: #ffffcc;
+    cursor: pointer;
+}
+#itemsTable tr td
+{
+    font-size: 14px;
+}
+.selectedRow
+{
+    background-color: #000099 !important;
+    color: #ffffff !important;
+}
+span.hidden
+{
+    display: none;
+}

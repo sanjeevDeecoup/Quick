@@ -1,0 +1,168 @@
+﻿------------------ 5.2
+UPDATE EntMenuRights set FileName='~/Masters/ProcessMaster.aspx' where PageTitle='service master'
+DELETE from EntMenuRights where PageTitle='Change Password'
+DELETE from EntMenuRights where PageTitle='Access Authentication'
+
+-------- 5.3
+UPDATE EntMenuRights set PageTitle='Stock Reconcialiation Right' where PageTitle='single tab right'
+UPDATE EntMenuRights set ParentMenu='None' where PageTitle='View Delivery Details Post Delivery'
+UPDATE EntMenuRights set PageTitle='Service Wise Order' where PageTitle='process wise booking'
+DELETE from EntMenuRights where PageTitle='Edit And Delete Expense'
+DELETE from EntMenuRights where PageTitle='Multiple Payment Accept Access Right'
+DECLARE @AccountID INT,@intFlag INT
+DECLARE @getAccountID CURSOR
+SET @getAccountID = CURSOR FOR
+SELECT BranchId
+FROM BranchMaster WHERE IsFactory=0
+OPEN @getAccountID
+FETCH NEXT
+FROM @getAccountID INTO @AccountID
+WHILE @@FETCH_STATUS = 0
+BEGIN
+
+----- Add New Menu Select Set to End and must set @intFlag=1
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Access Authentication' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Access Authentication','~/New_Admin/frmBoundToMachine.aspx','TRUE',2,13,'Admin',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Change Password' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Change Password','~/Masters/ChangePassword.aspx','TRUE',2,1,'Admin',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Export Data To Excel' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Export Data To Excel','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Customer Default Discount' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Customer Default Discount','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Login History' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Login History','~/Reports/frmLoginHistory.aspx','TRUE',2,41,'Reports',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Allow Editing After Delivery' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Allow Editing After Delivery','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Allow Discount on Booking Screen' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Allow Discount on Booking Screen','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Allow Discount on Delivery Screen' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Allow Discount on Delivery Screen','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Send To Work Shop Move All' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Send To Work Shop Move All','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Receive From Workshop Move All' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Receive From Workshop Move All','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Mark For Delivery Move All Buttons' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Mark For Delivery Move All Buttons','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Force User Pin or Barcode on mark ready screens' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Force User Pin or Barcode on mark ready screens','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Edit And Delete Expense' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Edit And Delete Expense','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+SET @intFlag = 1
+IF NOT EXISTS(SELECT * FROM EntMenuRights where PageTitle='Multiple Payment Accept Access Right' AND BranchId=@AccountID )
+BEGIN
+WHILE (@intFlag <=7)
+BEGIN
+INSERT INTO EntMenuRights VALUES (@intFlag,'Multiple Payment Accept Access Right','#','TRUE',2,1,'None',@AccountID,'',0)
+SET @intFlag = @intFlag + 1
+END
+END
+
+FETCH NEXT
+FROM @getAccountID INTO @AccountID
+END
+CLOSE @getAccountID
+DEALLOCATE @getAccountID

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DynamicDataSet" targetNamespace="http://tempuri.org/DynamicDataSet.xsd" xmlns:mstns="http://tempuri.org/DynamicDataSet.xsd" xmlns="http://tempuri.org/DynamicDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_dynamicTableAdapter" GeneratorDataComponentClassName="sp_dynamicTableAdapter" Name="sp_dynamic" UserDataComponentName="sp_dynamicTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>	SELECT dbo.BarcodeTable.Colour, CONVERT(varchar, dbo.BarcodeTable.BookingDate, 3) AS BookingDate, dbo.BarcodeTable.CurrentTime, 
+			   CONVERT(varchar, dbo.BarcodeTable.DueDate, 3) AS DueDate, dbo.BarcodeTable.Item, dbo.BarcodeTable.BarCode, dbo.BarcodeTable.Process, 
+			   dbo.BarcodeTable.BookingNo, dbo.BarcodeTable.RowIndex, dbo.CustomerMaster.CustomerName,dbo.BarcodeTable.ItemRemarks as ItemRemark,dbo.BarcodeTable.ItemExtraprocessType,dbo.BarcodeTable.ItemTotalandSubTotal,dbo.BarcodeTable.ItemExtraprocessType2
+		FROM   dbo.BarcodeTable INNER JOIN dbo.CustomerMaster ON dbo.BarcodeTable.BookingByCustomer = dbo.CustomerMaster.CustomerCode</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Colour" DataSetColumn="Colour" />
+              <Mapping SourceColumn="BookingDate" DataSetColumn="BookingDate" />
+              <Mapping SourceColumn="CurrentTime" DataSetColumn="CurrentTime" />
+              <Mapping SourceColumn="DueDate" DataSetColumn="DueDate" />
+              <Mapping SourceColumn="Item" DataSetColumn="Item" />
+              <Mapping SourceColumn="BarCode" DataSetColumn="BarCode" />
+              <Mapping SourceColumn="Process" DataSetColumn="Process" />
+              <Mapping SourceColumn="BookingNo" DataSetColumn="BookingNo" />
+              <Mapping SourceColumn="RowIndex" DataSetColumn="RowIndex" />
+              <Mapping SourceColumn="CustomerName" DataSetColumn="CustomerName" />
+              <Mapping SourceColumn="ItemRemark" DataSetColumn="ItemRemark" />
+              <Mapping SourceColumn="ItemExtraprocessType" DataSetColumn="ItemExtraprocessType" />
+              <Mapping SourceColumn="ItemTotalandSubTotal" DataSetColumn="ItemTotalandSubTotal" />
+              <Mapping SourceColumn="ItemExtraprocessType2" DataSetColumn="ItemExtraprocessType2" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DynamicDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DynamicDataSet" msprop:Generator_UserDSName="DynamicDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sp_dynamic" msprop:Generator_TableClassName="sp_dynamicDataTable" msprop:Generator_TableVarName="tablesp_dynamic" msprop:Generator_RowChangedName="sp_dynamicRowChanged" msprop:Generator_TablePropName="sp_dynamic" msprop:Generator_RowDeletingName="sp_dynamicRowDeleting" msprop:Generator_RowChangingName="sp_dynamicRowChanging" msprop:Generator_RowEvHandlerName="sp_dynamicRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_dynamicRowDeleted" msprop:Generator_RowClassName="sp_dynamicRow" msprop:Generator_UserTableName="sp_dynamic" msprop:Generator_RowEvArgName="sp_dynamicRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Colour" msprop:Generator_ColumnVarNameInTable="columnColour" msprop:Generator_ColumnPropNameInRow="Colour" msprop:Generator_ColumnPropNameInTable="ColourColumn" msprop:Generator_UserColumnName="Colour" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BookingDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBookingDate" msprop:Generator_ColumnPropNameInRow="BookingDate" msprop:Generator_ColumnPropNameInTable="BookingDateColumn" msprop:Generator_UserColumnName="BookingDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CurrentTime" msprop:Generator_ColumnVarNameInTable="columnCurrentTime" msprop:Generator_ColumnPropNameInRow="CurrentTime" msprop:Generator_ColumnPropNameInTable="CurrentTimeColumn" msprop:Generator_UserColumnName="CurrentTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DueDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" msprop:Generator_UserColumnName="DueDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Item" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_UserColumnName="Item" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BarCode" msprop:Generator_ColumnVarNameInTable="columnBarCode" msprop:Generator_ColumnPropNameInRow="BarCode" msprop:Generator_ColumnPropNameInTable="BarCodeColumn" msprop:Generator_UserColumnName="BarCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Process" msprop:Generator_ColumnVarNameInTable="columnProcess" msprop:Generator_ColumnPropNameInRow="Process" msprop:Generator_ColumnPropNameInTable="ProcessColumn" msprop:Generator_UserColumnName="Process" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BookingNo" msprop:Generator_ColumnVarNameInTable="columnBookingNo" msprop:Generator_ColumnPropNameInRow="BookingNo" msprop:Generator_ColumnPropNameInTable="BookingNoColumn" msprop:Generator_UserColumnName="BookingNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RowIndex" msprop:Generator_ColumnVarNameInTable="columnRowIndex" msprop:Generator_ColumnPropNameInRow="RowIndex" msprop:Generator_ColumnPropNameInTable="RowIndexColumn" msprop:Generator_UserColumnName="RowIndex" type="xs:int" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItemRemark" msprop:Generator_ColumnVarNameInTable="columnItemRemark" msprop:Generator_ColumnPropNameInRow="ItemRemark" msprop:Generator_ColumnPropNameInTable="ItemRemarkColumn" msprop:Generator_UserColumnName="ItemRemark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItemExtraprocessType" msprop:Generator_ColumnVarNameInTable="columnItemExtraprocessType" msprop:Generator_ColumnPropNameInRow="ItemExtraprocessType" msprop:Generator_ColumnPropNameInTable="ItemExtraprocessTypeColumn" msprop:Generator_UserColumnName="ItemExtraprocessType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItemTotalandSubTotal" msprop:Generator_ColumnVarNameInTable="columnItemTotalandSubTotal" msprop:Generator_ColumnPropNameInRow="ItemTotalandSubTotal" msprop:Generator_ColumnPropNameInTable="ItemTotalandSubTotalColumn" msprop:Generator_UserColumnName="ItemTotalandSubTotal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItemExtraprocessType2" msprop:Generator_ColumnVarNameInTable="columnItemExtraprocessType2" msprop:Generator_ColumnPropNameInRow="ItemExtraprocessType2" msprop:Generator_ColumnPropNameInTable="ItemExtraprocessType2Column" msprop:Generator_UserColumnName="ItemExtraprocessType2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_UserColumnName="Active" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

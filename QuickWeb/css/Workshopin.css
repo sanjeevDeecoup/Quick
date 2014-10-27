@@ -1,0 +1,14 @@
+﻿@import url (bootsrap.css);
+@charset "utf-8";
+/* CSS Document */
+.span6withsmallborder
+{
+    width: 590px !important;
+    margin-left: 10px !important;
+}
+
+.span5withsmallborder
+{
+    width: 490px !important;
+    margin-left: 10px !important;
+}

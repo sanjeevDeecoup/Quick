@@ -1,0 +1,10 @@
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\Debug\appServices.dll.config
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\Debug\appServices.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\Debug\appServices.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\Debug\BAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\Debug\DAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\Debug\BAL.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\Debug\DAL.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\obj\Debug\ResolveAssemblyReference.cache
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\obj\Debug\appServices.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\obj\Debug\appServices.pdb

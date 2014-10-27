@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{886670D3-D675-4B6D-A010-79CCA4AB73AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BacodeLable.cs" />
+    <Compile Include="BarCodeSetting.cs" />
+    <Compile Include="BookingLineItem.cs" />
+    <Compile Include="BookingLineItemTemplate.cs" />
+    <Compile Include="BookingReceipt.cs" />
+    <Compile Include="BookingReceiptHeader.cs" />
+    <Compile Include="BookingReceiptHeaderTemplate.cs" />
+    <Compile Include="Barcodeconfig.cs" />
+    <Compile Include="Booking_Items.cs" />
+    <Compile Include="Booking.cs" />
+    <Compile Include="Booking_Items_Brands.cs" />
+    <Compile Include="Booking_Items_Colors.cs" />
+    <Compile Include="Booking_Items_Comments.cs" />
+    <Compile Include="Booking_Items_Patterns.cs" />
+    <Compile Include="Booking_Items_Processes.cs" />
+    <Compile Include="Booking_Items_SubItems.cs" />
+    <Compile Include="BranchChallanDetail.cs" />
+    <Compile Include="BranchChallanHeader.cs" />
+    <Compile Include="BranchMaster.cs" />
+    <Compile Include="BrandMaster.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="ColorMaster.cs" />
+    <Compile Include="Comment.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="CommonFields.cs" />
+    <Compile Include="CustomerMaster.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="FactoryChallanDetail.cs" />
+    <Compile Include="FactoryChallanHeader.cs" />
+    <Compile Include="FactoryIn.cs" />
+    <Compile Include="Holiday.cs" />
+    <Compile Include="Item_Categories.cs" />
+    <Compile Include="Item_Variations.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Item_Tracking.cs" />
+    <Compile Include="NewBooking.cs" />
+    <Compile Include="NewPriceLists.cs" />
+    <Compile Include="PackageMaster.cs" />
+    <Compile Include="Patterns.cs" />
+    <Compile Include="ProcessMaster.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="sms.cs" />
+    <Compile Include="StatusSummary_DTO.cs" />
+    <Compile Include="Sticker.cs" />
+    <Compile Include="Sub_Items.cs" />
+    <Compile Include="UserMaster.cs" />
+    <Compile Include="Variation.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

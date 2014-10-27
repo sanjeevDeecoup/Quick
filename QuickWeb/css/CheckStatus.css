@@ -1,0 +1,69 @@
+﻿body
+{
+	width: 99%;
+	height: 100%;
+}
+
+.mGrid
+{
+	width: 100%;
+	background-color: #E1F5F5;
+	margin: 5px 0 10px 0;
+	border: solid 1px #525252;
+	border-collapse: collapse;
+}
+.mGrid td
+{
+	padding: 2px;
+	border: solid 1px #c1c1c1;
+	color: #717171;
+}
+.mGrid th
+{
+	padding: 4px 2px;
+	color: #000000;
+	background: #ddeefe url(../images/footer.png) repeat-x top;
+	border-left: solid 1px #525252;
+	font-size: 0.9em;
+}
+.mGrid .pgr
+{
+	background: #424242 url(footer copy.png) repeat-x top;
+}
+.mGrid .pgr table
+{
+	margin: 5px 0;
+}
+.mGrid .pgr td
+{
+	border-width: 0;
+	padding: 0 6px;
+	border-left: solid 1px #666;
+	font-weight: bold;
+	color: #000;
+	line-height: 12px;
+}
+.mGrid .pgr a
+{
+	color: #666;
+	text-decoration: none;
+}
+.mGrid .pgr a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.DivStyleWithScroll
+{
+	border-right: black thin solid;
+	border-top: black thin solid;
+	font-size: 11px;
+	overflow: scroll;
+	border-left: black thin solid;
+	width: 90%;
+	border-bottom: black thin solid;
+	font-family: Verdana;
+	height: 450px;
+	background-color: silver;
+}

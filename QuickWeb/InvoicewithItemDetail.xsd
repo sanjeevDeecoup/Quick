@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InvoicewithItemDetail" targetNamespace="http://tempuri.org/InvoicewithItemDetail.xsd" xmlns:mstns="http://tempuri.org/InvoicewithItemDetail.xsd" xmlns="http://tempuri.org/InvoicewithItemDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InvoicewithItemDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="InvoicewithItemDetail" msprop:Generator_UserDSName="InvoicewithItemDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="InvoicewithItemDetail" msprop:Generator_TableClassName="InvoicewithItemDetailDataTable" msprop:Generator_TableVarName="tableInvoicewithItemDetail" msprop:Generator_RowChangedName="InvoicewithItemDetailRowChanged" msprop:Generator_TablePropName="_InvoicewithItemDetail" msprop:Generator_RowDeletingName="InvoicewithItemDetailRowDeleting" msprop:Generator_RowChangingName="InvoicewithItemDetailRowChanging" msprop:Generator_RowEvHandlerName="InvoicewithItemDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="InvoicewithItemDetailRowDeleted" msprop:Generator_RowClassName="InvoicewithItemDetailRow" msprop:Generator_UserTableName="InvoicewithItemDetail" msprop:Generator_RowEvArgName="InvoicewithItemDetailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BookingDate" msprop:Generator_ColumnVarNameInTable="columnBookingDate" msprop:Generator_ColumnPropNameInRow="BookingDate" msprop:Generator_ColumnPropNameInTable="BookingDateColumn" msprop:Generator_UserColumnName="BookingDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ChallanNumber" msprop:Generator_ColumnVarNameInTable="columnChallanNumber" msprop:Generator_ColumnPropNameInRow="ChallanNumber" msprop:Generator_ColumnPropNameInTable="ChallanNumberColumn" msprop:Generator_UserColumnName="ChallanNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingNumber" msprop:Generator_ColumnVarNameInTable="columnBookingNumber" msprop:Generator_ColumnPropNameInRow="BookingNumber" msprop:Generator_ColumnPropNameInTable="BookingNumberColumn" msprop:Generator_UserColumnName="BookingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerDetails" msprop:Generator_ColumnVarNameInTable="columnCustomerDetails" msprop:Generator_ColumnPropNameInRow="CustomerDetails" msprop:Generator_ColumnPropNameInTable="CustomerDetailsColumn" msprop:Generator_UserColumnName="CustomerDetails" type="xs:string" minOccurs="0" />
+              <xs:element name="DueDate" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" msprop:Generator_UserColumnName="DueDate" type="xs:string" minOccurs="0" />
+              <xs:element name="IsUrgent" msprop:Generator_ColumnVarNameInTable="columnIsUrgent" msprop:Generator_ColumnPropNameInRow="IsUrgent" msprop:Generator_ColumnPropNameInTable="IsUrgentColumn" msprop:Generator_UserColumnName="IsUrgent" type="xs:string" minOccurs="0" />
+              <xs:element name="HomeDelivery" msprop:Generator_ColumnVarNameInTable="columnHomeDelivery" msprop:Generator_ColumnPropNameInRow="HomeDelivery" msprop:Generator_ColumnPropNameInTable="HomeDeliveryColumn" msprop:Generator_UserColumnName="HomeDelivery" type="xs:string" minOccurs="0" />
+              <xs:element name="Details" msprop:Generator_ColumnVarNameInTable="columnDetails" msprop:Generator_ColumnPropNameInRow="Details" msprop:Generator_ColumnPropNameInTable="DetailsColumn" msprop:Generator_UserColumnName="Details" type="xs:string" minOccurs="0" />
+              <xs:element name="ChallanDate" msprop:Generator_ColumnVarNameInTable="columnChallanDate" msprop:Generator_ColumnPropNameInRow="ChallanDate" msprop:Generator_ColumnPropNameInTable="ChallanDateColumn" msprop:Generator_UserColumnName="ChallanDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ChallanSendingShift" msprop:Generator_ColumnVarNameInTable="columnChallanSendingShift" msprop:Generator_ColumnPropNameInRow="ChallanSendingShift" msprop:Generator_ColumnPropNameInTable="ChallanSendingShiftColumn" msprop:Generator_UserColumnName="ChallanSendingShift" type="xs:string" minOccurs="0" />
+              <xs:element name="CountClothes" msprop:Generator_ColumnVarNameInTable="columnCountClothes" msprop:Generator_ColumnPropNameInRow="CountClothes" msprop:Generator_ColumnPropNameInTable="CountClothesColumn" msprop:Generator_UserColumnName="CountClothes" type="xs:int" minOccurs="0" />
+              <xs:element name="WorkShopNote" msprop:Generator_ColumnVarNameInTable="columnWorkShopNote" msprop:Generator_ColumnPropNameInRow="WorkShopNote" msprop:Generator_ColumnPropNameInTable="WorkShopNoteColumn" msprop:Generator_UserColumnName="WorkShopNote" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemRemarks" msprop:Generator_ColumnVarNameInTable="columnItemRemarks" msprop:Generator_ColumnPropNameInRow="ItemRemarks" msprop:Generator_ColumnPropNameInTable="ItemRemarksColumn" msprop:Generator_UserColumnName="ItemRemarks" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemProcessType" msprop:Generator_ColumnVarNameInTable="columnItemProcessType" msprop:Generator_ColumnPropNameInRow="ItemProcessType" msprop:Generator_ColumnPropNameInTable="ItemProcessTypeColumn" msprop:Generator_UserColumnName="ItemProcessType" type="xs:string" minOccurs="0" />
+              <xs:element name="UG" msprop:Generator_ColumnVarNameInTable="columnUG" msprop:Generator_ColumnPropNameInRow="UG" msprop:Generator_ColumnPropNameInTable="UGColumn" msprop:Generator_UserColumnName="UG" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPcs" msprop:Generator_ColumnVarNameInTable="columnTotalPcs" msprop:Generator_ColumnPropNameInRow="TotalPcs" msprop:Generator_ColumnPropNameInTable="TotalPcsColumn" msprop:Generator_UserColumnName="TotalPcs" type="xs:string" minOccurs="0" />
+              <xs:element name="BookedBy" msprop:Generator_ColumnVarNameInTable="columnBookedBy" msprop:Generator_ColumnPropNameInRow="BookedBy" msprop:Generator_ColumnPropNameInTable="BookedByColumn" msprop:Generator_UserColumnName="BookedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingPrefix" msprop:Generator_ColumnVarNameInTable="columnBookingPrefix" msprop:Generator_ColumnPropNameInRow="BookingPrefix" msprop:Generator_ColumnPropNameInTable="BookingPrefixColumn" msprop:Generator_UserColumnName="BookingPrefix" type="xs:string" minOccurs="0" />
+              <xs:element name="Process" msprop:Generator_ColumnVarNameInTable="columnProcess" msprop:Generator_ColumnPropNameInRow="Process" msprop:Generator_ColumnPropNameInTable="ProcessColumn" msprop:Generator_UserColumnName="Process" type="xs:string" minOccurs="0" />
+              <xs:element name="AllItemDetails" msprop:Generator_ColumnVarNameInTable="columnAllItemDetails" msprop:Generator_ColumnPropNameInRow="AllItemDetails" msprop:Generator_ColumnPropNameInTable="AllItemDetailsColumn" msprop:Generator_UserColumnName="AllItemDetails" type="xs:string" minOccurs="0" />
+              <xs:element name="ChallanUserName" msprop:Generator_ColumnVarNameInTable="columnChallanUserName" msprop:Generator_ColumnPropNameInRow="ChallanUserName" msprop:Generator_ColumnPropNameInTable="ChallanUserNameColumn" msprop:Generator_UserColumnName="ChallanUserName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="appServices.PromoSchemeService" CodeBehind="PromoSchemeService.svc.cs" %>

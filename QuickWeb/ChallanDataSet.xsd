@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ChallanDataSet" targetNamespace="http://tempuri.org/ChallanDataSet.xsd" xmlns:mstns="http://tempuri.org/ChallanDataSet.xsd" xmlns="http://tempuri.org/ChallanDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_ChallanTableAdapter" GeneratorDataComponentClassName="sp_ChallanTableAdapter" Name="sp_Challan" UserDataComponentName="sp_ChallanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT
+				CONVERT(varchar, dbo.BarcodeTable.BookingDate, 106) AS BookingDate, dbo.EntChallan.ChallanNumber, dbo.EntChallan.BookingNumber,
+                dbo.BarcodeTable.Item AS ItemName, CASE WHEN barcodetable.Process = 'NONE' THEN '' ELSE barcodetable.Process END AS ProcessType,
+                dbo.BarcodeTable.ItemExtraprocessType AS ExtraProcessType,dbo.BarcodeTable.ItemExtraprocessType2 AS ExtraProcessType2, dbo.BarcodeTable.SNo AS TotalQty, CONVERT(varchar, dbo.EntChallan.ChallanDate,
+                106) AS ChallanDate, dbo.EntChallan.ChallanSendingShift, dbo.BarcodeTable.ItemRemarks, CONVERT(varchar, dbo.BarcodeTable.DueDate, 106)
+                AS DueDate, dbo.EntBookings.IsUrgent, dbo.EntBookings.HomeDelivery
+			FROM
+				dbo.EntChallan INNER JOIN
+                dbo.BarcodeTable ON dbo.EntChallan.BookingNumber = dbo.BarcodeTable.BookingNo AND
+                dbo.EntChallan.ItemSNo = dbo.BarcodeTable.RowIndex INNER JOIN
+                dbo.EntBookings ON dbo.BarcodeTable.BookingNo = dbo.EntBookings.BookingNumber</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BookingDate" DataSetColumn="BookingDate" />
+              <Mapping SourceColumn="ChallanNumber" DataSetColumn="ChallanNumber" />
+              <Mapping SourceColumn="BookingNumber" DataSetColumn="BookingNumber" />
+              <Mapping SourceColumn="ItemName" DataSetColumn="ItemName" />
+              <Mapping SourceColumn="ProcessType" DataSetColumn="ProcessType" />
+              <Mapping SourceColumn="ExtraProcessType" DataSetColumn="ExtraProcessType" />
+              <Mapping SourceColumn="ExtraProcessType2" DataSetColumn="ExtraProcessType2" />
+              <Mapping SourceColumn="TotalQty" DataSetColumn="TotalQty" />
+              <Mapping SourceColumn="ChallanDate" DataSetColumn="ChallanDate" />
+              <Mapping SourceColumn="ChallanSendingShift" DataSetColumn="ChallanSendingShift" />
+              <Mapping SourceColumn="ItemRemarks" DataSetColumn="ItemRemarks" />
+              <Mapping SourceColumn="DueDate" DataSetColumn="DueDate" />
+              <Mapping SourceColumn="IsUrgent" DataSetColumn="IsUrgent" />
+              <Mapping SourceColumn="HomeDelivery" DataSetColumn="HomeDelivery" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ChallanDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ChallanDataSet" msprop:Generator_UserDSName="ChallanDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sp_Challan" msprop:Generator_UserTableName="sp_Challan" msprop:Generator_RowEvArgName="sp_ChallanRowChangeEvent" msprop:Generator_TableVarName="tablesp_Challan" msprop:Generator_TablePropName="sp_Challan" msprop:Generator_RowDeletingName="sp_ChallanRowDeleting" msprop:Generator_RowChangingName="sp_ChallanRowChanging" msprop:Generator_RowDeletedName="sp_ChallanRowDeleted" msprop:Generator_RowEvHandlerName="sp_ChallanRowChangeEventHandler" msprop:Generator_TableClassName="sp_ChallanDataTable" msprop:Generator_RowChangedName="sp_ChallanRowChanged" msprop:Generator_RowClassName="sp_ChallanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BookingDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBookingDate" msprop:Generator_ColumnPropNameInRow="BookingDate" msprop:Generator_ColumnPropNameInTable="BookingDateColumn" msprop:Generator_UserColumnName="BookingDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ChallanNumber" msprop:Generator_ColumnVarNameInTable="columnChallanNumber" msprop:Generator_ColumnPropNameInRow="ChallanNumber" msprop:Generator_ColumnPropNameInTable="ChallanNumberColumn" msprop:Generator_UserColumnName="ChallanNumber" type="xs:int" />
+              <xs:element name="BookingNumber" msprop:Generator_ColumnVarNameInTable="columnBookingNumber" msprop:Generator_ColumnPropNameInRow="BookingNumber" msprop:Generator_ColumnPropNameInTable="BookingNumberColumn" msprop:Generator_UserColumnName="BookingNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItemName" msprop:Generator_ColumnVarNameInTable="columnItemName" msprop:Generator_ColumnPropNameInRow="ItemName" msprop:Generator_ColumnPropNameInTable="ItemNameColumn" msprop:Generator_UserColumnName="ItemName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProcessType" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProcessType" msprop:Generator_ColumnPropNameInRow="ProcessType" msprop:Generator_ColumnPropNameInTable="ProcessTypeColumn" msprop:Generator_UserColumnName="ProcessType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExtraProcessType" msprop:Generator_ColumnVarNameInTable="columnExtraProcessType" msprop:Generator_ColumnPropNameInRow="ExtraProcessType" msprop:Generator_ColumnPropNameInTable="ExtraProcessTypeColumn" msprop:Generator_UserColumnName="ExtraProcessType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExtraProcessType2" msprop:Generator_ColumnVarNameInTable="columnExtraProcessType2" msprop:Generator_ColumnPropNameInRow="ExtraProcessType2" msprop:Generator_ColumnPropNameInTable="ExtraProcessType2Column" msprop:Generator_UserColumnName="ExtraProcessType2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalQty" msprop:Generator_ColumnVarNameInTable="columnTotalQty" msprop:Generator_ColumnPropNameInRow="TotalQty" msprop:Generator_ColumnPropNameInTable="TotalQtyColumn" msprop:Generator_UserColumnName="TotalQty" type="xs:int" minOccurs="0" />
+              <xs:element name="ChallanDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnChallanDate" msprop:Generator_ColumnPropNameInRow="ChallanDate" msprop:Generator_ColumnPropNameInTable="ChallanDateColumn" msprop:Generator_UserColumnName="ChallanDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ChallanSendingShift" msprop:Generator_ColumnVarNameInTable="columnChallanSendingShift" msprop:Generator_ColumnPropNameInRow="ChallanSendingShift" msprop:Generator_ColumnPropNameInTable="ChallanSendingShiftColumn" msprop:Generator_UserColumnName="ChallanSendingShift">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItemRemarks" msprop:Generator_ColumnVarNameInTable="columnItemRemarks" msprop:Generator_ColumnPropNameInRow="ItemRemarks" msprop:Generator_ColumnPropNameInTable="ItemRemarksColumn" msprop:Generator_UserColumnName="ItemRemarks" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DueDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" msprop:Generator_UserColumnName="DueDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsUrgent" msprop:Generator_ColumnVarNameInTable="columnIsUrgent" msprop:Generator_ColumnPropNameInRow="IsUrgent" msprop:Generator_ColumnPropNameInTable="IsUrgentColumn" msprop:Generator_UserColumnName="IsUrgent" type="xs:boolean" />
+              <xs:element name="HomeDelivery" msprop:Generator_ColumnVarNameInTable="columnHomeDelivery" msprop:Generator_ColumnPropNameInRow="HomeDelivery" msprop:Generator_ColumnPropNameInTable="HomeDeliveryColumn" msprop:Generator_UserColumnName="HomeDelivery" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Colour" msprop:Generator_ColumnVarNameInTable="columnColour" msprop:Generator_ColumnPropNameInRow="Colour" msprop:Generator_ColumnPropNameInTable="ColourColumn" msprop:Generator_UserColumnName="Colour" type="xs:string" minOccurs="0" />
+              <xs:element name="Details" msprop:Generator_ColumnVarNameInTable="columnDetails" msprop:Generator_ColumnPropNameInRow="Details" msprop:Generator_ColumnPropNameInTable="DetailsColumn" msprop:Generator_UserColumnName="Details" type="xs:string" minOccurs="0" />
+              <xs:element name="CountClothes" msprop:Generator_ColumnVarNameInTable="columnCountClothes" msprop:Generator_ColumnPropNameInRow="CountClothes" msprop:Generator_ColumnPropNameInTable="CountClothesColumn" msprop:Generator_UserColumnName="CountClothes" type="xs:string" minOccurs="0" />
+              <xs:element name="UG" msprop:Generator_ColumnVarNameInTable="columnUG" msprop:Generator_ColumnPropNameInRow="UG" msprop:Generator_ColumnPropNameInTable="UGColumn" msprop:Generator_UserColumnName="UG" type="xs:string" minOccurs="0" />
+              <xs:element name="ChallanUserName" msprop:Generator_ColumnVarNameInTable="columnChallanUserName" msprop:Generator_ColumnPropNameInRow="ChallanUserName" msprop:Generator_ColumnPropNameInTable="ChallanUserNameColumn" msprop:Generator_UserColumnName="ChallanUserName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Aashish\dc\DrySoft\Discount\code\Publish\Web" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="images/items/Under Wear.png" publishTime="01/27/2012 16:20:16" />
+    <file relUrl="images/items/Ladies Top2.png" publishTime="01/27/2012 16:13:41" />
+    <file relUrl="images/items/Kameez Ladies.png" publishTime="01/26/2012 14:55:01" />
+    <file relUrl="images/items/Towel (Large).png" publishTime="01/27/2012 12:19:25" />
+    <file relUrl="images/items/Quilt6.png" publishTime="01/26/2012 14:48:23" />
+    <file relUrl="images/colors/Brown.png" publishTime="03/23/2012 14:17:09" />
+    <file relUrl="images/items/Saree (Heavy Work).png" publishTime="01/27/2012 21:21:27" />
+    <file relUrl="images/items/Peticot.png" publishTime="01/27/2012 22:06:29" />
+    <file relUrl="images/items/Table Cloth2.png" publishTime="01/26/2012 15:00:42" />
+    <file relUrl="images/items/Pagri.png" publishTime="01/27/2012 22:07:25" />
+    <file relUrl="images/items/Sherwani 2Pcs Gents.png" publishTime="01/27/2012 19:35:12" />
+    <file relUrl="images/items/Quilt3.png" publishTime="01/26/2012 14:57:37" />
+    <file relUrl="images/process/Starch.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/colors/Yellow.png" publishTime="03/23/2012 14:15:28" />
+    <file relUrl="images/items/Frock Kids.png" publishTime="01/26/2012 22:42:33" />
+    <file relUrl="images/no_scroll_right.png" publishTime="03/23/2012 14:34:06" />
+    <file relUrl="images/colors/Blue.png" publishTime="03/23/2012 14:16:41" />
+    <file relUrl="images/items/Suit 3Pcs (kids).png" publishTime="01/27/2012 18:03:28" />
+    <file relUrl="images/items/Blazer Gents2.png" publishTime="01/26/2012 14:51:28" />
+    <file relUrl="images/items/Blanket6.png" publishTime="01/26/2012 14:50:24" />
+    <file relUrl="images/items/Sweat Shirt Kids.png" publishTime="01/27/2012 16:42:55" />
+    <file relUrl="images/categories/ladies.png" publishTime="03/23/2012 19:25:12" />
+    <file relUrl="images/items/Lehenga 2pcs.png" publishTime="01/27/2012 22:33:08" />
+    <file relUrl="images/brands.png" publishTime="03/22/2012 14:44:49" />
+    <file relUrl="images/items/Saree (Border).png" publishTime="01/27/2012 21:13:36" />
+    <file relUrl="images/items/Blanket4.png" publishTime="01/26/2012 14:50:44" />
+    <file relUrl="images/other/Print_hover.png" publishTime="02/29/2012 19:00:18" />
+    <file relUrl="bin/promos.pdb" publishTime="03/26/2012 07:30:11" />
+    <file relUrl="images/items/Saree (Medium Work).png" publishTime="01/27/2012 21:19:22" />
+    <file relUrl="BookingReceiptsv2.aspx" publishTime="03/26/2012 07:02:30" />
+    <file relUrl="images/items/laidiessutionly.png" publishTime="01/26/2012 14:56:03" />
+    <file relUrl="images/items/Sherwani 2Pcs (Kids).png" publishTime="01/27/2012 19:35:43" />
+    <file relUrl="images/items/Bath Robe.png" publishTime="01/26/2012 14:49:23" />
+    <file relUrl="images/items/Coat Gents.png" publishTime="01/26/2012 14:52:27" />
+    <file relUrl="images/items/Robe3.png" publishTime="01/26/2012 14:58:05" />
+    <file relUrl="images/items/Jeans.png" publishTime="01/26/2012 14:54:45" />
+    <file relUrl="images/items/Kurta Gents.png" publishTime="01/26/2012 14:55:18" />
+    <file relUrl="images/items/Robe2.png" publishTime="01/26/2012 14:57:57" />
+    <file relUrl="images/items/Blanket Double Single Ply.png" publishTime="01/26/2012 14:50:14" />
+    <file relUrl="images/items/Slacks (Kids).png" publishTime="01/27/2012 18:11:12" />
+    <file relUrl="images/no_scroll_left.png" publishTime="03/23/2012 14:32:01" />
+    <file relUrl="images/other/Print.png" publishTime="02/29/2012 19:00:38" />
+    <file relUrl="images/process/Calender.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Sherwani (Kids).png" publishTime="01/27/2012 19:05:54" />
+    <file relUrl="images/colors/Crimson.png" publishTime="03/23/2012 14:18:32" />
+    <file relUrl="images/process/Alteration.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/comments.png" publishTime="03/22/2012 14:37:27" />
+    <file relUrl="images/items/LongCoat2.png" publishTime="01/27/2012 22:23:14" />
+    <file relUrl="images/items/Handkerchief2.png" publishTime="01/26/2012 14:54:16" />
+    <file relUrl="images/items/Shawl Gents.png" publishTime="01/26/2012 14:59:45" />
+    <file relUrl="images/items/Cap.png" publishTime="01/26/2012 20:58:10" />
+    <file relUrl="images/items/Vest2.png" publishTime="01/27/2012 16:17:04" />
+    <file relUrl="images/items/Pullover.png" publishTime="01/26/2012 14:57:34" />
+    <file relUrl="images/items/Stoll.png" publishTime="01/27/2012 18:07:25" />
+    <file relUrl="images/items/Dhoti2.png" publishTime="01/26/2012 14:52:59" />
+    <file relUrl="images/items/Gloves.png" publishTime="01/26/2012 22:35:55" />
+    <file relUrl="images/items/Dungaree.png" publishTime="01/26/2012 14:53:02" />
+    <file relUrl="images/items/Short4.png" publishTime="01/26/2012 14:59:37" />
+    <file relUrl="images/items/Blanket Double Double Ply.png" publishTime="01/26/2012 14:50:42" />
+    <file relUrl="images/colors/Blue_Violet.png" publishTime="03/23/2012 14:16:56" />
+    <file relUrl="images/items/Payajama.png" publishTime="01/27/2012 21:57:30" />
+    <file relUrl="images/items/Blouse (LIGHT WORK).png" publishTime="01/26/2012 20:45:25" />
+    <file relUrl="images/left.png" publishTime="03/22/2012 14:11:10" />
+    <file relUrl="images/items/Vest.png" publishTime="01/27/2012 16:16:55" />
+    <file relUrl="images/items/Safari-Suit.png" publishTime="01/27/2012 21:46:28" />
+    <file relUrl="images/items/Shirt2.png" publishTime="01/26/2012 14:59:24" />
+    <file relUrl="images/items/Jeans2.png" publishTime="01/26/2012 14:54:34" />
+    <file relUrl="images/items/Ladies Bag.png" publishTime="01/26/2012 14:48:31" />
+    <file relUrl="images/items/Gown2.png" publishTime="01/26/2012 14:53:51" />
+    <file relUrl="images/other/Urgent_Selected.png" publishTime="02/29/2012 19:04:43" />
+    <file relUrl="images/items/Saree (Plain).png" publishTime="01/27/2012 21:12:11" />
+    <file relUrl="images/items/Bow Tie.png" publishTime="01/26/2012 20:53:19" />
+    <file relUrl="images/items/Quilt DoubleBed.png" publishTime="01/26/2012 14:57:51" />
+    <file relUrl="images/categories/Other.png" publishTime="03/23/2012 19:25:17" />
+    <file relUrl="images/categories/KIds.png" publishTime="03/23/2012 19:25:08" />
+    <file relUrl="images/items/Rain Coat.png" publishTime="01/26/2012 14:57:53" />
+    <file relUrl="images/process/Dry Cleaning3.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Trouser3.png" publishTime="01/26/2012 15:01:11" />
+    <file relUrl="images/items/Dhoti.png" publishTime="01/26/2012 14:52:58" />
+    <file relUrl="images/process/Steam Iron4.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/down.png" publishTime="03/22/2012 14:10:21" />
+    <file relUrl="images/items/Jeans Half.png" publishTime="01/26/2012 14:54:46" />
+    <file relUrl="images/items/Frock (Large).png" publishTime="01/26/2012 22:30:28" />
+    <file relUrl="images/items/Kurta (Emboidery).png" publishTime="01/26/2012 23:20:07" />
+    <file relUrl="images/items/Quilt SingleBed.png" publishTime="01/27/2012 21:52:39" />
+    <file relUrl="images/process/Dry Cleaning2.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Payajama2.png" publishTime="01/26/2012 14:57:18" />
+    <file relUrl="BookingReceipts.aspx" publishTime="03/05/2012 23:03:29" />
+    <file relUrl="images/items/Quilt2.png" publishTime="01/26/2012 14:57:38" />
+    <file relUrl="images/items/Door Mat2.png" publishTime="01/26/2012 14:53:00" />
+    <file relUrl="images/items/BedSheet2.png" publishTime="01/26/2012 14:49:40" />
+    <file relUrl="images/process/HandWash.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Bath Robe2.png" publishTime="01/26/2012 14:49:26" />
+    <file relUrl="images/categories/household.png" publishTime="03/23/2012 19:25:02" />
+    <file relUrl="images/items/Lungi.png" publishTime="01/27/2012 22:20:57" />
+    <file relUrl="images/other/SMS_NotSelected.png" publishTime="02/29/2012 19:09:20" />
+    <file relUrl="images/items/Dungaree2.png" publishTime="01/26/2012 14:53:12" />
+    <file relUrl="js/jquery-1.6.2.min.js" publishTime="01/16/2012 11:43:00" />
+    <file relUrl="images/items/Chef Coat.png" publishTime="01/26/2012 14:52:14" />
+    <file relUrl="images/colors/Olive.png" publishTime="03/23/2012 14:23:05" />
+    <file relUrl="images/items/TShirt2.png" publishTime="01/26/2012 15:01:24" />
+    <file relUrl="images/process/Bleach.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/process/Iron2.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Bath Mat3.png" publishTime="01/26/2012 14:48:56" />
+    <file relUrl="images/items/Sweater.png" publishTime="01/26/2012 15:00:26" />
+    <file relUrl="images/items/Kurta Pyajama (Kids).png" publishTime="01/27/2012 22:50:19" />
+    <file relUrl="images/items/Sweater Half.png" publishTime="01/26/2012 15:00:27" />
+    <file relUrl="images/items/Jacket Girl2.png" publishTime="01/26/2012 14:54:31" />
+    <file relUrl="images/other/Email_Selected.png" publishTime="02/29/2012 19:10:41" />
+    <file relUrl="images/items/Towel2.png" publishTime="01/26/2012 15:00:54" />
+    <file relUrl="images/items/Towel (Medium).png" publishTime="01/27/2012 12:18:56" />
+    <file relUrl="images/items/Blanket3.png" publishTime="01/26/2012 14:50:43" />
+    <file relUrl="images/colors/Lime.png" publishTime="03/23/2012 14:21:34" />
+    <file relUrl="images/items/Gown.png" publishTime="01/26/2012 14:53:49" />
+    <file relUrl="js/bookingReceipts.js" publishTime="03/03/2012 15:49:00" />
+    <file relUrl="images/items/Hat2.png" publishTime="01/26/2012 14:54:19" />
+    <file relUrl="images/items/Trouser.png" publishTime="01/27/2012 12:22:04" />
+    <file relUrl="images/colors/Khakhi.png" publishTime="03/23/2012 14:20:37" />
+    <file relUrl="images/items/Belt2.png" publishTime="01/26/2012 14:50:10" />
+    <file relUrl="promos.aspx" publishTime="02/19/2012 11:54:53" />
+    <file relUrl="images/process/Wet Cleaning.png" publishTime="01/30/2012 14:50:30" />
+    <file relUrl="images/items/Blanket Single Single Ply.png" publishTime="01/26/2012 14:50:41" />
+    <file relUrl="images/items/laiesKurtaPayajama.png" publishTime="01/26/2012 14:56:04" />
+    <file relUrl="images/items/Nighty.png" publishTime="01/26/2012 14:57:06" />
+    <file relUrl="images/items/Shirt.png" publishTime="01/26/2012 14:59:21" />
+    <file relUrl="images/process/Darning.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="js/jquery1.6.2_Dev.js" publishTime="03/01/2012 22:34:01" />
+    <file relUrl="images/items/Foot Mats2.png" publishTime="01/26/2012 14:53:28" />
+    <file relUrl="images/patterns/Check.png" publishTime="03/23/2012 14:17:40" />
+    <file relUrl="images/other/Save.png" publishTime="02/29/2012 18:56:57" />
+    <file relUrl="images/items/Kurta Pyajama Gents2.png" publishTime="01/26/2012 14:55:05" />
+    <file relUrl="images/items/Dupatta Medium.png" publishTime="01/26/2012 22:20:32" />
+    <file relUrl="images/items/Tie.png" publishTime="01/27/2012 12:52:21" />
+    <file relUrl="images/items/Blouse (FULL WORK).png" publishTime="01/26/2012 20:48:51" />
+    <file relUrl="images/items/Apron2.png" publishTime="01/26/2012 19:03:43" />
+    <file relUrl="images/patterns/dots.png" publishTime="03/23/2012 14:19:11" />
+    <file relUrl="images/colors/Gold.png" publishTime="03/23/2012 14:20:04" />
+    <file relUrl="css/bookingreceiptsv1.css" publishTime="03/06/2012 14:55:57" />
+    <file relUrl="images/items/Blouse (NORMAL).png" publishTime="01/26/2012 20:54:21" />
+    <file relUrl="images/items/Door Mat.png" publishTime="01/26/2012 14:52:59" />
+    <file relUrl="images/items/Pullover2.png" publishTime="01/26/2012 14:57:35" />
+    <file relUrl="images/items/Toy Large.png" publishTime="01/26/2012 15:00:10" />
+    <file relUrl="images/colors_icon.png" publishTime="03/22/2012 13:04:20" />
+    <file relUrl="images/items/Skirt Long.png" publishTime="01/27/2012 18:31:23" />
+    <file relUrl="images/items/ladieshawal3.png" publishTime="01/26/2012 14:55:33" />
+    <file relUrl="images/items/Handkerchief3.png" publishTime="01/26/2012 14:54:15" />
+    <file relUrl="images/items/Cushion.png" publishTime="01/26/2012 14:52:48" />
+    <file relUrl="images/items/Shirt3.png" publishTime="01/26/2012 14:59:25" />
+    <file relUrl="images/items/Lehnga (Kids).png" publishTime="01/27/2012 22:28:18" />
+    <file relUrl="images/other/Save_hover.png" publishTime="02/29/2012 18:57:25" />
+    <file relUrl="images/colors/Toamto.png" publishTime="03/23/2012 14:26:00" />
+    <file relUrl="images/items/Salwar.png" publishTime="01/26/2012 14:58:07" />
+    <file relUrl="images/items/Skirt Top.png" publishTime="01/27/2012 18:24:16" />
+    <file relUrl="images/items/Trouser (Kids).png" publishTime="01/26/2012 20:05:59" />
+    <file relUrl="images/items/Sweat Shirt.png" publishTime="01/27/2012 16:40:54" />
+    <file relUrl="images/items/Car Seat Cover Medium.png" publishTime="01/26/2012 21:02:53" />
+    <file relUrl="images/items/Jacket Baby.png" publishTime="01/26/2012 23:03:39" />
+    <file relUrl="images/items/Sherwani 3Pcs (Kids).png" publishTime="01/27/2012 19:38:29" />
+    <file relUrl="images/colors/Gray.png" publishTime="03/23/2012 14:20:16" />
+    <file relUrl="images/process/Steam Iron3.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="bin/BAL.pdb" publishTime="03/26/2012 07:29:50" />
+    <file relUrl="images/items/Ladies Top.png" publishTime="01/27/2012 16:13:24" />
+    <file relUrl="images/colors/Sky_Blue.png" publishTime="03/23/2012 14:24:02" />
+    <file relUrl="images/process/Dry Cleaning.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/process/Laundry6.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Blazer (ladies)2.png" publishTime="01/26/2012 14:51:29" />
+    <file relUrl="images/items/Suit 2Pcs (kids).png" publishTime="01/27/2012 18:00:24" />
+    <file relUrl="images/items/ladiesshwal2.png" publishTime="01/26/2012 14:55:36" />
+    <file relUrl="images/items/Ladies Top4.png" publishTime="01/26/2012 14:55:50" />
+    <file relUrl="images/items/Skirt Ladies.png" publishTime="01/27/2012 18:26:22" />
+    <file relUrl="images/items/Bag.png" publishTime="01/26/2012 14:48:25" />
+    <file relUrl="images/items/Suit 3Pcs Gents.png" publishTime="01/27/2012 18:03:14" />
+    <file relUrl="images/items/Mattress Protector (BIG).png" publishTime="01/26/2012 14:56:49" />
+    <file relUrl="js/bookingReceiptsv1.js" publishTime="03/06/2012 16:59:59" />
+    <file relUrl="bin/DAL.dll" publishTime="03/26/2012 07:29:48" />
+    <file relUrl="images/items/Apron.png" publishTime="01/26/2012 19:03:22" />
+    <file relUrl="images/items/TShirt (Kids).png" publishTime="01/27/2012 12:27:10" />
+    <file relUrl="images/items/Ladies Suit (3 Pcs).png" publishTime="01/26/2012 14:55:46" />
+    <file relUrl="images/items/ladisshwal4.png" publishTime="01/26/2012 14:55:59" />
+    <file relUrl="images/up.png" publishTime="03/22/2012 14:10:48" />
+    <file relUrl="images/patterns/Stripes.png" publishTime="03/23/2012 14:24:37" />
+    <file relUrl="images/items/Foot Mats.png" publishTime="01/26/2012 14:53:18" />
+    <file relUrl="images/items/Blanket Single Double Ply.png" publishTime="01/26/2012 14:48:41" />
+    <file relUrl="images/items/Toy Medium.png" publishTime="01/26/2012 15:00:09" />
+    <file relUrl="images/process/Iron.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Robe4.png" publishTime="01/26/2012 14:58:06" />
+    <file relUrl="images/items/Handkerchief.png" publishTime="01/26/2012 14:54:17" />
+    <file relUrl="images/items/Sweater Ladies.png" publishTime="01/27/2012 16:43:41" />
+    <file relUrl="images/patterns/Floral.png" publishTime="03/23/2012 14:19:46" />
+    <file relUrl="images/items/Quilt5.png" publishTime="01/26/2012 14:57:50" />
+    <file relUrl="js/bookingReceiptsv2.js" publishTime="03/26/2012 06:58:38" />
+    <file relUrl="images/right.png" publishTime="03/22/2012 14:11:27" />
+    <file relUrl="images/items/Jacket Leather.png" publishTime="01/26/2012 14:54:33" />
+    <file relUrl="images/items/TShirt.png" publishTime="01/27/2012 12:24:20" />
+    <file relUrl="images/items/Wedding Gown.png" publishTime="01/26/2012 15:01:25" />
+    <file relUrl="images/items/Shirt (Kids).png" publishTime="01/27/2012 18:44:21" />
+    <file relUrl="images/items/Dupatta Heavy.png" publishTime="01/26/2012 22:23:46" />
+    <file relUrl="images/items/Capri2.png" publishTime="01/26/2012 14:51:46" />
+    <file relUrl="images/colors/Beige.png" publishTime="03/23/2012 14:16:12" />
+    <file relUrl="images/items/Cushion Cover.png" publishTime="01/26/2012 22:02:51" />
+    <file relUrl="images/colors/multi.png" publishTime="03/23/2012 14:22:37" />
+    <file relUrl="images/items/Slacks.png" publishTime="01/26/2012 14:59:56" />
+    <file relUrl="images/items/Shawl Ladies.png" publishTime="01/26/2012 14:59:40" />
+    <file relUrl="images/process/Steam Iron.png" publishTime="01/30/2012 14:50:30" />
+    <file relUrl="images/colors/Aqua.png" publishTime="03/23/2012 14:15:53" />
+    <file relUrl="images/colors/Purple.png" publishTime="03/23/2012 14:23:40" />
+    <file relUrl="images/items/Pillow Cover.png" publishTime="01/26/2012 22:03:58" />
+    <file relUrl="images/categories/Institutional.png" publishTime="02/29/2012 18:32:09" />
+    <file relUrl="js/promoAjaxCalls.js" publishTime="02/20/2012 17:04:28" />
+    <file relUrl="images/items/Socks.png" publishTime="01/27/2012 18:13:58" />
+    <file relUrl="images/items/Towel3.png" publishTime="01/26/2012 15:00:58" />
+    <file relUrl="images/items/Table Cloth.png" publishTime="01/26/2012 15:00:41" />
+    <file relUrl="images/items/Saree (Designer).png" publishTime="01/26/2012 14:58:10" />
+    <file relUrl="images/items/Jacket White.png" publishTime="01/26/2012 14:54:34" />
+    <file relUrl="images/items/Car Seat Cover Large.png" publishTime="01/26/2012 21:04:03" />
+    <file relUrl="images/items/Cardigan.png" publishTime="01/26/2012 14:51:56" />
+    <file relUrl="images/items/Trouser Half.png" publishTime="01/26/2012 14:54:14" />
+    <file relUrl="images/categories/Gents.png" publishTime="03/23/2012 19:24:58" />
+    <file relUrl="images/items/Woolen Shirt2.png" publishTime="01/26/2012 15:01:27" />
+    <file relUrl="images/colors/chocolate.png" publishTime="03/23/2012 14:18:00" />
+    <file relUrl="images/colors/Red.png" publishTime="03/23/2012 14:23:50" />
+    <file relUrl="images/items/Tie2.png" publishTime="01/27/2012 12:50:59" />
+    <file relUrl="images/colors/Green.png" publishTime="03/23/2012 14:20:26" />
+    <file relUrl="images/other/addUpdate.png" publishTime="02/29/2012 18:55:42" />
+    <file relUrl="images/items/Scarf3.png" publishTime="01/26/2012 14:58:25" />
+    <file relUrl="css/jquery.datepick.css" publishTime="04/30/2011 14:15:36" />
+    <file relUrl="images/items/Blazer Gents (WHITE LILAN).png" publishTime="01/26/2012 14:51:41" />
+    <file relUrl="images/colors/LightBrown.png" publishTime="03/23/2012 14:21:24" />
+    <file relUrl="images/other/Delet_hover.png" publishTime="02/29/2012 18:51:24" />
+    <file relUrl="images/items/Ladies Suit (2 Pcs).png" publishTime="01/26/2012 14:55:02" />
+    <file relUrl="images/items/Jeans3.png" publishTime="01/26/2012 14:54:35" />
+    <file relUrl="images/items/Quiltdd.png" publishTime="01/26/2012 14:54:21" />
+    <file relUrl="BookingReceiptsv1.aspx" publishTime="03/06/2012 11:17:23" />
+    <file relUrl="images/items/Sherwani Gents.png" publishTime="01/27/2012 19:04:03" />
+    <file relUrl="images/items/Scarf.png" publishTime="01/26/2012 14:58:22" />
+    <file relUrl="images/items/Woolen Shirt.png" publishTime="01/27/2012 16:21:31" />
+    <file relUrl="bin/DAL.pdb" publishTime="03/26/2012 07:29:48" />
+    <file relUrl="images/process/Zipper Alteration.png" publishTime="01/30/2012 14:50:30" />
+    <file relUrl="images/items/Short2.png" publishTime="01/26/2012 14:59:29" />
+    <file relUrl="images/items/Mattress Protector (SMALL).png" publishTime="01/26/2012 14:56:51" />
+    <file relUrl="images/items/Short3.png" publishTime="01/26/2012 14:59:37" />
+    <file relUrl="css/bookingreceipts.css" publishTime="03/05/2012 23:03:42" />
+    <file relUrl="images/items/Frock (Short).png" publishTime="01/26/2012 14:53:30" />
+    <file relUrl="images/items/Blazer (Kids).png" publishTime="01/26/2012 19:11:37" />
+    <file relUrl="images/process/laundry5.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/other/addUpdate_hover.png" publishTime="02/29/2012 18:55:16" />
+    <file relUrl="images/other/Email_NotSelected.png" publishTime="02/29/2012 19:10:58" />
+    <file relUrl="images/other/SMS_Selected.png" publishTime="02/29/2012 19:09:04" />
+    <file relUrl="images/process/Dye.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Kurta Pyajama Gents.png" publishTime="01/26/2012 23:31:23" />
+    <file relUrl="images/items/Jacket.png" publishTime="01/26/2012 14:54:30" />
+    <file relUrl="images/process/Laundry7.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/process/Carpet Cleaning.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Bath-Mat2.png" publishTime="01/26/2012 20:15:49" />
+    <file relUrl="images/items/Ladies Top3.png" publishTime="01/26/2012 14:55:50" />
+    <file relUrl="images/items/Blanket5.png" publishTime="01/26/2012 14:50:57" />
+    <file relUrl="images/items/Pathani Suit Salwar.png" publishTime="01/27/2012 22:16:26" />
+    <file relUrl="images/items/Sherwani 3Pcs Gents.png" publishTime="01/27/2012 19:38:13" />
+    <file relUrl="images/items/Bedsheet (Double).png" publishTime="01/26/2012 14:49:41" />
+    <file relUrl="images/items/Dungaree3.png" publishTime="01/26/2012 14:53:00" />
+    <file relUrl="images/colors/Cream.png" publishTime="03/23/2012 14:18:12" />
+    <file relUrl="images/items/Robe.png" publishTime="01/26/2012 14:57:54" />
+    <file relUrl="images/items/Shawl (Pashmina).png" publishTime="01/26/2012 14:59:41" />
+    <file relUrl="images/items/Suit 2Pcs Gents.png" publishTime="01/27/2012 17:58:17" />
+    <file relUrl="images/items/Stokings.png" publishTime="01/26/2012 15:00:08" />
+    <file relUrl="images/scroll_right.png" publishTime="03/22/2012 14:57:32" />
+    <file relUrl="images/items/Bath Mat2.png" publishTime="01/26/2012 14:48:54" />
+    <file relUrl="images/colors/Black.png" publishTime="03/23/2012 14:16:25" />
+    <file relUrl="images/items/Blazer Gents.png" publishTime="01/26/2012 20:33:12" />
+    <file relUrl="images/items/Lehenga 3pcs.png" publishTime="01/27/2012 22:36:18" />
+    <file relUrl="images/items/Quilt4.png" publishTime="01/26/2012 14:57:49" />
+    <file relUrl="images/colors/Magenta.png" publishTime="03/23/2012 14:21:46" />
+    <file relUrl="images/items/BedSheet4.png" publishTime="01/26/2012 14:49:28" />
+    <file relUrl="images/items/Pillow2.png" publishTime="01/26/2012 14:57:20" />
+    <file relUrl="images/process/Chemical Wash.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Blanket2.png" publishTime="01/26/2012 14:50:12" />
+    <file relUrl="images/items/School Bag.png" publishTime="01/26/2012 14:58:25" />
+    <file relUrl="images/items/Jacket Half2.png" publishTime="01/26/2012 14:54:04" />
+    <file relUrl="images/colors/DarkGray.png" publishTime="03/23/2012 14:18:44" />
+    <file relUrl="images/items/Pillow3.png" publishTime="01/26/2012 14:57:21" />
+    <file relUrl="images/items/Shirt4.png" publishTime="01/26/2012 14:59:23" />
+    <file relUrl="images/items/Trouser5.png" publishTime="01/26/2012 15:01:12" />
+    <file relUrl="images/checkmark_1.gif" publishTime="01/27/2012 14:52:10" />
+    <file relUrl="images/other/Urgent_NotSelected.png" publishTime="02/29/2012 19:05:21" />
+    <file relUrl="images/items/Skirt (Kids).png" publishTime="01/27/2012 18:27:46" />
+    <file relUrl="bin/promos.dll" publishTime="03/26/2012 07:30:11" />
+    <file relUrl="images/items/Jacket Half3.png" publishTime="01/26/2012 14:54:32" />
+    <file relUrl="css/promoWizard.css" publishTime="02/20/2012 08:30:58" />
+    <file relUrl="images/items/Blazer (ladies).png" publishTime="01/26/2012 14:51:30" />
+    <file relUrl="images/items/Lehenga.png" publishTime="01/27/2012 22:27:01" />
+    <file relUrl="bin/BAL.dll" publishTime="03/26/2012 07:29:50" />
+    <file relUrl="images/items/Saree (Light Work).png" publishTime="01/27/2012 21:16:28" />
+    <file relUrl="images/items/Towel (Small).png" publishTime="01/27/2012 12:18:32" />
+    <file relUrl="images/colors/Teal.png" publishTime="03/23/2012 14:25:51" />
+    <file relUrl="images/items/Sweater (Kids).png" publishTime="01/27/2012 16:36:19" />
+    <file relUrl="css/bookingreceiptsv2.css" publishTime="03/26/2012 07:23:51" />
+    <file relUrl="images/items/Quilt (Cover Single).png" publishTime="01/27/2012 21:54:26" />
+    <file relUrl="images/other/Delete.png" publishTime="02/29/2012 18:50:52" />
+    <file relUrl="PromoWizard.htm" publishTime="01/30/2012 15:14:58" />
+    <file relUrl="images/items/Cardigan2.png" publishTime="01/26/2012 14:51:56" />
+    <file relUrl="images/colors/White.png" publishTime="03/23/2012 14:26:21" />
+    <file relUrl="images/items/Sweat Shirt (W CAP).png" publishTime="01/26/2012 15:00:40" />
+    <file relUrl="images/items/LongCoat.png" publishTime="01/27/2012 22:23:05" />
+    <file relUrl="images/colors/Navy.png" publishTime="03/23/2012 14:22:54" />
+    <file relUrl="images/colors/Maroon.png" publishTime="03/23/2012 14:21:56" />
+    <file relUrl="images/items/Scarf2.png" publishTime="01/27/2012 19:41:37" />
+    <file relUrl="images/items/Pullover3.png" publishTime="01/26/2012 14:57:36" />
+    <file relUrl="images/items/Coat Gents3.png" publishTime="01/26/2012 14:52:30" />
+    <file relUrl="images/colors/violet.png" publishTime="03/23/2012 14:26:11" />
+    <file relUrl="images/items/Trouser2.png" publishTime="01/26/2012 15:01:10" />
+    <file relUrl="images/items/Coat Gents2.png" publishTime="01/26/2012 14:52:27" />
+    <file relUrl="images/items/Quilt ( Cover Double).png" publishTime="01/26/2012 14:57:52" />
+    <file relUrl="images/other/TimePickerDialog.png" publishTime="02/29/2012 19:12:09" />
+    <file relUrl="images/loading_3.gif" publishTime="01/22/2012 19:04:56" />
+    <file relUrl="images/items/Toy Small.png" publishTime="01/26/2012 15:00:11" />
+    <file relUrl="images/items/Lehnga 2Pcs (Kids).png" publishTime="01/27/2012 22:33:45" />
+    <file relUrl="Web.config" publishTime="03/26/2012 07:30:12" />
+    <file relUrl="images/items/Trouser4.png" publishTime="01/26/2012 15:01:12" />
+    <file relUrl="images/items/Jacket Girl.png" publishTime="01/26/2012 14:54:32" />
+    <file relUrl="js/jquery.datepick.js" publishTime="04/30/2011 14:08:48" />
+    <file relUrl="images/items/Dressing Gown.png" publishTime="01/26/2012 22:17:07" />
+    <file relUrl="images/items/Dupatta.png" publishTime="01/26/2012 22:20:21" />
+    <file relUrl="images/process/Laundry.png" publishTime="01/30/2012 14:50:29" />
+    <file relUrl="images/items/Tie3.png" publishTime="01/27/2012 12:51:11" />
+    <file relUrl="images/items/Car Seat Cover Small.png" publishTime="01/26/2012 14:58:35" />
+    <file relUrl="images/items/Skirt Mini.png" publishTime="01/27/2012 18:30:39" />
+    <file relUrl="images/items/Jacket Half.png" publishTime="01/26/2012 14:54:03" />
+    <file relUrl="images/colors/Pink.png" publishTime="03/23/2012 14:23:30" />
+    <file relUrl="images/items/Lehnga 3Pcs (Kids).png" publishTime="01/27/2012 22:36:48" />
+    <file relUrl="images/items/Kurta (Emboidery) Ladies.png" publishTime="01/26/2012 23:23:23" />
+    <file relUrl="images/items/Shirt5.png" publishTime="01/26/2012 14:59:22" />
+    <file relUrl="images/items/Capri.png" publishTime="01/26/2012 14:51:45" />
+    <file relUrl="images/items/Rain Coat2.png" publishTime="01/26/2012 14:57:53" />
+    <file relUrl="images/items/Short.png" publishTime="01/26/2012 14:59:26" />
+    <file relUrl="js/promoWIzard.js" publishTime="02/20/2012 16:56:28" />
+    <file relUrl="images/items/Gown3.png" publishTime="01/26/2012 14:54:00" />
+    <file relUrl="images/items/Skirt Top (Kids).png" publishTime="01/27/2012 18:24:49" />
+    <file relUrl="images/scroll_left.png" publishTime="03/23/2012 14:33:25" />
+    <file relUrl="images/process/Zipper Alteration2.png" publishTime="01/30/2012 14:50:30" />
+    <file relUrl="images/items/Bedsheet (Single).png" publishTime="01/26/2012 14:49:55" />
+    <file relUrl="images/colors/Orange.png" publishTime="03/23/2012 14:23:16" />
+    <file relUrl="images/items/Belt.png" publishTime="01/26/2012 14:49:57" />
+    <file relUrl="images/items/Bath Mat.png" publishTime="01/26/2012 14:48:52" />
+    <file relUrl="images/items/Pillow.png" publishTime="01/26/2012 14:52:46" />
+    <file relUrl="images/items/Hat.png" publishTime="01/26/2012 14:54:18" />
+  </publishProfile>
+</publishData>

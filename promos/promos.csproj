@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{060F049D-C243-4D80-87E0-F6887A779B7E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>promos</RootNamespace>
+    <AssemblyName>promos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BookingReceipts.aspx" />
+    <Content Include="BookingReceiptsv1.aspx" />
+    <Content Include="BookingReceiptsv2.aspx" />
+    <Content Include="BookingReceiptsv3.aspx" />
+    <Content Include="css\bookingreceipts.css" />
+    <Content Include="css\bookingreceiptsv1.css" />
+    <Content Include="css\bookingreceiptsv2.css" />
+    <Content Include="css\bookingreceiptsv3.css" />
+    <Content Include="css\jquery.datepick.css" />
+    <Content Include="css\promoWizard.css" />
+    <Content Include="images\brands.png" />
+    <Content Include="images\categories\Gents.png" />
+    <Content Include="images\categories\household.png" />
+    <Content Include="images\categories\Institutional.png" />
+    <Content Include="images\categories\KIds.png" />
+    <Content Include="images\categories\ladies.png" />
+    <Content Include="images\categories\Other.png" />
+    <Content Include="images\checkmark_1.gif" />
+    <Content Include="images\colors\Aqua.png" />
+    <Content Include="images\colors\Beige.png" />
+    <Content Include="images\colors\Black.png" />
+    <Content Include="images\colors\Blue.png" />
+    <Content Include="images\colors\Blue_Violet.png" />
+    <Content Include="images\colors\Brown.png" />
+    <Content Include="images\colors\chocolate.PNG" />
+    <Content Include="images\colors\Cream.PNG" />
+    <Content Include="images\colors\Crimson.png" />
+    <Content Include="images\colors\DarkGray.PNG" />
+    <Content Include="images\colors\Gold.png" />
+    <Content Include="images\colors\Gray.PNG" />
+    <Content Include="images\colors\Green.png" />
+    <Content Include="images\colors\Khakhi.png" />
+    <Content Include="images\colors\LightBrown.png" />
+    <Content Include="images\colors\Lime.png" />
+    <Content Include="images\colors\Magenta.png" />
+    <Content Include="images\colors\Maroon.png" />
+    <Content Include="images\colors\multi.png" />
+    <Content Include="images\colors\Navy.png" />
+    <Content Include="images\colors\Olive.png" />
+    <Content Include="images\colors\Orange.png" />
+    <Content Include="images\colors\Pink.png" />
+    <Content Include="images\colors\Purple.png" />
+    <Content Include="images\colors\Red.png" />
+    <Content Include="images\colors\Sky_Blue.png" />
+    <Content Include="images\colors\Teal.png" />
+    <Content Include="images\colors\Toamto.png" />
+    <Content Include="images\colors\violet.png" />
+    <Content Include="images\colors\White.png" />
+    <Content Include="images\colors\Yellow.png" />
+    <Content Include="images\colors_icon.png" />
+    <Content Include="images\comments.png" />
+    <Content Include="images\down.png" />
+    <Content Include="images\items\Apron.png" />
+    <Content Include="images\items\Apron2.png" />
+    <Content Include="images\items\Bag.png" />
+    <Content Include="images\items\Bath Mat.png" />
+    <Content Include="images\items\Bath Mat2.png" />
+    <Content Include="images\items\Bath Mat3.png" />
+    <Content Include="images\items\Bath Robe.png" />
+    <Content Include="images\items\Bath Robe2.png" />
+    <Content Include="images\items\Bath-Mat2.png" />
+    <Content Include="images\items\Bedsheet %28Double%29.png" />
+    <Content Include="images\items\Bedsheet %28Single%29.png" />
+    <Content Include="images\items\BedSheet2.png" />
+    <Content Include="images\items\BedSheet4.png" />
+    <Content Include="images\items\Belt.png" />
+    <Content Include="images\items\Belt2.png" />
+    <Content Include="images\items\Blanket Double Double Ply.png" />
+    <Content Include="images\items\Blanket Double Single Ply.png" />
+    <Content Include="images\items\Blanket Single Double Ply.png" />
+    <Content Include="images\items\Blanket Single Single Ply.png" />
+    <Content Include="images\items\Blanket2.png" />
+    <Content Include="images\items\Blanket3.png" />
+    <Content Include="images\items\Blanket4.png" />
+    <Content Include="images\items\Blanket5.png" />
+    <Content Include="images\items\Blanket6.png" />
+    <Content Include="images\items\Blazer %28Kids%29.png" />
+    <Content Include="images\items\Blazer %28ladies%29.png" />
+    <Content Include="images\items\Blazer %28ladies%292.png" />
+    <Content Include="images\items\Blazer Gents %28WHITE LILAN%29.png" />
+    <Content Include="images\items\Blazer Gents.png" />
+    <Content Include="images\items\Blazer Gents2.png" />
+    <Content Include="images\items\Blouse %28FULL WORK%29.png" />
+    <Content Include="images\items\Blouse %28LIGHT WORK%29.png" />
+    <Content Include="images\items\Blouse %28NORMAL%29.png" />
+    <Content Include="images\items\Bow Tie.png" />
+    <Content Include="images\items\Cap.png" />
+    <Content Include="images\items\Capri.png" />
+    <Content Include="images\items\Capri2.png" />
+    <Content Include="images\items\Car Seat Cover Large.png" />
+    <Content Include="images\items\Car Seat Cover Medium.png" />
+    <Content Include="images\items\Car Seat Cover Small.png" />
+    <Content Include="images\items\Cardigan.png" />
+    <Content Include="images\items\Cardigan2.png" />
+    <Content Include="images\items\Chef Coat.png" />
+    <Content Include="images\items\Coat Gents.png" />
+    <Content Include="images\items\Coat Gents2.png" />
+    <Content Include="images\items\Coat Gents3.png" />
+    <Content Include="images\items\Cushion Cover.png" />
+    <Content Include="images\items\Cushion.png" />
+    <Content Include="images\items\Dhoti.png" />
+    <Content Include="images\items\Dhoti2.png" />
+    <Content Include="images\items\Door Mat.png" />
+    <Content Include="images\items\Door Mat2.png" />
+    <Content Include="images\items\Dressing Gown.png" />
+    <Content Include="images\items\Dungaree.png" />
+    <Content Include="images\items\Dungaree2.png" />
+    <Content Include="images\items\Dungaree3.png" />
+    <Content Include="images\items\Dupatta Heavy.png" />
+    <Content Include="images\items\Dupatta Medium.png" />
+    <Content Include="images\items\Dupatta.png" />
+    <Content Include="images\items\Foot Mats.png" />
+    <Content Include="images\items\Foot Mats2.png" />
+    <Content Include="images\items\Frock %28Large%29.png" />
+    <Content Include="images\items\Frock %28Short%29.png" />
+    <Content Include="images\items\Frock Kids.png" />
+    <Content Include="images\items\Gloves.png" />
+    <Content Include="images\items\Gown.png" />
+    <Content Include="images\items\Gown2.png" />
+    <Content Include="images\items\Gown3.png" />
+    <Content Include="images\items\Handkerchief.png" />
+    <Content Include="images\items\Handkerchief2.png" />
+    <Content Include="images\items\Handkerchief3.png" />
+    <Content Include="images\items\Hat.png" />
+    <Content Include="images\items\Hat2.png" />
+    <Content Include="images\items\Jacket Baby.png" />
+    <Content Include="images\items\Jacket Girl.png" />
+    <Content Include="images\items\Jacket Girl2.png" />
+    <Content Include="images\items\Jacket Half.png" />
+    <Content Include="images\items\Jacket Half2.png" />
+    <Content Include="images\items\Jacket Half3.png" />
+    <Content Include="images\items\Jacket Leather.png" />
+    <Content Include="images\items\Jacket White.png" />
+    <Content Include="images\items\Jacket.png" />
+    <Content Include="images\items\Jeans Half.png" />
+    <Content Include="images\items\Jeans.png" />
+    <Content Include="images\items\Jeans2.png" />
+    <Content Include="images\items\Jeans3.png" />
+    <Content Include="images\items\Kameez Ladies.png" />
+    <Content Include="images\items\Kurta %28Emboidery%29 Ladies.png" />
+    <Content Include="images\items\Kurta %28Emboidery%29.png" />
+    <Content Include="images\items\Kurta Gents.png" />
+    <Content Include="images\items\Kurta Pyajama %28Kids%29.png" />
+    <Content Include="images\items\Kurta Pyajama Gents.png" />
+    <Content Include="images\items\Kurta Pyajama Gents2.png" />
+    <Content Include="images\items\Ladies Bag.png" />
+    <Content Include="images\items\Ladies Suit %282 Pcs%29.png" />
+    <Content Include="images\items\Ladies Suit %283 Pcs%29.png" />
+    <Content Include="images\items\Ladies Top.png" />
+    <Content Include="images\items\Ladies Top2.png" />
+    <Content Include="images\items\Ladies Top3.png" />
+    <Content Include="images\items\Ladies Top4.png" />
+    <Content Include="images\items\ladieshawal3.png" />
+    <Content Include="images\items\ladiesshwal2.png" />
+    <Content Include="images\items\ladisshwal4.png" />
+    <Content Include="images\items\laidiessutionly.png" />
+    <Content Include="images\items\laiesKurtaPayajama.png" />
+    <Content Include="images\items\Lehenga 2pcs.png" />
+    <Content Include="images\items\Lehenga 3pcs.png" />
+    <Content Include="images\items\Lehenga.png" />
+    <Content Include="images\items\Lehnga %28Kids%29.png" />
+    <Content Include="images\items\Lehnga 2Pcs %28Kids%29.png" />
+    <Content Include="images\items\Lehnga 3Pcs %28Kids%29.png" />
+    <Content Include="images\items\LongCoat.png" />
+    <Content Include="images\items\LongCoat2.png" />
+    <Content Include="images\items\Lungi.png" />
+    <Content Include="images\items\Mattress Protector %28BIG%29.png" />
+    <Content Include="images\items\Mattress Protector %28SMALL%29.png" />
+    <Content Include="images\items\Nighty.png" />
+    <Content Include="images\items\Pagri.png" />
+    <Content Include="images\items\Pathani Suit Salwar.png" />
+    <Content Include="images\items\Payajama.png" />
+    <Content Include="images\items\Payajama2.png" />
+    <Content Include="images\items\Peticot.png" />
+    <Content Include="images\items\Pillow Cover.png" />
+    <Content Include="images\items\Pillow.png" />
+    <Content Include="images\items\Pillow2.png" />
+    <Content Include="images\items\Pillow3.png" />
+    <Content Include="images\items\Pullover.png" />
+    <Content Include="images\items\Pullover2.png" />
+    <Content Include="images\items\Pullover3.png" />
+    <Content Include="images\items\Quilt %28 Cover Double%29.png" />
+    <Content Include="images\items\Quilt %28Cover Single%29.png" />
+    <Content Include="images\items\Quilt DoubleBed.png" />
+    <Content Include="images\items\Quilt SingleBed.png" />
+    <Content Include="images\items\Quilt2.png" />
+    <Content Include="images\items\Quilt3.png" />
+    <Content Include="images\items\Quilt4.png" />
+    <Content Include="images\items\Quilt5.png" />
+    <Content Include="images\items\Quilt6.png" />
+    <Content Include="images\items\Quiltdd.png" />
+    <Content Include="images\items\Rain Coat.png" />
+    <Content Include="images\items\Rain Coat2.png" />
+    <Content Include="images\items\Robe.png" />
+    <Content Include="images\items\Robe2.png" />
+    <Content Include="images\items\Robe3.png" />
+    <Content Include="images\items\Robe4.png" />
+    <Content Include="images\items\Safari-Suit.png" />
+    <Content Include="images\items\Salwar.png" />
+    <Content Include="images\items\Saree %28Border%29.png" />
+    <Content Include="images\items\Saree %28Designer%29.png" />
+    <Content Include="images\items\Saree %28Heavy Work%29.png" />
+    <Content Include="images\items\Saree %28Light Work%29.png" />
+    <Content Include="images\items\Saree %28Medium Work%29.png" />
+    <Content Include="images\items\Saree %28Plain%29.png" />
+    <Content Include="images\items\Scarf.png" />
+    <Content Include="images\items\Scarf2.png" />
+    <Content Include="images\items\Scarf3.png" />
+    <Content Include="images\items\School Bag.png" />
+    <Content Include="images\items\Shawl %28Pashmina%29.png" />
+    <Content Include="images\items\Shawl Gents.png" />
+    <Content Include="images\items\Shawl Ladies.png" />
+    <Content Include="images\items\Sherwani %28Kids%29.png" />
+    <Content Include="images\items\Sherwani 2Pcs %28Kids%29.png" />
+    <Content Include="images\items\Sherwani 2Pcs Gents.png" />
+    <Content Include="images\items\Sherwani 3Pcs %28Kids%29.png" />
+    <Content Include="images\items\Sherwani 3Pcs Gents.png" />
+    <Content Include="images\items\Sherwani Gents.png" />
+    <Content Include="images\items\Shirt %28Kids%29.png" />
+    <Content Include="images\items\Shirt.png" />
+    <Content Include="images\items\Shirt2.png" />
+    <Content Include="images\items\Shirt3.png" />
+    <Content Include="images\items\Shirt4.png" />
+    <Content Include="images\items\Shirt5.png" />
+    <Content Include="images\items\Short.png" />
+    <Content Include="images\items\Short2.png" />
+    <Content Include="images\items\Short3.png" />
+    <Content Include="images\items\Short4.png" />
+    <Content Include="images\items\Skirt %28Kids%29.png" />
+    <Content Include="images\items\Skirt Ladies.png" />
+    <Content Include="images\items\Skirt Long.png" />
+    <Content Include="images\items\Skirt Mini.png" />
+    <Content Include="images\items\Skirt Top %28Kids%29.png" />
+    <Content Include="images\items\Skirt Top.png" />
+    <Content Include="images\items\Slacks %28Kids%29.png" />
+    <Content Include="images\items\Slacks.png" />
+    <Content Include="images\items\Socks.png" />
+    <Content Include="images\items\Stokings.png" />
+    <Content Include="images\items\Stoll.png" />
+    <Content Include="images\items\Suit 2Pcs %28kids%29.png" />
+    <Content Include="images\items\Suit 2Pcs Gents.png" />
+    <Content Include="images\items\Suit 3Pcs %28kids%29.png" />
+    <Content Include="images\items\Suit 3Pcs Gents.png" />
+    <Content Include="images\items\Sweat Shirt %28W CAP%29.png" />
+    <Content Include="images\items\Sweat Shirt Kids.png" />
+    <Content Include="images\items\Sweat Shirt.png" />
+    <Content Include="images\items\Sweater %28Kids%29.png" />
+    <Content Include="images\items\Sweater Half.png" />
+    <Content Include="images\items\Sweater Ladies.png" />
+    <Content Include="images\items\Sweater.png" />
+    <Content Include="images\items\Table Cloth.png" />
+    <Content Include="images\items\Table Cloth2.png" />
+    <Content Include="images\items\Tie.png" />
+    <Content Include="images\items\Tie2.png" />
+    <Content Include="images\items\Tie3.png" />
+    <Content Include="images\items\Towel %28Large%29.png" />
+    <Content Include="images\items\Towel %28Medium%29.png" />
+    <Content Include="images\items\Towel %28Small%29.png" />
+    <Content Include="images\items\Towel2.png" />
+    <Content Include="images\items\Towel3.png" />
+    <Content Include="images\items\Toy Large.png" />
+    <Content Include="images\items\Toy Medium.png" />
+    <Content Include="images\items\Toy Small.png" />
+    <Content Include="images\items\Trouser %28Kids%29.png" />
+    <Content Include="images\items\Trouser Half.png" />
+    <Content Include="images\items\Trouser.png" />
+    <Content Include="images\items\Trouser2.png" />
+    <Content Include="images\items\Trouser3.png" />
+    <Content Include="images\items\Trouser4.png" />
+    <Content Include="images\items\Trouser5.png" />
+    <Content Include="images\items\TShirt %28Kids%29.png" />
+    <Content Include="images\items\TShirt.png" />
+    <Content Include="images\items\TShirt2.png" />
+    <Content Include="images\items\Under Wear.png" />
+    <Content Include="images\items\Vest.png" />
+    <Content Include="images\items\Vest2.png" />
+    <Content Include="images\items\Wedding Gown.png" />
+    <Content Include="images\items\Woolen Shirt.png" />
+    <Content Include="images\items\Woolen Shirt2.png" />
+    <Content Include="images\left.png" />
+    <Content Include="images\loading_3.gif" />
+    <Content Include="images\no_scroll_left.png" />
+    <Content Include="images\no_scroll_right.png" />
+    <Content Include="images\other\addUpdate.png" />
+    <Content Include="images\other\addUpdate_hover.png" />
+    <Content Include="images\other\Delete.png" />
+    <Content Include="images\other\Delet_hover.png" />
+    <Content Include="images\other\Email_NotSelected.png" />
+    <Content Include="images\other\Email_Selected.png" />
+    <Content Include="images\other\Print.png" />
+    <Content Include="images\other\Print_hover.png" />
+    <Content Include="images\other\Save.png" />
+    <Content Include="images\other\Save_hover.png" />
+    <Content Include="images\other\SMS_NotSelected.png" />
+    <Content Include="images\other\SMS_Selected.png" />
+    <Content Include="images\other\TimePickerDialog.png" />
+    <Content Include="images\other\Urgent_NotSelected.png" />
+    <Content Include="images\other\Urgent_Selected.png" />
+    <Content Include="images\patterns\Check.png" />
+    <Content Include="images\patterns\dots.png" />
+    <Content Include="images\patterns\Floral.png" />
+    <Content Include="images\patterns\Stripes.png" />
+    <Content Include="images\process\Alteration.png" />
+    <Content Include="images\process\Bleach.png" />
+    <Content Include="images\process\Calender.png" />
+    <Content Include="images\process\Carpet Cleaning.png" />
+    <Content Include="images\process\Chemical Wash.png" />
+    <Content Include="images\process\Darning.png" />
+    <Content Include="images\process\Dry Cleaning.png" />
+    <Content Include="images\process\Dry Cleaning2.png" />
+    <Content Include="images\process\Dry Cleaning3.png" />
+    <Content Include="images\process\Dye.png" />
+    <Content Include="images\process\HandWash.png" />
+    <Content Include="images\process\Iron.png" />
+    <Content Include="images\process\Iron2.png" />
+    <Content Include="images\process\Laundry.png" />
+    <Content Include="images\process\laundry5.png" />
+    <Content Include="images\process\Laundry6.png" />
+    <Content Include="images\process\Laundry7.png" />
+    <Content Include="images\process\Starch.png" />
+    <Content Include="images\process\Steam Iron.png" />
+    <Content Include="images\process\Steam Iron3.png" />
+    <Content Include="images\process\Steam Iron4.png" />
+    <Content Include="images\process\Wet Cleaning.png" />
+    <Content Include="images\process\Zipper Alteration.png" />
+    <Content Include="images\process\Zipper Alteration2.png" />
+    <Content Include="images\right.png" />
+    <Content Include="images\scroll_left.png" />
+    <Content Include="images\scroll_right.png" />
+    <Content Include="images\up.png" />
+    <Content Include="js\autoComplete_Plugin.js" />
+    <Content Include="js\bookingReceipts.js" />
+    <Content Include="js\bookingReceiptsv1.js" />
+    <Content Include="js\bookingReceiptsv2.js" />
+    <Content Include="js\bookingReceiptsv3.js" />
+    <Content Include="js\common.js" />
+    <Content Include="js\jquery-1.6.2.min.js" />
+    <Content Include="js\jquery.datepick.js" />
+    <Content Include="js\jquery1.6.2_Dev.js" />
+    <Content Include="js\numpad.js" />
+    <Content Include="js\promoAjaxCalls.js" />
+    <Content Include="js\promoWIzard.js" />
+    <Content Include="promos.aspx" />
+    <Content Include="PromoWizard.htm" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookingReceipts.aspx.cs">
+      <DependentUpon>BookingReceipts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingReceipts.aspx.designer.cs">
+      <DependentUpon>BookingReceipts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingReceiptsv1.aspx.cs">
+      <DependentUpon>BookingReceiptsv1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingReceiptsv1.aspx.designer.cs">
+      <DependentUpon>BookingReceiptsv1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingReceiptsv2.aspx.cs">
+      <DependentUpon>BookingReceiptsv2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingReceiptsv2.aspx.designer.cs">
+      <DependentUpon>BookingReceiptsv2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingReceiptsv3.aspx.cs">
+      <DependentUpon>BookingReceiptsv3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingReceiptsv3.aspx.designer.cs">
+      <DependentUpon>BookingReceiptsv3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="promos.aspx.cs">
+      <DependentUpon>promos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="promos.aspx.designer.cs">
+      <DependentUpon>promos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="BAL\BAL.csproj">
+      <Project>{3026BDAF-7D1B-4D7C-AB34-E1DDABAADF01}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1536</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/svnpromos</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

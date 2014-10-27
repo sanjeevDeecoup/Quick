@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schemeTemplate id="1" promoid="0">
+  <schemeName>Bill Amount</schemeName>
+  <examples>
+    <example>Get a discount of 10% on bill greater than Rs. 5000</example>
+  </examples>
+  <steps>
+    <f2 sequence="1">
+      <legend>Select discount</legend>
+      <help>Please enter the discount</help>
+      <error>Please enter discount before clicking next</error>
+      <content>
+        <captions>
+          <control seqid="1">
+            <controlSelector>div[name=quantityText] label</controlSelector>
+            <controlValue>Enter discount</controlValue>
+          </control>
+        </captions>
+        <showHide>
+          <control seqid="1">
+            <controlSelector>div[name=quantityUnit] :nth-child(5)</controlSelector>
+            <controlValue>hide</controlValue>
+          </control>
+          <control seqid="2">
+            <controlSelector>div[name=quantityUnit] :nth-child(6)</controlSelector>
+            <controlValue>hide</controlValue>
+          </control>
+        </showHide>
+      </content>
+      <filldata>
+        <uidata seqid="1">
+          <uiselector>input:text[name=txtClothQty]</uiselector>
+          <uivalue></uivalue>
+        </uidata>
+        <uidata seqid="2">
+          <uiselector>input:radio[name=unit1]:checked</uiselector>
+          <uivalue></uivalue>
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true">Get discount of </staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f2>
+    <f2 sequence="2">
+      <legend>Bill Amount</legend>
+      <help>Please enter the bill amount on which the discount is applicable</help>
+      <error>Please enter amount before clicking next</error>
+      <content>
+        <captions>
+          <control seqid="1">
+            <controlSelector>div[name=quantityText] label</controlSelector>
+            <controlValue>Enter Amount</controlValue>
+          </control>
+        </captions>
+        <showHide>
+          <control seqid="1">
+            <controlSelector>div[name=quantityUnit]</controlSelector>
+            <controlValue>hide</controlValue>
+          </control>
+        </showHide>
+      </content>
+      <filldata>
+        <uidata seqid="1">
+          <uiselector>input:text[name=txtClothQty]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="2">
+          <uiselector>input:radio[name=unit2]:checked</uiselector>
+          <uivalue>1</uivalue>
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true">on bill amount of </staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f2>
+    <f6 sequence="3">
+      <legend>Validity</legend>
+      <help>Please select validity</help>
+      <error>Please select validity before clicking next</error>
+      <filldata>
+        <uidata seqid="1">
+          <uiselector>input:radio[name=validity]:checked</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="2">
+          <uiselector>input:text[name=txtApplicableFor]</uiselector>
+          <uivalue>1</uivalue>
+        </uidata>
+        <uidata seqid="3">
+          <uiselector>select[name=selectApplicableForTenure]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="4">
+          <uiselector>input:text[name=txtDateFrom]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="5">
+          <uiselector>input:text[name=txtDateTo]</uiselector>
+          <uivalue />
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true">. This scheme is valid </staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f6>
+    <f5 sequence="4">
+      <legend>Scheme Name</legend>
+      <help>Please enter the Scheme Name</help>
+      <error>Please enter scheme name before clicking next</error>
+      <filldata>
+        <uidata seqid="1">
+          <uiselector>input:text[name=txtSchemeName]</uiselector>
+          <uivalue />
+        </uidata>
+        <uidata seqid="2">
+          <uiselector>textarea[name=txtSchemeDesc]</uiselector>
+          <uivalue />
+        </uidata>
+      </filldata>
+      <summarydata>
+        <staticdata beforeValue="true"></staticdata>
+        <dynamicdata></dynamicdata>
+      </summarydata>
+    </f5>
+  </steps>
+</schemeTemplate>

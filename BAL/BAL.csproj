@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CEA914C-CA06-43F6-B3A3-E915B323073F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BAL</RootNamespace>
+    <AssemblyName>BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/BAL/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BALFactory.cs" />
+    <Compile Include="BAL_Area.cs" />
+    <Compile Include="BAL_Barcodeconfig.cs" />
+    <Compile Include="BAL_BarcodeLable.cs" />
+    <Compile Include="BAL_Barcodesetting.cs" />
+    <Compile Include="BAL_Booking.cs" />
+    <Compile Include="BAL_BookingItemBrands.cs" />
+    <Compile Include="BAL_BookingItemComments.cs" />
+    <Compile Include="BAL_BookingItems.cs" />
+    <Compile Include="BAL_BookingItem_SubItems.cs" />
+    <Compile Include="BAL_Booking_ItemColors.cs" />
+    <Compile Include="BAL_Booking_Items_Processes.cs" />
+    <Compile Include="BAL_BranchChallanDetail.cs" />
+    <Compile Include="BAL_BranchChallanHeader.cs" />
+    <Compile Include="BAL_ChallanIn.cs" />
+    <Compile Include="BAL_City.cs" />
+    <Compile Include="BAL_Color.cs" />
+    <Compile Include="BAL_Comment.cs" />
+    <Compile Include="BAL_DateAndTime.cs" />
+    <Compile Include="BAL_Employee.cs" />
+    <Compile Include="BAL_FactoryChallanDetail.cs" />
+    <Compile Include="BAL_FactoryChallanHeader.cs" />
+    <Compile Include="BAL_Item.cs" />
+    <Compile Include="BAL_ItemCategory.cs" />
+    <Compile Include="BAL_ItemTracking.cs" />
+    <Compile Include="BAL_ItemVariation.cs" />
+    <Compile Include="BAL_NewBookingScreen.cs" />
+    <Compile Include="BAL_NewCustomer.cs" />
+    <Compile Include="BAL_Newpricelists.cs" />
+    <Compile Include="BAL_New_Bookings.cs" />
+    <Compile Include="BAL_Patterns.cs" />
+    <Compile Include="BAL_Priority.cs" />
+    <Compile Include="Bal_Processmaster.cs" />
+    <Compile Include="BAL_Profession.cs" />
+    <Compile Include="BAL_Remark.cs" />
+    <Compile Include="BAL_RemoveReason.cs" />
+    <Compile Include="Bal_Report.cs" />
+    <Compile Include="BAL_Shift.cs" />
+    <Compile Include="BAL_sms.cs" />
+    <Compile Include="BAL_Sticker.cs" />
+    <Compile Include="BAL_SubItems.cs" />
+    <Compile Include="BAL_Variation.cs" />
+    <Compile Include="BL_Branch.cs" />
+    <Compile Include="BL_BrandMaster.cs" />
+    <Compile Include="BL_CategoryMaster.cs" />
+    <Compile Include="BL_ColorMaster.cs" />
+    <Compile Include="BL_CustomerMaster.cs" />
+    <Compile Include="BL_For_ImportFile.cs" />
+    <Compile Include="BL_HolidayMaster.cs" />
+    <Compile Include="BL_PackageMaster.cs" />
+    <Compile Include="BL_PriceList.cs" />
+    <Compile Include="BL_UserMaster.cs" />
+    <Compile Include="BL_WorkShopAllFunction.cs" />
+    <Compile Include="BookingBAO.cs" />
+    <Compile Include="BookingReceiptTransformer.cs" />
+    <Compile Include="CustomerBAO.cs" />
+    <Compile Include="ItemBAO.cs" />
+    <Compile Include="ProcessBAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchemeBAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{F755BB3F-8CBA-4028-8DD6-0B3CF8B32136}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{886670D3-D675-4B6D-A010-79CCA4AB73AE}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

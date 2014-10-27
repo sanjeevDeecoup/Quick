@@ -1,0 +1,7 @@
+D:\Aashish\dc\DrySoft\Discount\code\promos\BAL\bin\Debug\BAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\BAL\bin\Debug\BAL.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\BAL\bin\Debug\DAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\BAL\bin\Debug\DAL.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\BAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Aashish\dc\DrySoft\Discount\code\promos\BAL\obj\Debug\BAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\BAL\obj\Debug\BAL.pdb

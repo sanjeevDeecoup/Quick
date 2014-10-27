@@ -1,0 +1,6 @@
+D:\Aashish\dc\DrySoft\Discount\code\promos\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll.config
+D:\Aashish\dc\DrySoft\Discount\code\promos\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\WcfServiceLibrary1\obj\Debug\ResolveAssemblyReference.cache
+D:\Aashish\dc\DrySoft\Discount\code\promos\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb

@@ -1,0 +1,14 @@
+ Volume in drive D is DATA
+ Volume Serial Number is A081-E32D
+
+ Directory of D:\Aashish\dc\DrySoft\Discount\code\promos\images\patterns
+
+03/23/12  03:25 PM    <DIR>          .
+03/23/12  03:25 PM    <DIR>          ..
+03/23/12  03:25 PM                 0 a.txt
+03/23/12  02:17 PM               236 Check.png
+03/23/12  02:19 PM               222 dots.png
+03/23/12  02:19 PM               401 Floral.png
+03/23/12  02:24 PM               253 Stripes.png
+               5 File(s)          1,112 bytes
+               2 Dir(s)  12,652,879,872 bytes free

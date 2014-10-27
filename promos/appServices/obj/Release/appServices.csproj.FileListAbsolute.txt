@@ -1,0 +1,9 @@
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\WcfService1.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\WcfService1.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\BAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\DAL.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\BAL.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\bin\DAL.pdb
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\obj\Release\ResolveAssemblyReference.cache
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\obj\Release\WcfService1.dll
+D:\Aashish\dc\DrySoft\Discount\code\promos\appServices\obj\Release\WcfService1.pdb

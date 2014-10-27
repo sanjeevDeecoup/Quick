@@ -1,0 +1,154 @@
+/* @override http://dev.facilitydude.com/css/facilitydude.css */
+
+body
+{
+}
+
+/* @group Typography */
+
+a
+{
+    color: #a21e18;
+}
+
+p
+{
+    margin-bottom: 20px;
+}
+
+p a
+{
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 2px;
+}
+
+p a:hover
+{
+    background-color: #a21e18;
+    color: #fff;
+}
+
+b, strong
+{
+    color: #333;
+    font-weight: bold;
+}
+
+em, i
+{
+    color: #333;
+    font-family: Georgia, "Times New Roman" , Times, serif;
+    font-style: italic;
+}
+
+h1
+{
+    color: #a21e18;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-bottom: 15px;
+    clear: both;
+}
+
+#content h1 a
+{
+    color: #a21e18;
+    text-decoration: none;
+}
+
+p.buttons
+{
+    float: left;
+    width: 100%;
+}
+
+p.us
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-family: Georgia, "Times New Roman" , Times, serif;
+    font-style: italic;
+    margin-top: 120px;
+}
+
+p.us a
+{
+    border: none;
+    padding: 0px;
+}
+
+p.us a:hover
+{
+    background-color: transparent;
+}
+
+/* @end */
+
+/* @group Buttons */
+
+a.button
+{
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#dbdbdb')";
+    border: 1px solid #fff;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-shadow: #fff 0 1px 0;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: block;
+    color: #597390;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffff),color-stop(1, #dbdbdb));
+}
+
+a.button:hover
+{
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eeeeee')";
+    color: #000;
+    display: block;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffff),color-stop(1, #eeeeee));
+}
+
+a.button:active
+{
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#dbdbdb', EndColorStr='#ffffff')";
+    text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.5);
+    margin-top: 1px;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #dbdbdb),color-stop(1, #ffffff));
+}
+
+a.button.icon
+{
+    padding-left: 11px;
+}
+
+a.button.icon span
+{
+    padding-left: 36px;
+    background: url(../images/icons.png) no-repeat scroll 0px -4px;
+}
+
+a.button.icon.chat span
+{
+    background-position: 0px -36px;
+}
+
+a.button.icon.tag span
+{
+    background-position: 0px -68px;
+}
+
+/* @end */

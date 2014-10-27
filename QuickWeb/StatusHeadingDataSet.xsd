@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StatusHeadingDataSet" targetNamespace="http://tempuri.org/StatusHeadingDataSet.xsd" xmlns:mstns="http://tempuri.org/StatusHeadingDataSet.xsd" xmlns="http://tempuri.org/StatusHeadingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StatusHeadingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="StatusHeadingDataSet" msprop:Generator_UserDSName="StatusHeadingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sp_StatusHeadingPage" msprop:Generator_TableClassName="sp_StatusHeadingPageDataTable" msprop:Generator_TableVarName="tablesp_StatusHeadingPage" msprop:Generator_RowChangedName="sp_StatusHeadingPageRowChanged" msprop:Generator_TablePropName="sp_StatusHeadingPage" msprop:Generator_RowDeletingName="sp_StatusHeadingPageRowDeleting" msprop:Generator_RowChangingName="sp_StatusHeadingPageRowChanging" msprop:Generator_RowEvHandlerName="sp_StatusHeadingPageRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_StatusHeadingPageRowDeleted" msprop:Generator_RowClassName="sp_StatusHeadingPageRow" msprop:Generator_UserTableName="sp_StatusHeadingPage" msprop:Generator_RowEvArgName="sp_StatusHeadingPageRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PaymentType" msprop:Generator_ColumnVarNameInTable="columnPaymentType" msprop:Generator_ColumnPropNameInRow="PaymentType" msprop:Generator_ColumnPropNameInTable="PaymentTypeColumn" msprop:Generator_UserColumnName="PaymentType" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

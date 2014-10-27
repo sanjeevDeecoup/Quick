@@ -1,0 +1,30 @@
+/*#mainContainer { font-family:Verdana; font-size:14px; clear:both;  }
+#mainContainer fieldset { border:none; background-color:#d4d0c8; height:200px; width:600px;}
+#mainContainer fieldset ul { list-style-type:none; padding: 0px 5px 0px 10px; width:100%; }
+#mainContainer fieldset ul li { padding:3px;  text-align:left; } 
+#mainContainer fieldset legend { font-weight:bold; font-size:16px; text-decoration:underline; }
+#mainContainer .firstCol { width:40%; float:left; }
+#mainContainer .secondCol { width:40%; float:left; text-align:right; padding:0px 2px 0px 0px; }
+
+#mainContainer .typeTextHide { display:none; }
+
+input[type=text] { width:50px; }
+
+.prev, .next { background-color:#d4d0c8; padding:5px 10px; color:#000000; text-decoration:none;}
+.prev:hover, .next:hover { background-color:#000; color:#ffffff;  text-decoration:none;}
+.prev { float:left;}
+.next { float:right;}
+#steps { list-style:none; width:100; overflow:hidden; margin:0px; padding:0px; }
+#steps li {font-size:24px; float:left; padding:10px; color:#b0b1b3;}
+#steps li span {font-size:11px; display:block;}
+#steps li.current { color:#000; }
+#makeWizard { background-color:#b0232a; color:#fff; padding:5px 10px; text-decoration:none; font-size:18px;}
+#makeWizard:hover { background-color:#000;}
+
+#steps { font-size:24px; margin:0px; padding:0px; width:100%; }
+#steps div { width:118px; background-color:#a2a2a2; border:1px solid #808080; float:left; color:#808080; }
+#steps div.current { border:1px solid #a2a2a2; background-color:#d4d0c8; text-align:center; color:#000000;  }
+
+#commands { background-color:#d4d0c8; width:600px; } 
+#commands p { display:none; font-weight:bold; }
+#commands p.currentSel { display:block; }*/

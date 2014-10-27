@@ -1,0 +1,1433 @@
+﻿.BodyStyle
+{
+	background-color: #DDDDDD;
+}
+.BaseTableStyle
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	vertical-align: top;
+	border-color: Black;
+	color: Black;
+}
+.ajax__calendar
+{
+	z-index: 1000 !important;
+}
+.ajax__calendar_container
+{
+	z-index: 1000 !important;
+}
+.staticPanel
+{
+	width: 400px;
+	background-color: White;
+	border: solid 1px black;
+	padding: 10px;
+	top: 10px;
+	right: 10px;
+}
+.TableForHeader
+{
+	width: 100%;
+	vertical-align: top;
+	background-color: #f7f7e9;
+	color: White;
+	height: 20px;
+}
+.NormalTable
+{
+	width: 100%;
+	vertical-align: top;
+	text-align: left;
+}
+.FormStyle
+{
+	background-color: Silver;
+	color: Black;
+	font-family: Tahoma,Arial, MS Sans Serif, Times New Roman;
+	font-size: 14px;
+}
+.NormalTableStyle
+{
+	border-width: 0px;
+	vertical-align: top;
+}
+
+.FieldSetStyle
+{
+	padding: 0px;
+}
+
+.TextBoxStyle
+{
+	background-color: inherit;
+}
+
+.TextBoxHighlighted1
+{
+	background-color: #FFFFCC;
+}
+/*
+.ButtonStyle
+{
+	height: 15px;
+	font-size: 10px;
+}
+*/
+.WarningMessage
+{
+	color: Red;
+	font-weight: bold;
+}
+tr
+{
+	vertical-align: top;
+}
+
+.Title1
+{
+	vertical-align: top;
+	font-weight: normal;
+	color: #CC0000;
+	font-family: 'Bauhaus 93';
+	font-size: 46px;
+}
+.Calender
+{
+	z-index: 500;
+}
+
+.Title2
+{
+	font-family: 'Arial Black';
+	font-size: 20px;
+	font-weight: bold;
+	color: #003366;
+}
+
+.ReceiptNameHead
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.ReceiptDetails
+{
+	font-size: 12px;
+}
+/*
+.ButtonSelection
+{
+	border-radius: 10px;
+}
+*/
+
+.staticMenuItemStyle
+{
+	text-align: center;
+	display: block;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-left: 0;
+}
+
+.staticMenuItemSelectedStyle
+{
+	border: solid 1px #000;
+}
+
+.staticHoverStyle
+{
+	background-image: url(../images/bg-black.gif);
+}
+
+.menuItem
+{
+	display: block;
+}
+
+.dynamicMenuItemStyle
+{
+	border: solid 1px #000;
+	background-color: Silver;
+	color: Red;
+	z-index: 200;
+	position: relative;
+}
+
+.background
+{
+	border: solid 1px #000;
+	background-image: url(../images/bg-black.gif);
+}
+
+.NavigationMenu
+{
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #FFF;
+	font-weight: 600;
+	z-index: 101;
+	background-image: url(../images/bg-black.gif);
+}
+
+#h
+{
+	background: #CCCFFF;
+	padding: 5px 0 6px 10px;
+}
+
+#e
+{
+	border: solid 1px #919191;
+	background-image: url(../images/sub.gif);
+	padding: 0 0 1px;
+}
+
+.menuItemMouseOver, .menuItemSelected
+{
+	border: solid 1px Navy;
+	background-image: url(../images/bg-black.gif);
+}
+
+.NavigationMenu A:link, .NavigationMenu A:visited, .NavigationMenu A:active
+{
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+}
+
+.currentNodeStyle, .nodeStyle, .rootNodeStyle, a.siteMapPath
+{
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+
+.RequireMessageSummary
+{
+	background-color: White;
+	border-color: #999999;
+	border-style: Solid;
+	border-width: 1px;
+	font-family: Arial;
+}
+.H1
+{
+	color: #5081A1;
+	font-size: larger;
+	font-weight: bold;
+}
+.DivStyleWithScroll
+{
+	border-right: black thin solid;
+	border-top: black thin solid;
+	font-size: 11px;
+	overflow: scroll;
+	border-left: black thin solid;
+	width: 100%;
+	border-bottom: black thin solid;
+	font-family: Verdana;
+	height: 150px;
+	background-color: silver;
+}
+.GridHeaderStyle
+{
+	color: White;
+	font-size: small;
+	text-align: center;
+}
+
+.col1, .col2, .col3
+{
+	float: left;
+	width: 110px;
+	margin: 0;
+	padding: 0 5px 0 0;
+	line-height: 14px;
+}
+
+body
+{
+}
+
+.TDFORMAT
+{
+	font-weight: lighter;
+	border-style: solid;
+	border-width: thin;
+	border-color: Gray;
+	color: #000000;
+	text-align: center;
+	height: 20px;
+	font-size: 10px;
+}
+.popupMenu
+{
+	position: absolute;
+	visibility: hidden;
+	background-color: White;
+	color: Black;
+	opacity: .9;
+	filter: alpha(opacity=90);
+}
+.popupHover
+{
+	background-position: left top;
+	background-color: #F5F7F8;
+}
+
+.accordionHeader
+{
+	border: 1px solid :#9EE0FF;
+	color: Green;
+	font-family: verdana,Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+	background-color: #9EE0FF;
+}
+
+#center-bg
+{
+	width: 1024px;
+	height: 404px;
+	margin: 0 auto;
+	background: url(../Image/center-bg-okhla.jpg);
+}
+
+#login-box
+{
+	width: 262px;
+	height: auto;
+	float: left;
+	margin-left: 40px;
+}
+
+h5
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #555555;
+	text-align: left;
+	font-weight: bold;
+}
+
+.tdStyle
+{
+	color: White;
+	font-weight: bold;
+	background-color: Green;
+	font-family: Arial;
+}
+
+.watermark
+{
+	color: #A39D9D;
+	font-family: Tahoma;
+	font-size: 10;
+	font-weight: bolder;
+}
+
+.textboxCode
+{
+	background-color: White;
+	border-color: #999999;
+	border-style: Solid;
+	border-width: 1px;
+	width: 50px;
+}
+.textboxAddress
+{
+	background-color: White;
+	border-color: #999999;
+	border-style: Solid;
+	border-width: 1px;
+	width: 350px;
+}
+.textboxName
+{
+	background-color: White;
+	border-color: #999999;
+	border-style: Solid;
+	border-width: 1px;
+	width: 200px;
+}
+.textboxTelephone
+{
+	background-color: White;
+	border-color: #999999;
+	border-style: Solid;
+	border-width: 1px;
+	width: 125px;
+}
+
+.SuccessMessage
+{
+	color: Green;
+	font-weight: bold;
+	font-size: medium;
+}
+
+.ErrorMessage
+{
+	color: Red;
+	font-weight: bold;
+	font-size: medium;
+}
+.TDCaption /* Caption of the controls with "Low Impression", instruct user Enter the right kind of data  */
+{
+	color: #5E6265;
+	font-family: verdana,Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	height: 25px;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+
+.TDCaption2
+{
+	color: #5E6265;
+	font-family: verdana,Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	height: 25px;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+.TDCaptionHeader /* Caption of the controls with "Low Impression", instruct user Enter the right kind of data  */
+{
+	color: #5E6265;
+	font-family: verdana,Arial, Helvetica, sans-serif;
+	font-size: 14;
+	text-align: center;
+	height: 25px;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+.TDDot
+{
+	color: #5E6265;
+	font-family: verdana,Arial, Helvetica, sans-serif;
+	font-size: 14;
+	text-align: left;
+	height: 25px;
+	font-weight: bolder;
+	width: 10px;
+}
+.td
+{
+	text-align: left;
+}
+
+.hyperlink
+{
+	color: Navy;
+	font-size: smaller;
+}
+.bold
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	color: #669999;
+	font-weight: bold;
+}
+
+.Fieldset
+{
+	border-color: #00649e;
+}
+
+.TableData
+{
+	font-family: Arial;
+	font-size: small;
+	font-weight: bolder;
+}
+
+.lableMessage
+{
+	color: Red;
+	font-family: Arial;
+	font-size: small;
+}
+/*
+.Button
+{
+	color: Red;
+	font-size: small;
+	font-family: Arial;
+}
+*/
+.span
+{
+	width: 10px;
+	font-size: x-small;
+	color: Red;
+}
+.span1
+{
+	width: 10px;
+	font-size: large;
+	color: Red;
+}
+.Legend
+{
+	border-color: #00649e;
+	font-family: Arial;
+	font-size: small;
+	cursor: pointer;
+	font-weight: bold;
+	color: #00649e;
+}
+.LabelBkgScrn
+{
+	border-color: #00649e;
+	font-family: Arial;
+	font-size: small;
+	cursor: pointer;
+	font-weight: bold;
+	color: Maroon !important;
+}
+
+.LegendPopUp
+{
+	border-color: #00649e;
+	font-family: Arial;
+	font-size: small;
+}
+.bodyplain
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	color: #000000;
+	font-weight: normal;
+}
+
+.boldwhite
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.boldwhiteCopy
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	color: #4A627A;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.bodyplaingrey
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	color: #999999;
+	font-weight: normal;
+}
+
+.Textbox
+{
+	border-color: #2d3a02;
+	border-width: 1px;
+}
+
+.textSize
+{
+	font-size: small;
+}
+
+.Legend
+{
+	color: #00649e;
+	font-weight: bold;
+	border-style: none;
+	border-width: 2px;
+	border-color: Red;
+}
+/*
+.ButtonStyle
+{
+	height: 15px;
+	font-size: 10px;
+}
+*/
+tr
+{
+	vertical-align: top;
+}
+.TableTdAlign
+{
+	text-align: center;
+	border-width: thin;
+	border-color: #000000;
+	font-weight: bold;
+	border-bottom-style: solid;
+	border-right-style: solid;
+}
+.normal
+{
+	background-color: white;
+}
+
+.focus
+{
+	background-color: #E3F5B0;
+}
+
+.TDCaption1 /* Caption of the controls with "Low Impression", instruct user Enter the right kind of data  */
+{
+	color: #5E6265;
+	font-family: verdana,Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	height: 25px;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+
+.AutoExtender
+{
+	font-family: Arial Black;
+	font-size: 14px;
+	font-weight: normal;
+	border: solid 1px #006699;
+	line-height: 20px;
+	padding: 10px;
+	background-color: Silver;
+	list-style: None;
+	z-index: 1200 !important; /* margin-left:10px; */
+	overflow: scroll;
+	height: 350px;
+}
+
+.AutoExtenderProcessList
+{
+	font-family: Arial Black;
+	font-size: 14px;
+	font-weight: normal;
+	border: solid 1px #006699;
+	line-height: 20px;
+	padding: 10px;
+	background-color: Silver;
+	list-style: None;
+	z-index: 1200 !important; /* margin-left:10px;*/
+	overflow: scroll;
+	height: 150px;
+}
+.AutoExtenderList
+{
+	margin-top: 3px;
+	border-bottom: Solid 2px Yellow;
+	cursor: pointer;
+	color: Black;
+}
+
+.AutoExtenderHighlight
+{
+	color: White;
+	background-color: #006699;
+	cursor: pointer;
+}
+
+.grdCustName
+{
+}
+
+.bookingDate
+{
+}
+
+.grdFooter
+{
+	background-color: Aqua;
+	font-weight: bolder;
+}
+
+.alignTdRight
+{
+	width: 20%;
+}
+
+.modalPopup
+{
+	background-color: #ffffdd;
+	border-width: 3px;
+	border-style: solid;
+	border-color: Gray;
+	padding: 3px;
+	width: 250px;
+}
+*
+{
+	padding: 0;
+	margin: 0px;
+}
+body
+{
+	font: 11px Tahoma;
+	background-color: #F7F7E9;
+}
+h1
+{
+	font: bold 32px Times;
+	color: #666;
+	text-align: center;
+	padding: 20px 0;
+}
+#container
+{
+	width: 700px;
+	margin: 10px auto;
+}
+up.Tagit
+{
+	width: 10px;
+}
+
+.mGrid
+{
+	width: 100%;
+	background-color: #E1F5F5;
+	margin: 5px 0 10px 0;
+	border: solid 1px #525252;
+	border-collapse: collapse;
+}
+.mGrid td
+{
+	padding: 2px;
+	border: solid 1px #c1c1c1;
+	color: Black;
+}
+.mGrid th
+{
+	padding: 4px 2px;
+	color: #fff;
+	background: #ddeefe url(../images/footer.png) repeat-x top;
+	border-left: solid 1px #525252;
+	font-size: 0.9em;
+}
+.mGrid .pgr
+{
+	background: #424242 url(footer copy.png) repeat-x top;
+}
+.mGrid .pgr table
+{
+	margin: 5px 0;
+}
+.mGrid .pgr td
+{
+	border-width: 0;
+	padding: 0 6px;
+	border-left: solid 1px #666;
+	font-weight: bold;
+	color: #000;
+	line-height: 12px;
+}
+.mGrid .pgr a
+{
+	color: #666;
+	text-decoration: none;
+}
+.mGrid .pgr a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+/*.mGridCustomHeader { background: #ddeefe url(../images/footer.png) repeat-x top;  } */
+
+.mGridEntry
+{
+	background-color: #E1F5F5;
+	border: 1px solid #525252;
+	border-collapse: collapse;
+	margin: 5px 0 10px;
+	width: 100%;
+}
+.mGridEntry td
+{
+	border: 1px solid #C1C1C1;
+	color: #717171 !important;
+	padding: 2px;
+}
+.mGridEntry th
+{
+	background: url("../images/th-Bakcgrond6.png") repeat-x scroll 0 0 transparent !important;
+	border-left: 1px solid #525252;
+	font-size: 0.9em;
+	padding: 4px 2px;
+	border: 1px solid #C1C1C1;
+}
+.mGridEntry .pgr table
+{
+	margin: 5px 0;
+}
+.mGridEntry .pgr td
+{
+	border-left: 1px solid #666666;
+	border-width: 0 0 0 1px;
+	color: #000000;
+	font-weight: bold;
+	line-height: 12px;
+	padding: 0 6px;
+}
+.mGridEntry .pgr a
+{
+	color: #666666;
+	text-decoration: none;
+}
+.mGridEntry .pgr a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.mGirdAlternate tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+.calcGrid
+{
+	left: -35px;
+	top: 0px;
+	position: relative;
+	float: right;
+}
+.GridLowerLeft
+{
+	left: 0px;
+	top: 35px;
+	position: relative;
+	vertical-align: bottom;
+}
+.BookingBtns
+{
+	vertical-align: bottom;
+	width: 100% !important;
+	align: center;
+	colspan: 0;
+}
+.BookingBtns input
+{
+	left: 0px !important;
+	padding: 0px;
+	background: none repeat scroll 0 0 transparent !important;
+	border: medium none transparent !important;
+	cursor: pointer;
+}
+#lblLastBooking
+{
+	position: relative;
+	left: -2px;
+	font-size: medium;
+	font-weight: bold;
+	top: -1px;
+	color: Darkgreen !important;
+}
+#txtDate
+{
+	position: relative;
+	left: -7px;
+}
+#txtCustomerName
+{
+	width: 420px;
+	left: 10px;
+	position: relative;
+}
+#lblCustomer
+{
+	position: relative;
+	left: 10px;
+	width: 60px;
+}
+#chkToday, #chkNextDay
+{
+	top: 2px;
+	position: relative;
+}
+.mainRowTblEntry
+{
+}
+#imgBtnCustAdd
+{
+	position: relative;
+	left: -60px;
+	top: 0px;
+}
+/*
+#btnSaveBooking
+{
+	background: url("../images/save.png") no-repeat scroll -2px 1px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+}
+.btnSaveBooking:hover #btnSaveBooking
+{
+	background: url("../images/saveN.png") no-repeat scroll -2px 1px transparent !important;
+}
+#btnReset
+{
+	background: url("../images/Reset.png") no-repeat scroll -2px 1px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+}
+.btnSaveBooking:hover #btnReset
+{
+	background: url("../images/Reset3.png") no-repeat scroll -2px 1px transparent !important;
+}
+#btnSavePrint
+{
+	background: url("../images/Printer.png") no-repeat scroll 4px 1px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 30px 1px 10px;
+}
+.btnSaveBooking:hover #btnSavePrint
+{
+	background: url("../images/PrinterN.png") no-repeat scroll 4px 1px transparent !important;
+}
+#btnSavePrintBarCode
+{
+	background: url("../images/printerNTags.png") no-repeat scroll 4px 1px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 30px 1px 10px;
+}
+.btnSaveBooking:hover #btnSavePrintBarCode
+{
+	background: url("../images/printerNTags2.png") no-repeat scroll 4px 1px transparent !important;
+}
+#btnPrintBarCode
+{
+	background: url("../images/BarCode.png") no-repeat scroll 4px -4px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 18px 1px 10px;
+}
+.btnSaveBooking:hover #btnPrintBarCode
+{
+	background: url("../images/BarCodeN.png") no-repeat scroll 4px -4px transparent !important;
+}
+#btnSavePrint
+{
+	position: relative;
+	left: 60px !important;
+}
+#btnPrintBarCode
+{
+	left: 16px !important;
+	position: relative;
+}
+
+.btnSaveBooking
+{
+	background: -moz-linear-gradient(center top , #FFFFFF, #DBDBDB) no-repeat scroll 0 0 transparent;
+	border: 1px solid #FFFFFF ;
+	border-radius: 20px 20px 20px 20px ;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+	color: #597390 !important;
+	font-family: Verdana;
+	font-weight: bold;
+	line-height: 16px;
+	padding: 2px ;
+	padding-right: 5px;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+.btnSaveBooking:hover
+{
+	background: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
+	color: #000000;
+	display: block;
+	cursor: pointer;
+}
+.btnSaveBooking:active {
+	background-image: -moz-linear-gradient(center top , #DBDBDB, #FFFFFF);
+	margin-top: 1px important;
+	text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5) important;
+}
+.btnsavebookingspan {
+	font-size: 10.1pt;
+	padding: 0 20px 0 0;
+}
+#btnSavePrintBarCode
+{
+	left: 30px;
+	position: relative;
+}
+
+*/
+
+/* NEW CODE */
+
+.btnSaveBooking
+{
+	border-top: 1px solid #7abbde;
+	background: #1776a6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7ec5e8), to(#1776a6));
+	background: -webkit-linear-gradient(top, #7ec5e8, #1776a6);
+	background: -moz-linear-gradient(top, #7ec5e8, #1776a6);
+	background: -ms-linear-gradient(top, #7ec5e8, #1776a6);
+	background: -o-linear-gradient(top, #7ec5e8, #1776a6);
+	padding: 5px 5px 6px 8px;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 15px;
+	border-radius: 11px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #f7f7f7;
+	font-size: 19px;
+	font-family: Georgia, Serif;
+	text-decoration: none;
+	vertical-align: middle;
+	width: 400px;
+}
+.btnSaveBooking:hover
+{
+	border-top-color: #000000;
+	background: #7288c9;
+	color: #ffffff;
+	cursor: pointer;
+}
+.btnSaveBooking:active
+{
+	border-top-color: #3c637d;
+	background: #3c637d;
+}
+
+/* CODE FOR IMAGES */
+
+#save .btnImage
+{
+	background: url("../images/save.png") no-repeat scroll 2px 5px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#save .btnImage:hover
+{
+	background: url("../images/saveN.png") no-repeat scroll 2px 5px transparent !important;
+	cursor: pointer;
+}
+
+#save:hover img
+{
+	src: url("../images/saveN.png") !important;
+	cursor: pointer;
+}
+
+#print .btnImage:first-child
+{
+	background: url("../images/save.png") no-repeat scroll 2px 5px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#print .btnImage:first-child:hover
+{
+	background: url("../images/saveN.png") no-repeat scroll 2px 5px transparent !important;
+	cursor: pointer;
+}
+
+#print .btnImage:nth-child(2)
+{
+	background: url("../images/Printer.png") no-repeat scroll 2px 5px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#print .btnImage:nth-child(2):hover
+{
+	background: url("../images/PrinterN.png") no-repeat scroll 2px 5px transparent !important;
+	cursor: pointer;
+}
+
+#printtag .btnImage:first-child
+{
+	background: url("../images/save.png") no-repeat scroll 2px 5px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#printtag .btnImage:first-child:hover
+{
+	background: url("../images/saveN.png") no-repeat scroll 2px 5px transparent !important;
+	cursor: pointer;
+}
+
+#printtag .btnImage:nth-child(2)
+{
+	background: url("../images/BarCode.png") no-repeat scroll -8px 1px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#printtag .btnImage:nth-child(2):hover
+{
+	background: url("../images/BarCodeN.png") no-repeat scroll -8px 1px transparent !important;
+	cursor: pointer;
+}
+
+#saveprinttag .btnImage:first-child
+{
+	background: url("../images/save.png") no-repeat scroll 2px 5px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#saveprinttag .btnImage:first-child:hover
+{
+	background: url("../images/saveN.png") no-repeat scroll 2px 5px transparent !important;
+	cursor: pointer;
+}
+
+#saveprinttag .btnImage:nth-child(2)
+{
+	background: url("../images/BarCode.png") no-repeat scroll -8px 1px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#saveprinttag .btnImage:nth-child(2):hover
+{
+	background: url("../images/BarCodeN.png") no-repeat scroll -8px 1px transparent !important;
+	cursor: pointer;
+}
+
+#saveprinttag .btnImage:nth-child(3)
+{
+	background: url("../images/Printer.png") no-repeat scroll 2px 5px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#saveprinttag .btnImage:nth-child(3):hover
+{
+	background: url("../images/PrinterN.png") no-repeat scroll 2px 5px transparent !important;
+	cursor: pointer;
+}
+
+#reset .btnImage
+{
+	background: url("../images/Reset.png") no-repeat scroll 2px 5px transparent !important;
+	border-color: transparent !important;
+	height: 24px;
+	position: relative;
+	width: 28px;
+	margin: 1px 1px 1px 10px;
+	padding: 4px 2px 0 20px;
+}
+
+#reset .btnImage:hover
+{
+	background: url("../images/Reset3.png") no-repeat scroll 2px 5px transparent !important;
+	cursor: pointer;
+}
+.btnSaveBookingContainder:hover .btnImage
+{
+	background: url("../images/saveN.png") no-repeat scroll 2px 5px transparent !important;
+	cursor: pointer;
+	width: 28px;
+	height: 31px;
+}
+
+#tblBtnSavings
+{
+	width: 80%;
+	text-align: center;
+	vertical-align: middle;
+	left: 40px;
+	position: relative;
+}
+
+.tblOldBookingLeftGrid
+{
+	position: relative;
+	top: 42px;
+}
+#drpDate:focus
+{
+	background-color: Yellow;
+}
+#drpMonth:focus
+{
+	background-color: Yellow;
+}
+#drpYear:focus
+{
+	background-color: Yellow;
+}
+.MasterFooter
+{
+	font-size: 10px;
+}
+
+#lblCalcDim
+{
+	left: 50px;
+	position: relative;
+	top: -20px;
+}
+#grdEntry_ctl01_imgBtnGridEntry:hover
+{
+	background-color: Lime !important;
+	border: 1px solid Red !important;
+	text-shadow: 1px !important;
+}
+#grdEntry_ctl01_imgBtnGridEntry:focus
+{
+	background-color: Lime !important;
+	border: 1px solid Red !important;
+	text-shadow: 1px !important;
+}
+
+.challanMoveButtons input
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 4px 10px;
+	border-color: Black !important;
+	border-width: 1px !important;
+	margin: 8px 8px;
+	background: -moz-linear-gradient( 		top, 		#67c8e5 0%, 		#050e9e);
+	background: -webkit-gradient( 		linear, left top, left bottom,  		from(#67c8e5), 		to(#050e9e));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 0px solid #258ede;
+	-moz-box-shadow: 2px 2px 8px rgba(000,000,000,0.6), inset 0px 0px 0px rgba(240,240,240,1);
+	-webkit-box-shadow: 2px 2px 8px rgba(000,000,000,0.6), inset 0px 0px 0px rgba(240,240,240,1);
+	box-shadow: 2px 2px 8px rgba(000,000,000,0.6), inset 0px 0px 0px rgba(240,240,240,1);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.4), 0px 1px 0px rgba(255,255,255,0.3);
+}
+.challanMoveButtons input:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 4px 10px;
+	border-color: Black !important;
+	border-width: 1px !important;
+	margin: 8px 8px;
+	background: -moz-linear-gradient( 		top, 		#004c8a 0%, 		#6870c7 55%, 		#96d7fa);
+	background: -webkit-gradient( 		linear, left top, left bottom,  		from(#004c8a), 		color-stop(.55, #6870c7), 		to(#96d7fa));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 0px solid #258ede;
+	-moz-box-shadow: 2px 2px 8px rgba(000,000,000,0.6), inset 0px 0px 0px rgba(240,240,240,1);
+	-webkit-box-shadow: 2px 2px 8px rgba(000,000,000,0.6), inset 0px 0px 0px rgba(240,240,240,1);
+	box-shadow: 2px 2px 8px rgba(000,000,000,0.6), inset 0px 0px 0px rgba(240,240,240,1);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.4), 0px 1px 0px rgba(255,255,255,0.3);
+}
+.challanMoveButtons :disabled
+{
+	background: black;
+}
+.challanMoveButtons :disabled:hover
+{
+	background: black;
+}
+.disabledClass
+{
+	background-color: Gray !important;
+}
+.top20
+{
+	position: relative;
+	top: 20px;
+}
+/*
+.disabledClass :hover
+{
+	background: black;
+}
+*/
+.lblMoveBtnText
+{
+	top: 20px;
+	position: relative;
+}
+
+td .challanMoveButtons
+{
+	width: 1%;
+}
+
+.lblClothCount
+{
+	position: relative;
+	left: -25px;
+}
+td
+{
+	-moz-transition: 0.5s ease;
+}
+#DivContainerStatus
+{
+	-moz-transition: 0.5s ease;
+}
+
+#lblStatusCloth
+{
+	font-size: 16px;
+	font-weight: bold;
+	left: 30%;
+	letter-spacing: 0.5px;
+	margin: 0 auto;
+	position: relative;
+	text-align: justify;
+	top: 4px;
+	width: 100%;
+}
+
+.LabelPending
+{
+	position: relative; /*left: 20px;*/
+	font-size: larger;
+	font-weight: bold;
+	color: Black;
+	margin: 0 0 0 40px;
+}
+.LabelPendingRt
+{
+	position: relative; /*left: 30px;*/
+	font-size: larger;
+	font-weight: bold;
+	color: Black;
+	margin: 0 0 0 40px;
+}
+.LabelPendingText
+{
+	position: relative;
+	left: 20px;
+	font-size: large; /*font-weight: bold;*/
+	color: Maroon;
+	margin: 0 5px 0 5px;
+}
+.LabelPendingTextRt
+{
+	position: relative;
+	left: 30px;
+	font-size: large; /*font-weight: bold; */
+	color: Maroon; /*margin: 0 5px 0 5px; */
+}
+.fixedHeader
+{
+	position: fixed;
+}
+
+#UpdatePanel8 input:focus, select:focus
+{
+	/* background-color: Yellow;   */
+}
+.frmBkScr input:focus, select:focus, checkbox:focus
+{
+/*	background-color: Yellow; */
+}
+
+.linkClass
+{
+	cursor: pointer;
+	text-decoration: underline;
+	color: background !important;
+}
+
+#pnlPackageDetails table td
+{
+	padding: 2px 20px 2px 2px;
+}
+
+.ddlchklst
+{
+	width: 170px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	border: 1px solid #ccc;
+	float:left;
+	margin:0px 0px 0px -4px;
+	padding: 5px 5px;
+	font-size: 14px;
+    height: 34px;
+}
+.ddlchklst ul
+{
+	margin: 0;
+	padding: 0;
+	border-top: solid 1px silver;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.ddlchklst li
+{
+	list-style: none;
+}
+
+.LabelPendingOrd {
+    color: #000000;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0 0 0 40px;
+    position: relative;
+}

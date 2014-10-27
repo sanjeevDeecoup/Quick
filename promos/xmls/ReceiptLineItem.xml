@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lineItem sequence="1">
+  <item id="0">
+    <quantity> </quantity>
+    <length> </length>
+    <breadth> </breadth>
+    <area> </area>
+    <remarks> </remarks>
+    <brand> </brand>
+    <text> </text>
+  </item>
+  <patterns>
+    <pattern id="0">
+      <text> </text>
+    </pattern>
+  </patterns>
+  <colors>
+    <color id="0">
+      <text> </text>
+    </color>
+  </colors>
+  <processes>
+    <process id="0">
+      <rate> </rate>
+      <amount> </amount>
+      <text> </text>
+    </process>
+  </processes>
+</lineItem>
